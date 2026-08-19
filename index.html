@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en" data-baked>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawlock — App Blocker &amp; Screen Time Control for iPhone &amp; Android</title>
+  <meta name="description" content="Pawlock is an app blocker for iPhone and Android that locks distracting apps and websites with your phone's own system controls. Block social media, set focus schedules, beat phone addiction and win your day back.">
+
+  <link rel="canonical" href="https://pawlock.app/">
+  <link rel="alternate" hreflang="en" href="https://pawlock.app/">
+  <link rel="alternate" hreflang="tr" href="https://pawlock.app/tr/">
+  <link rel="alternate" hreflang="es" href="https://pawlock.app/es/">
+  <link rel="alternate" hreflang="de" href="https://pawlock.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://pawlock.app/fr/">
+  <link rel="alternate" hreflang="pt" href="https://pawlock.app/pt/">
+  <link rel="alternate" hreflang="ja" href="https://pawlock.app/ja/">
+  <link rel="alternate" hreflang="zh" href="https://pawlock.app/zh/">
+  <link rel="alternate" hreflang="ko" href="https://pawlock.app/ko/">
+  <link rel="alternate" hreflang="it" href="https://pawlock.app/it/">
+  <link rel="alternate" hreflang="ru" href="https://pawlock.app/ru/">
+  <link rel="alternate" hreflang="ar" href="https://pawlock.app/ar/">
+  <link rel="alternate" hreflang="nl" href="https://pawlock.app/nl/">
+  <link rel="alternate" hreflang="pl" href="https://pawlock.app/pl/">
+  <link rel="alternate" hreflang="id" href="https://pawlock.app/id/">
+  <link rel="alternate" hreflang="th" href="https://pawlock.app/th/">
+  <link rel="alternate" hreflang="vi" href="https://pawlock.app/vi/">
+  <link rel="alternate" hreflang="sv" href="https://pawlock.app/sv/">
+  <link rel="alternate" hreflang="da" href="https://pawlock.app/da/">
+  <link rel="alternate" hreflang="nb" href="https://pawlock.app/nb/">
+  <link rel="alternate" hreflang="fi" href="https://pawlock.app/fi/">
+  <link rel="alternate" hreflang="uk" href="https://pawlock.app/uk/">
+  <link rel="alternate" hreflang="el" href="https://pawlock.app/el/">
+  <link rel="alternate" hreflang="cs" href="https://pawlock.app/cs/">
+  <link rel="alternate" hreflang="ro" href="https://pawlock.app/ro/">
+  <link rel="alternate" hreflang="hu" href="https://pawlock.app/hu/">
+  <link rel="alternate" hreflang="sk" href="https://pawlock.app/sk/">
+  <link rel="alternate" hreflang="bg" href="https://pawlock.app/bg/">
+  <link rel="alternate" hreflang="hr" href="https://pawlock.app/hr/">
+  <link rel="alternate" hreflang="x-default" href="https://pawlock.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pawlock">
+  <meta property="og:url" content="https://pawlock.app/">
+  <meta property="og:title" content="Pawlock — App Blocker &amp; Screen Time Control for iPhone &amp; Android">
+  <meta property="og:description" content="Lock distracting apps and websites with Apple's Screen Time technology. Stop relying on willpower: build a system that actually holds.">
+  <meta property="og:image" content="https://pawlock.app/assets/img/og.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:locale:alternate" content="ar_SA">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="id_ID">
+  <meta property="og:locale:alternate" content="th_TH">
+  <meta property="og:locale:alternate" content="vi_VN">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="uk_UA">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="bg_BG">
+  <meta property="og:locale:alternate" content="hr_HR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236137ec'/%3E%3Cellipse cx='32' cy='40' rx='11' ry='9' fill='white'/%3E%3Ccircle cx='19' cy='28' r='5' fill='white'/%3E%3Ccircle cx='28' cy='21' r='5' fill='white'/%3E%3Ccircle cx='38' cy='21' r='5' fill='white'/%3E%3Ccircle cx='46' cy='28' r='5' fill='white'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="/assets/img/app-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preload" as="image" href="/assets/img/s1-locknow.webp" type="image/webp">
+  <link rel="preload" as="image" href="/assets/img/g1-hero.webp" type="image/webp" media="(min-width: 760px)">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Pawlock",
+    "alternateName": "Pawlock: App Blocker & Screen Time",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "ProductivityApplication",
+    "description": "App blocker for iPhone and Android that locks distracting apps and websites with your phone's own system controls, with instant locks, automatic schedules and real usage statistics.",
+    "image": "https://pawlock.app/assets/img/og.png",
+    "inLanguage": ["en","tr","es","de","fr","pt","ja","zh","ko","it","ru","ar","nl","pl","id","th","vi","sv","da","nb","fi","uk","el","cs","ro","hu","sk","bg","hr"],
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "url": "https://pawlock.app/"
+  }
+  </script>
+  <!-- ld-faq --><script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I really not unlock early?","acceptedAnswer":{"@type":"Answer","text":"That's the core idea. Once a scheduled program starts, it runs until its end time. If you could switch it off in two taps, it would be a reminder, not a lock. Set your durations thoughtfully."}},{"@type":"Question","name":"Where does my data go?","acceptedAnswer":{"@type":"Answer","text":"Nowhere. Pawlock has no account system and no servers. Your usage data is processed on your device by the system itself, and we never see it."}},{"@type":"Question","name":"Why does it ask for Screen Time permission?","acceptedAnswer":{"@type":"Answer","text":"Locking apps is only possible through the system's own controls: Apple's Screen Time (Family Controls) on iPhone, and the accessibility service on Android. The permission is granted to your phone's system and is required for any real blocking to work."}},{"@type":"Question","name":"What do I get for free?","acceptedAnswer":{"@type":"Answer","text":"3 instant locks per day, 1 automatic program, app and website blocking, and daily Screen Time statistics. Pro unlocks unlimited programs and all current Pro features."}},{"@type":"Question","name":"How do I cancel my subscription?","acceptedAnswer":{"@type":"Answer","text":"Through your App Store or Google Play subscriptions, like any other subscription. If you cancel, Pro stays active until the end of the paid period."}},{"@type":"Question","name":"Which devices are supported?","acceptedAnswer":{"@type":"Answer","text":"Pawlock runs on iPhone and on Android. Check the store page for the current version requirements."}}]}
+  </script><!-- /ld-faq -->
+</head>
+<body>
+
+  <!-- ======================== NAV ======================== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+        <span class="brand-icon"><img src="/assets/img/app-icon.png" alt="" onerror="this.replaceWith('🐾')"></span>
+        Pawlock
+      </a>
+      <button class="nav-burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#features" data-i18n="nav.features">Features</a></li>
+        <li><a href="#how" data-i18n="nav.how">How it works</a></li>
+        <li><a href="#pricing" data-i18n="nav.pricing">Free vs Pro</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+        <li class="nav-cta no-line"><a class="btn btn-primary store-link" href="#pricing" data-i18n="nav.download">Download</a></li>
+      </ul>
+    </div>
+    <div class="lang-strip">
+      <nav class="lang-bar" aria-label="Language">
+        <a href="/ar/" hreflang="ar" data-lang-link="ar" title="العربية" aria-label="العربية">🇸🇦</a>
+        <a href="/bg/" hreflang="bg" data-lang-link="bg" title="Български" aria-label="Български">🇧🇬</a>
+        <a href="/zh/" hreflang="zh" data-lang-link="zh" title="简体中文" aria-label="简体中文">🇨🇳</a>
+        <a href="/hr/" hreflang="hr" data-lang-link="hr" title="Hrvatski" aria-label="Hrvatski">🇭🇷</a>
+        <a href="/cs/" hreflang="cs" data-lang-link="cs" title="Čeština" aria-label="Čeština">🇨🇿</a>
+        <a href="/da/" hreflang="da" data-lang-link="da" title="Dansk" aria-label="Dansk">🇩🇰</a>
+        <a href="/nl/" hreflang="nl" data-lang-link="nl" title="Nederlands" aria-label="Nederlands">🇳🇱</a>
+        <a href="/" hreflang="en" data-lang-link="en" class="active" title="English" aria-label="English">🇬🇧</a>
+        <a href="/fi/" hreflang="fi" data-lang-link="fi" title="Suomi" aria-label="Suomi">🇫🇮</a>
+        <a href="/fr/" hreflang="fr" data-lang-link="fr" title="Français" aria-label="Français">🇫🇷</a>
+        <a href="/de/" hreflang="de" data-lang-link="de" title="Deutsch" aria-label="Deutsch">🇩🇪</a>
+        <a href="/el/" hreflang="el" data-lang-link="el" title="Ελληνικά" aria-label="Ελληνικά">🇬🇷</a>
+        <a href="/hu/" hreflang="hu" data-lang-link="hu" title="Magyar" aria-label="Magyar">🇭🇺</a>
+        <a href="/id/" hreflang="id" data-lang-link="id" title="Bahasa Indonesia" aria-label="Bahasa Indonesia">🇮🇩</a>
+        <a href="/it/" hreflang="it" data-lang-link="it" title="Italiano" aria-label="Italiano">🇮🇹</a>
+        <a href="/ja/" hreflang="ja" data-lang-link="ja" title="日本語" aria-label="日本語">🇯🇵</a>
+        <a href="/ko/" hreflang="ko" data-lang-link="ko" title="한국어" aria-label="한국어">🇰🇷</a>
+        <a href="/nb/" hreflang="nb" data-lang-link="nb" title="Norsk" aria-label="Norsk">🇳🇴</a>
+        <a href="/pl/" hreflang="pl" data-lang-link="pl" title="Polski" aria-label="Polski">🇵🇱</a>
+        <a href="/pt/" hreflang="pt" data-lang-link="pt" title="Português" aria-label="Português">🇵🇹</a>
+        <a href="/ro/" hreflang="ro" data-lang-link="ro" title="Română" aria-label="Română">🇷🇴</a>
+        <a href="/ru/" hreflang="ru" data-lang-link="ru" title="Русский" aria-label="Русский">🇷🇺</a>
+        <a href="/sk/" hreflang="sk" data-lang-link="sk" title="Slovenčina" aria-label="Slovenčina">🇸🇰</a>
+        <a href="/es/" hreflang="es" data-lang-link="es" title="Español" aria-label="Español">🇪🇸</a>
+        <a href="/sv/" hreflang="sv" data-lang-link="sv" title="Svenska" aria-label="Svenska">🇸🇪</a>
+        <a href="/th/" hreflang="th" data-lang-link="th" title="ไทย" aria-label="ไทย">🇹🇭</a>
+        <a href="/tr/" hreflang="tr" data-lang-link="tr" title="Türkçe" aria-label="Türkçe">🇹🇷</a>
+        <a href="/uk/" hreflang="uk" data-lang-link="uk" title="Українська" aria-label="Українська">🇺🇦</a>
+        <a href="/vi/" hreflang="vi" data-lang-link="vi" title="Tiếng Việt" aria-label="Tiếng Việt">🇻🇳</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================== HERO ======================== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="hero-badge">🐾 <span data-i18n="hero.badge">App blocker and screen time guardian for iPhone and Android</span></span>
+          <h1>
+            <span data-i18n="hero.title1">Less screen,</span><br>
+            <span data-i18n="hero.title2">more </span><span class="grad-word" data-i18n="hero.title3">life.</span>
+          </h1>
+          <p class="hero-sub" data-i18n="hero.sub">Pawlock locks your distracting apps and websites for you. Stop relying on willpower: build a system that actually holds.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary store-link" href="#pricing">
+              <svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+              <span data-i18n="hero.cta">Download for free</span>
+            </a>
+            <a class="btn btn-ghost" href="#how" data-i18n="hero.cta2">See how it works</a>
+          </div>
+          <ul class="hero-trust">
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust1">Your data never leaves your device</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust2">No account needed</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust3">Built on your phone's own system controls</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust4">No ads</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="phone">
+            <figure class="slot" data-ph="🔒">
+              <img src="/assets/img/s1-locknow.webp" width="820" height="1778" alt="Pawlock app blocker lock screen with countdown timer" data-i18n-alt="alt.s1" onerror="imgFail(this)">
+            </figure>
+          </div>
+          <div class="hero-mascot">
+            <figure class="slot" data-ph="🐾">
+              <img src="/assets/img/g1-hero.webp" alt="" onerror="imgFail(this)">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== PROBLEM ======================== -->
+    <section class="section problem">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="problem.title">It's not you. It's the design.</h2>
+          <p data-i18n="problem.sub">The apps stealing your time were built by thousands of engineers with one goal: keep you scrolling. Willpower was never a fair fight.</p>
+        </div>
+        <div class="problem-stats reveal">
+          <div class="pstat">
+            <strong data-i18n="problem.stat1n">4+ hours</strong>
+            <span data-i18n="problem.stat1d">is what the average person spends on their phone every single day</span>
+          </div>
+          <div class="pstat">
+            <strong data-i18n="problem.stat2n">91 days</strong>
+            <span data-i18n="problem.stat2d">of your waking year vanish into the screen at that pace</span>
+          </div>
+          <div class="pstat">
+            <strong data-i18n="problem.stat3n">1 in 4</strong>
+            <span data-i18n="problem.stat3d">waking hours goes to the phone, on a 16-hour waking day</span>
+          </div>
+        </div>
+        <div class="problem-grid">
+          <figure class="slot illus reveal" data-ph="🌙">
+            <img src="/assets/img/g2-problem.webp" alt="" loading="lazy" onerror="imgFail(this)">
+          </figure>
+          <div class="problem-cards reveal">
+            <div class="problem-card">
+              <h3 data-i18n="problem.c1t">“Just five minutes”</h3>
+              <p data-i18n="problem.c1d">You open it for a moment. An hour later you're still there, and you don't even remember what you saw.</p>
+            </div>
+            <div class="problem-card">
+              <h3 data-i18n="problem.c2t">Deleting doesn't work</h3>
+              <p data-i18n="problem.c2d">You delete the app feeling determined. Two days later it's back on your home screen.</p>
+            </div>
+            <div class="problem-card">
+              <h3 data-i18n="problem.c3t">Reminders are ignorable</h3>
+              <p data-i18n="problem.c3d">Screen time warnings and “take a break” popups get dismissed with one tap. You need a lock, not a suggestion.</p>
+            </div>
+          </div>
+        </div>
+        <p class="problem-note reveal" data-i18n="problem.note">The math is simple: 4 hours × 365 days = 1,460 hours a year. Count a day as 16 waking hours (the other 8 are sleep) and that's 91 full waking days. Pawlock's statistics show your own number, straight from your device.</p>
+      </div>
+    </section>
+
+    <!-- ======================== TRANSITION (problem → hope) ======================== -->
+    <section class="transition">
+      <div class="container transition-inner reveal">
+        <figure class="slot transition-img" data-ph="🌿">
+          <img src="/assets/img/g3-freedom.webp" alt="" loading="lazy" onerror="imgFail(this)">
+        </figure>
+        <div class="transition-text">
+          <h2 data-i18n="transition.title">On the other side, your life is waiting.</h2>
+          <p data-i18n="transition.sub">You lose nothing by putting the phone down. You gain back a whole day.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== HOW IT WORKS ======================== -->
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="how.title">How Pawlock works</h2>
+          <p data-i18n="how.sub">Three steps. After that, the system works even when your motivation doesn't.</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <figure class="slot illus" data-ph="👆">
+              <img src="/assets/img/g4-step1.webp" alt="" loading="lazy" onerror="imgFail(this)">
+            </figure>
+            <span class="step-num" aria-hidden="true"></span>
+            <h3 data-i18n="how.s1t">Choose what distracts you</h3>
+            <p data-i18n="how.s1d">Pick apps, whole categories, or websites with your phone's own picker. Add any site by typing its address.</p>
+          </div>
+          <div class="step reveal">
+            <figure class="slot illus" data-ph="🔒">
+              <img src="/assets/img/g5-step2.webp" alt="" loading="lazy" onerror="imgFail(this)">
+            </figure>
+            <span class="step-num" aria-hidden="true"></span>
+            <h3 data-i18n="how.s2t">Lock now, or on a schedule</h3>
+            <p data-i18n="how.s2d">One tap for an instant lock with a timer, or create automatic programs: sleep, study, work. Overnight windows are supported.</p>
+          </div>
+          <div class="step reveal">
+            <figure class="slot illus" data-ph="🌿">
+              <img src="/assets/img/g6-step3.webp" alt="" loading="lazy" onerror="imgFail(this)">
+            </figure>
+            <span class="step-num" aria-hidden="true"></span>
+            <h3 data-i18n="how.s3t">No way back. That's the point.</h3>
+            <p data-i18n="how.s3d">Once a program starts, it can't be ended early. Pawlock stands guard so you can go live your life.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FEATURES ======================== -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="features.title">Everything you need to take your time back</h2>
+          <p data-i18n="features.sub">Serious blocking underneath, a friendly face on top.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature reveal">
+            <div class="feature-icon">⚡️</div>
+            <h3 data-i18n="features.f1t">Instant lock</h3>
+            <p data-i18n="features.f1d">One tap locks your selected apps and sites. Spin the wheel to set days, hours, minutes, and watch the focus countdown.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">📅</div>
+            <h3 data-i18n="features.f2t">Personalized program suggestions</h3>
+            <p data-i18n="features.f2d">Answer a few onboarding questions and Pawlock automatically creates a program suggestion around your habits, goals, and daily routine.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🛡️</div>
+            <h3 data-i18n="features.f3t">Strict by design</h3>
+            <p data-i18n="features.f3d">A started program can't be switched off early. The lock that can't be talked out of its job is the one that changes your habits.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">📊</div>
+            <h3 data-i18n="features.f4t">Real statistics</h3>
+            <p data-i18n="features.f4d">Daily, weekly and monthly usage read from your phone itself. Real numbers from your device, not estimates.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🌐</div>
+            <h3 data-i18n="features.f5t">Websites too</h3>
+            <p data-i18n="features.f5d">Distraction isn't only apps. Block websites and entire categories alongside them, in the same lock.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🔐</div>
+            <h3 data-i18n="features.f6t">Private by default</h3>
+            <p data-i18n="features.f6d">No account, no server, no ads. Your usage data stays on your phone, where the system keeps it.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">⏳</div>
+            <h3 data-i18n="features.f7t">Live countdowns</h3>
+            <p data-i18n="features.f7d">Follow every lock through a mascot-led Live Activity on the Lock Screen and a compact countdown in Dynamic Island.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🔔</div>
+            <h3 data-i18n="features.f8t">Smart daily notifications</h3>
+            <p data-i18n="features.f8d">Get a useful daily nudge based on your streak, blocked attempts, or weekly focus summary.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SPOTLIGHT: STRICT (g7) ======================== -->
+    <section class="section spotlight">
+      <div class="container spot-inner reveal">
+        <figure class="slot spot-img" data-ph="🛡️">
+          <img src="/assets/img/g7-guard.webp" alt="" loading="lazy" onerror="imgFail(this)">
+        </figure>
+        <div class="spot-text">
+          <span class="spot-badge" data-i18n="spot.strict.badge">Unbreakable</span>
+          <h2 data-i18n="spot.strict.title">A lock you can't talk your way out of.</h2>
+          <p data-i18n="spot.strict.sub">Most blockers fold the moment you really want in. Pawlock doesn't. Once a program starts, there is no early exit, no two-tap escape. That's the whole reason it changes your habits.</p>
+          <ul class="spot-list">
+            <li><span class="tick">✓</span> <span data-i18n="spot.strict.b1">Started programs can't be ended early</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.strict.b2">Built on system-level controls, not a reminder</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.strict.b3">No loophole, no “just this once”</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SPOTLIGHT: AUTOMATIC (g8) ======================== -->
+    <section class="section spotlight spotlight-alt">
+      <div class="container spot-inner reveal">
+        <figure class="slot spot-img" data-ph="🌙">
+          <img src="/assets/img/g8-sleep.webp" alt="" loading="lazy" onerror="imgFail(this)">
+        </figure>
+        <div class="spot-text">
+          <span class="spot-badge" data-i18n="spot.auto.badge">Automatic</span>
+          <h2 data-i18n="spot.auto.title">On guard, even while you sleep.</h2>
+          <p data-i18n="spot.auto.sub">Set your programs once and Pawlock takes over. Every night and every morning it locks right on time. You don't even have to remember.</p>
+          <ul class="spot-list">
+            <li><span class="tick">✓</span> <span data-i18n="spot.auto.b1">Overnight windows, like 11pm → 7am</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.auto.b2">A notification when each program begins</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.auto.b3">Every day, weekdays or weekends in one tap</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SHOWCASE / EFFECT ======================== -->
+    <section class="section showcase">
+      <div class="container showcase-inner">
+        <div class="reveal">
+          <figure class="slot effect-medal" data-ph="🌱">
+            <img src="/assets/img/g9-stats.webp" alt="" loading="lazy" onerror="imgFail(this)">
+          </figure>
+          <h2 data-i18n="effect.title">See the time you win back</h2>
+          <p data-i18n="effect.sub">Pawlock shows your before and after: how your usage changes, your busiest hours, and when you tried to open locked apps. Watching the reclaimed hours grow is the best motivation there is.</p>
+          <ul>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b1">Before and after comparison</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b2">Your busiest usage hours</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b3">Reclaimed time, day by day</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b4">Cut 1 hour a day: 23 waking days back every year</span></li>
+          </ul>
+        </div>
+        <div class="showcase-phones reveal">
+          <div class="phone phone-sm">
+            <figure class="slot" data-ph="📊">
+              <img src="/assets/img/s2-stats.webp" width="820" height="1778" alt="Screen time statistics and usage charts in the Pawlock app" data-i18n-alt="alt.s2" loading="lazy" onerror="imgFail(this)">
+            </figure>
+          </div>
+          <div class="phone phone-sm">
+            <figure class="slot" data-ph="📅">
+              <img src="/assets/img/s4-programs.webp" width="820" height="1778" alt="Automatic app blocking schedules list in the Pawlock app" data-i18n-alt="alt.s4" loading="lazy" onerror="imgFail(this)">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== PRICING ======================== -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="pricing.title">Free vs Pro</h2>
+          <p data-i18n="pricing.sub">Start free. Upgrade when your habits ask for more.</p>
+        </div>
+        <div class="plans">
+          <div class="plan reveal">
+            <div class="plan-head">
+              <h3 data-i18n="pricing.freeName">Free</h3>
+              <span class="plan-badge plan-badge-free" data-i18n="pricing.freePrice">Free forever</span>
+            </div>
+            <ul class="plan-features">
+              <li><span class="plan-feature-icon" aria-hidden="true">⚡</span><span data-i18n="pricing.freeF1">3 instant locks per day</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">📅</span><span data-i18n="pricing.freeF2">1 automatic program</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">🛡</span><span data-i18n="pricing.freeF3">App, category and website blocking</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">▥</span><span data-i18n="pricing.freeF4">Daily Screen Time statistics</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">↗</span><span data-i18n="pricing.extendedStats">Weekly and monthly Screen Time statistics</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">☀</span><span data-i18n="pricing.yesterdayReport">Yesterday's report every morning</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">✦</span><span data-i18n="pricing.fullPersonalizedPlan">Full personalized program plan</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">●</span><span data-i18n="features.f8t">Smart daily notifications</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">★</span><span data-i18n="features.f3t">Strict by design</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+            </ul>
+            <div class="plan-footer">
+              <a class="btn btn-ghost store-link" href="#" data-i18n="pricing.freeCta">Download</a>
+              <p class="muted-note muted-note-placeholder" aria-hidden="true">&nbsp;</p>
+            </div>
+          </div>
+          <div class="plan plan-pro reveal">
+            <div class="plan-head">
+              <h3 data-i18n="pricing.proName">Pawlock Pro</h3>
+              <span class="plan-badge" data-i18n="pricing.proBadge">Cancel anytime</span>
+            </div>
+            <ul class="plan-features">
+              <li><span class="plan-feature-icon" aria-hidden="true">⚡</span><span data-i18n="pricing.unlimitedInstant">Unlimited instant locks</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">📅</span><span data-i18n="pricing.proF2">Unlimited automatic programs</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">🛡</span><span data-i18n="pricing.freeF3">App, category and website blocking</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">▥</span><span data-i18n="pricing.freeF4">Daily Screen Time statistics</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">↗</span><span data-i18n="pricing.extendedStats">Weekly and monthly Screen Time statistics</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">☀</span><span data-i18n="pricing.yesterdayReport">Yesterday's report every morning</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">✦</span><span data-i18n="pricing.fullPersonalizedPlan">Full personalized program plan</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">●</span><span data-i18n="features.f8t">Smart daily notifications</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">★</span><span data-i18n="features.f3t">Strict by design</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+            </ul>
+            <div class="plan-footer">
+              <a class="btn btn-light store-link" href="#" data-i18n="pricing.proCta">Get Pro</a>
+              <p class="muted-note" data-i18n="pricing.proNote">Weekly, monthly or yearly. Prices are shown in the App Store for your region.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== WHY PAWLOCK ======================== -->
+    <section class="section why-section">
+      <div class="container">
+        <div class="section-head why-head reveal">
+          <h2 data-i18n="why.title">Why Pawlock?</h2>
+          <p data-i18n="why.sub">A fair comparison with typical blocker apps.</p>
+        </div>
+        <div class="table-scroll why-table-wrap reveal">
+          <table class="compare">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Pawlock</th>
+                <th data-i18n="why.colOthers">Typical blockers</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="why-capability" data-i18n="why.r1">System-level lock built on your phone's own controls</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Yes</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">Some do</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r2">Locks can't be ended early</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Yes</span></span></td>
+                <td><span class="mark mark-no" data-i18n="why.legendNo">Usually not</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r3">Automatic schedules with overnight windows</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Yes</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">Some do</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r4">Works without an account or sign-up</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Yes</span></span></td>
+                <td><span class="mark mark-no" data-i18n="why.legendNo">Usually not</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r5">Data stays on your device</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Yes</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">Some do</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r6">No ads</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Yes</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">Some do</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== REVIEWS ========================
+         TODO: PLACEHOLDER CONTENT. Replace with real App Store reviews
+         after launch. The visible i18n "reviews.note" disclosure should
+         stay until real reviews are in. -->
+    <section class="section pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="reviews.title">What people say</h2>
+          <p data-i18n="reviews.sub">Real stories from the fight against the scroll.</p>
+        </div>
+        <div class="reviews-grid">
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r1t">i was scrolling till 2am every single night. set a sleep schedule that locks everything at 11 and the first week was rough but now i actually sleep 7 hours</p>
+            <span class="review-nick" data-i18n="reviews.r1n">jake_mck</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r2t">finals week saved me. locked my phone 9 to 6 on weekdays, panicked on day one, got used to it by day three. my practice scores went way up</p>
+            <span class="review-nick" data-i18n="reviews.r2n">sarah.studies</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r3t">im the guy who opens instagram at work and loses 40 minutes. work schedule runs all morning now, phone is basically dead till lunch. my boss didnt make me do it btw, i did</p>
+            <span class="review-nick" data-i18n="reviews.r3n">dan_codes</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r4t">caught myself checking my phone while playing with my kid and felt awful. family lock from 6 to 9pm now. my daughter actually noticed that dad doesnt look at his phone anymore</p>
+            <span class="review-nick" data-i18n="reviews.r4n">mike_t_dad</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r5t">deleted instagram like 100 times and always reinstalled. turns out deleting isnt the answer, locking is. 3 weeks clean and honestly the urge is fading</p>
+            <span class="review-nick" data-i18n="reviews.r5n">jess.miller</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r6t">the first hour of my day used to disappear into my phone before i even got out of bed. morning lock 7 to 9, i drink my coffee and go for a walk. owning that hour again is a different life</p>
+            <span class="review-nick" data-i18n="reviews.r6n">amy_runs</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r7t">i couldnt read books anymore, 2 pages and my hand reached for the phone. evening reading lock and i finished 3 books this month. last time that happened was college</p>
+            <span class="review-nick" data-i18n="reviews.r7n">tom.reads</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r8t">other blockers i could bypass in 2 taps, basically lying to myself. this one you cant turn off and yes its annoying at first but its the only thing that ever worked</p>
+            <span class="review-nick" data-i18n="reviews.r8n">chris_b</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r9t">the stats shocked me, 6h 40m a day. down to 3 hours in 2 months. watching that graph go down is weirdly the most motivating part</p>
+            <span class="review-nick" data-i18n="reviews.r9n">rachel.k</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★☆</div>
+            <p data-i18n="reviews.r10t">couldnt escape the shorts black hole so i just locked youtube, problem solved. would be 5 stars with a widget, otherwise zero complaints</p>
+            <span class="review-nick" data-i18n="reviews.r10n">tyler_035</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FAQ ======================== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="faq.title">Frequently asked questions</h2>
+        </div>
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary data-i18n="faq.q1">Can I really not unlock early?</summary>
+            <p data-i18n="faq.a1">That's the core idea. Once a scheduled program starts, it runs until its end time. If you could switch it off in two taps, it would be a reminder, not a lock. Set your durations thoughtfully.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q2">Where does my data go?</summary>
+            <p data-i18n="faq.a2">Nowhere. Pawlock has no account system and no servers. Your usage data is processed on your device by the system itself, and we never see it.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q3">Why does it ask for Screen Time permission?</summary>
+            <p data-i18n="faq.a3">Locking apps is only possible through the system's own controls: Apple's Screen Time (Family Controls) on iPhone, and the accessibility service on Android. The permission is granted to your phone's system and is required for any real blocking to work.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q4">What do I get for free?</summary>
+            <p data-i18n="faq.a4">3 instant locks per day, 1 automatic program, app and website blocking, and daily Screen Time statistics. Pro unlocks unlimited programs and all current Pro features.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q5">How do I cancel my subscription?</summary>
+            <p data-i18n="faq.a5">Through your App Store or Google Play subscriptions, like any other subscription. If you cancel, Pro stays active until the end of the paid period.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q6">Which devices are supported?</summary>
+            <p data-i18n="faq.a6">Pawlock runs on iPhone and on Android. Check the store page for the current version requirements.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FINAL CTA ======================== -->
+    <section class="section cta">
+      <div class="container reveal">
+        <div class="cta-mascot">
+          <figure class="slot illus-square" data-ph="🐾" style="background:none; box-shadow:none">
+            <img src="/assets/img/g11-cta.webp" alt="" loading="lazy" onerror="imgFail(this)">
+          </figure>
+        </div>
+        <h2 data-i18n="cta.title">Take your time back.</h2>
+        <p data-i18n="cta.sub">Your feed can wait. Your life can't.</p>
+        <a class="btn btn-light store-link" href="#">
+          <svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          <span data-i18n="cta.button">Download Pawlock</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="#">
+          <span class="brand-icon"><img src="/assets/img/app-icon.png" alt="" onerror="this.replaceWith('🐾')"></span>
+          Pawlock
+        </a>
+        <p style="margin-top:10px" data-i18n="footer.tagline">Less screen, more life.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+        <li><a href="/terms.html" data-i18n="footer.terms">Terms of Use</a></li>
+        <li><a href="mailto:support@pawlock.app" data-i18n="footer.contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> Pawlock</span>
+      <span data-i18n="footer.rights">All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

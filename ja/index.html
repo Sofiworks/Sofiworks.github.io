@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ja" data-baked>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawlock — iPhone・Android のアプリブロッカー＆スクリーンタイム管理</title>
+  <meta name="description" content="Pawlock は気を散らすアプリやウェブサイトを端末自身のシステム機能でロックする iPhone・Android 向けアプリブロッカーです。SNS をブロックし、集中スケジュールを組み、スマホ依存を断ち切って一日を取り戻しましょう。">
+
+  <link rel="canonical" href="https://pawlock.app/ja/">
+  <link rel="alternate" hreflang="en" href="https://pawlock.app/">
+  <link rel="alternate" hreflang="tr" href="https://pawlock.app/tr/">
+  <link rel="alternate" hreflang="es" href="https://pawlock.app/es/">
+  <link rel="alternate" hreflang="de" href="https://pawlock.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://pawlock.app/fr/">
+  <link rel="alternate" hreflang="pt" href="https://pawlock.app/pt/">
+  <link rel="alternate" hreflang="ja" href="https://pawlock.app/ja/">
+  <link rel="alternate" hreflang="zh" href="https://pawlock.app/zh/">
+  <link rel="alternate" hreflang="ko" href="https://pawlock.app/ko/">
+  <link rel="alternate" hreflang="it" href="https://pawlock.app/it/">
+  <link rel="alternate" hreflang="ru" href="https://pawlock.app/ru/">
+  <link rel="alternate" hreflang="ar" href="https://pawlock.app/ar/">
+  <link rel="alternate" hreflang="nl" href="https://pawlock.app/nl/">
+  <link rel="alternate" hreflang="pl" href="https://pawlock.app/pl/">
+  <link rel="alternate" hreflang="id" href="https://pawlock.app/id/">
+  <link rel="alternate" hreflang="th" href="https://pawlock.app/th/">
+  <link rel="alternate" hreflang="vi" href="https://pawlock.app/vi/">
+  <link rel="alternate" hreflang="sv" href="https://pawlock.app/sv/">
+  <link rel="alternate" hreflang="da" href="https://pawlock.app/da/">
+  <link rel="alternate" hreflang="nb" href="https://pawlock.app/nb/">
+  <link rel="alternate" hreflang="fi" href="https://pawlock.app/fi/">
+  <link rel="alternate" hreflang="uk" href="https://pawlock.app/uk/">
+  <link rel="alternate" hreflang="el" href="https://pawlock.app/el/">
+  <link rel="alternate" hreflang="cs" href="https://pawlock.app/cs/">
+  <link rel="alternate" hreflang="ro" href="https://pawlock.app/ro/">
+  <link rel="alternate" hreflang="hu" href="https://pawlock.app/hu/">
+  <link rel="alternate" hreflang="sk" href="https://pawlock.app/sk/">
+  <link rel="alternate" hreflang="bg" href="https://pawlock.app/bg/">
+  <link rel="alternate" hreflang="hr" href="https://pawlock.app/hr/">
+  <link rel="alternate" hreflang="x-default" href="https://pawlock.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pawlock">
+  <meta property="og:url" content="https://pawlock.app/ja/">
+  <meta property="og:title" content="Pawlock — iPhone・Android のアプリブロッカー＆スクリーンタイム管理">
+  <meta property="og:description" content="気を散らすアプリやサイトをAppleのスクリーンタイム技術でロック。意志の力に頼るのはもう終わり。ちゃんと続く仕組みを作ろう。">
+  <meta property="og:image" content="https://pawlock.app/assets/img/og-ja.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:locale:alternate" content="ar_SA">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="id_ID">
+  <meta property="og:locale:alternate" content="th_TH">
+  <meta property="og:locale:alternate" content="vi_VN">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="uk_UA">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="bg_BG">
+  <meta property="og:locale:alternate" content="hr_HR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236137ec'/%3E%3Cellipse cx='32' cy='40' rx='11' ry='9' fill='white'/%3E%3Ccircle cx='19' cy='28' r='5' fill='white'/%3E%3Ccircle cx='28' cy='21' r='5' fill='white'/%3E%3Ccircle cx='38' cy='21' r='5' fill='white'/%3E%3Ccircle cx='46' cy='28' r='5' fill='white'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="/assets/img/app-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preload" as="image" href="/assets/img/s1-locknow.webp" type="image/webp">
+  <link rel="preload" as="image" href="/assets/img/g1-hero.webp" type="image/webp" media="(min-width: 760px)">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Pawlock",
+    "alternateName": "Pawlock: App Blocker & Screen Time",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "ProductivityApplication",
+    "description": "気を散らすアプリやウェブサイトを端末自身のシステム機能でロックする iPhone・Android 向けアプリブロッカー。即時ロック、自動スケジュール、実際の使用状況の統計。",
+    "image": "https://pawlock.app/assets/img/og.png",
+    "inLanguage": ["en","tr","es","de","fr","pt","ja","zh","ko","it","ru","ar","nl","pl","id","th","vi","sv","da","nb","fi","uk","el","cs","ro","hu","sk","bg","hr"],
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "url": "https://pawlock.app/ja/"
+  }
+  </script>
+  <!-- ld-faq --><script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"本当に途中でロック解除できないの？","acceptedAnswer":{"@type":"Answer","text":"それが核心のアイデアです。予約したプログラムが始まると、終了時刻まで動き続けます。もし2タップでオフにできたら、それはロックではなくリマインダーです。時間はよく考えて設定してください。"}},{"@type":"Question","name":"私のデータはどこへ行くの？","acceptedAnswer":{"@type":"Answer","text":"どこにも行きません。Pawlockにはアカウントシステムもサーバーもありません。スクリーンタイムのデータはAppleのフレームワークを通じて端末内で処理され、私たちが目にすることは決してありません。"}},{"@type":"Question","name":"なぜスクリーンタイムの許可を求めるの？","acceptedAnswer":{"@type":"Answer","text":"アプリのロックはシステム自身の機能でのみ可能です。iPhone では Apple のスクリーンタイム（ファミリー共有）、Android ではアクセシビリティサービス。許可は端末のシステムに与えられ、実際のブロックには必須です。"}},{"@type":"Question","name":"無料版では何が使えるの？","acceptedAnswer":{"@type":"Answer","text":"1日3回の即時ロック、自動プログラム1つ、アプリとウェブサイトのブロック、そして毎日のスクリーンタイム統計です。Proなら自動プログラムが無制限になり、現在のすべてのPro機能も使えます。"}},{"@type":"Question","name":"サブスクリプションはどう解約するの？","acceptedAnswer":{"@type":"Answer","text":"App Store または Google Play のサブスクリプションから、他と同じように解約できます。解約しても支払い済み期間の終わりまで Pro は有効です。"}},{"@type":"Question","name":"どの端末に対応しているの？","acceptedAnswer":{"@type":"Answer","text":"Pawlock は iPhone でも Android でも動作します。必要なバージョンはストアページをご確認ください。"}}]}
+  </script><!-- /ld-faq -->
+</head>
+<body>
+
+  <!-- ======================== NAV ======================== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+        <span class="brand-icon"><img src="/assets/img/app-icon.png" alt="" onerror="this.replaceWith('🐾')"></span>
+        Pawlock
+      </a>
+      <button class="nav-burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#features" data-i18n="nav.features">機能</a></li>
+        <li><a href="#how" data-i18n="nav.how">使い方</a></li>
+        <li><a href="#pricing" data-i18n="nav.pricing">無料版とPro</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">よくある質問</a></li>
+        <li class="nav-cta no-line"><a class="btn btn-primary store-link" href="#pricing" data-i18n="nav.download">ダウンロード</a></li>
+      </ul>
+    </div>
+    <div class="lang-strip">
+      <nav class="lang-bar" aria-label="Language">
+        <a href="/ar/" hreflang="ar" data-lang-link="ar" title="العربية" aria-label="العربية">🇸🇦</a>
+        <a href="/bg/" hreflang="bg" data-lang-link="bg" title="Български" aria-label="Български">🇧🇬</a>
+        <a href="/zh/" hreflang="zh" data-lang-link="zh" title="简体中文" aria-label="简体中文">🇨🇳</a>
+        <a href="/hr/" hreflang="hr" data-lang-link="hr" title="Hrvatski" aria-label="Hrvatski">🇭🇷</a>
+        <a href="/cs/" hreflang="cs" data-lang-link="cs" title="Čeština" aria-label="Čeština">🇨🇿</a>
+        <a href="/da/" hreflang="da" data-lang-link="da" title="Dansk" aria-label="Dansk">🇩🇰</a>
+        <a href="/nl/" hreflang="nl" data-lang-link="nl" title="Nederlands" aria-label="Nederlands">🇳🇱</a>
+        <a href="/" hreflang="en" data-lang-link="en" title="English" aria-label="English">🇬🇧</a>
+        <a href="/fi/" hreflang="fi" data-lang-link="fi" title="Suomi" aria-label="Suomi">🇫🇮</a>
+        <a href="/fr/" hreflang="fr" data-lang-link="fr" title="Français" aria-label="Français">🇫🇷</a>
+        <a href="/de/" hreflang="de" data-lang-link="de" title="Deutsch" aria-label="Deutsch">🇩🇪</a>
+        <a href="/el/" hreflang="el" data-lang-link="el" title="Ελληνικά" aria-label="Ελληνικά">🇬🇷</a>
+        <a href="/hu/" hreflang="hu" data-lang-link="hu" title="Magyar" aria-label="Magyar">🇭🇺</a>
+        <a href="/id/" hreflang="id" data-lang-link="id" title="Bahasa Indonesia" aria-label="Bahasa Indonesia">🇮🇩</a>
+        <a href="/it/" hreflang="it" data-lang-link="it" title="Italiano" aria-label="Italiano">🇮🇹</a>
+        <a href="/ja/" hreflang="ja" data-lang-link="ja" class="active" title="日本語" aria-label="日本語">🇯🇵</a>
+        <a href="/ko/" hreflang="ko" data-lang-link="ko" title="한국어" aria-label="한국어">🇰🇷</a>
+        <a href="/nb/" hreflang="nb" data-lang-link="nb" title="Norsk" aria-label="Norsk">🇳🇴</a>
+        <a href="/pl/" hreflang="pl" data-lang-link="pl" title="Polski" aria-label="Polski">🇵🇱</a>
+        <a href="/pt/" hreflang="pt" data-lang-link="pt" title="Português" aria-label="Português">🇵🇹</a>
+        <a href="/ro/" hreflang="ro" data-lang-link="ro" title="Română" aria-label="Română">🇷🇴</a>
+        <a href="/ru/" hreflang="ru" data-lang-link="ru" title="Русский" aria-label="Русский">🇷🇺</a>
+        <a href="/sk/" hreflang="sk" data-lang-link="sk" title="Slovenčina" aria-label="Slovenčina">🇸🇰</a>
+        <a href="/es/" hreflang="es" data-lang-link="es" title="Español" aria-label="Español">🇪🇸</a>
+        <a href="/sv/" hreflang="sv" data-lang-link="sv" title="Svenska" aria-label="Svenska">🇸🇪</a>
+        <a href="/th/" hreflang="th" data-lang-link="th" title="ไทย" aria-label="ไทย">🇹🇭</a>
+        <a href="/tr/" hreflang="tr" data-lang-link="tr" title="Türkçe" aria-label="Türkçe">🇹🇷</a>
+        <a href="/uk/" hreflang="uk" data-lang-link="uk" title="Українська" aria-label="Українська">🇺🇦</a>
+        <a href="/vi/" hreflang="vi" data-lang-link="vi" title="Tiếng Việt" aria-label="Tiếng Việt">🇻🇳</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================== HERO ======================== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="hero-badge">🐾 <span data-i18n="hero.badge">iPhone・Android 向けアプリブロッカー＆スクリーンタイムの番人</span></span>
+          <h1>
+            <span data-i18n="hero.title1">画面は少なく、</span><br>
+            <span data-i18n="hero.title2">もっと </span><span class="grad-word" data-i18n="hero.title3">人生を。</span>
+          </h1>
+          <p class="hero-sub" data-i18n="hero.sub">Pawlockが、気を散らすアプリやウェブサイトをあなたの代わりにロックします。意志の力に頼るのはもう終わり。本当に続く仕組みをつくりましょう。</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary store-link" href="#pricing">
+              <svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+              <span data-i18n="hero.cta">無料でダウンロード</span>
+            </a>
+            <a class="btn btn-ghost" href="#how" data-i18n="hero.cta2">使い方を見る</a>
+          </div>
+          <ul class="hero-trust">
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust1">データが端末の外に出ることはありません</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust2">アカウント不要</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust3">端末自身のシステム機能に基づいています</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust4">広告なし</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="phone">
+            <figure class="slot" data-ph="🔒">
+              <img src="/assets/img/s1-locknow.webp" width="820" height="1778" alt="カウントダウン付きの Pawlock ロック画面" data-i18n-alt="alt.s1" onerror="imgFail(this)">
+            </figure>
+          </div>
+          <div class="hero-mascot">
+            <figure class="slot" data-ph="🐾">
+              <img src="/assets/img/g1-hero.webp" alt="" onerror="imgFail(this)">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== PROBLEM ======================== -->
+    <section class="section problem">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="problem.title">あなたのせいじゃない。設計のせいです。</h2>
+          <p data-i18n="problem.sub">あなたの時間を奪うアプリは、たった一つの目的のために何千人ものエンジニアがつくったもの。それは、あなたにスクロールを続けさせること。意志の力では、はじめから勝ち目のない戦いでした。</p>
+        </div>
+        <div class="problem-stats reveal">
+          <div class="pstat">
+            <strong data-i18n="problem.stat1n">4時間以上</strong>
+            <span data-i18n="problem.stat1d">平均的な人が毎日スマホに費やしている時間です</span>
+          </div>
+          <div class="pstat">
+            <strong data-i18n="problem.stat2n">91日</strong>
+            <span data-i18n="problem.stat2d">このペースだと、起きている1年のうちこれだけの日々が画面に消えていきます</span>
+          </div>
+          <div class="pstat">
+            <strong data-i18n="problem.stat3n">4分の1</strong>
+            <span data-i18n="problem.stat3d">起きている16時間のうち、4時間に1時間がスマホに使われています</span>
+          </div>
+        </div>
+        <div class="problem-grid">
+          <figure class="slot illus reveal" data-ph="🌙">
+            <img src="/assets/img/g2-problem.webp" alt="" loading="lazy" onerror="imgFail(this)">
+          </figure>
+          <div class="problem-cards reveal">
+            <div class="problem-card">
+              <h3 data-i18n="problem.c1t">「ほんの5分だけ」</h3>
+              <p data-i18n="problem.c1d">ちょっとだけ開いたはず。気づけば1時間後もまだそこにいて、何を見ていたかさえ覚えていない。</p>
+            </div>
+            <div class="problem-card">
+              <h3 data-i18n="problem.c2t">削除しても意味がない</h3>
+              <p data-i18n="problem.c2d">固い決意でアプリを削除する。2日後には、またホーム画面に戻っている。</p>
+            </div>
+            <div class="problem-card">
+              <h3 data-i18n="problem.c3t">リマインダーは無視できる</h3>
+              <p data-i18n="problem.c3d">スクリーンタイムの警告も「休憩しましょう」のポップアップも、ワンタップで消えてしまう。必要なのは提案ではなく、ロックです。</p>
+            </div>
+          </div>
+        </div>
+        <p class="problem-note reveal" data-i18n="problem.note">計算はシンプルです。1日4時間 × 365日 = 年に1,460時間。1日を起きている16時間として数えると（残りの8時間は睡眠）、まるまる91日分の起床時間になります。Pawlockの統計は、あなた自身の数字を端末から直接お見せします。</p>
+      </div>
+    </section>
+
+    <!-- ======================== TRANSITION (problem → hope) ======================== -->
+    <section class="transition">
+      <div class="container transition-inner reveal">
+        <figure class="slot transition-img" data-ph="🌿">
+          <img src="/assets/img/g3-freedom.webp" alt="" loading="lazy" onerror="imgFail(this)">
+        </figure>
+        <div class="transition-text">
+          <h2 data-i18n="transition.title">その向こう側で、あなたの人生が待っています。</h2>
+          <p data-i18n="transition.sub">スマホを置いても、失うものは何もありません。取り戻せるのは、まるまる一日分の時間です。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== HOW IT WORKS ======================== -->
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="how.title">Pawlockの仕組み</h2>
+          <p data-i18n="how.sub">3つのステップ。あとは、やる気が続かない日でも仕組みが働き続けます。</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <figure class="slot illus" data-ph="👆">
+              <img src="/assets/img/g4-step1.webp" alt="" loading="lazy" onerror="imgFail(this)">
+            </figure>
+            <span class="step-num" aria-hidden="true"></span>
+            <h3 data-i18n="how.s1t">気を散らすものを選ぶ</h3>
+            <p data-i18n="how.s1d">Apple公式のピッカーで、アプリやカテゴリ全体、ウェブサイトを選択。アドレスを入力すれば、どんなサイトでも追加できます。</p>
+          </div>
+          <div class="step reveal">
+            <figure class="slot illus" data-ph="🔒">
+              <img src="/assets/img/g5-step2.webp" alt="" loading="lazy" onerror="imgFail(this)">
+            </figure>
+            <span class="step-num" aria-hidden="true"></span>
+            <h3 data-i18n="how.s2t">今すぐ、または予約してロック</h3>
+            <p data-i18n="how.s2d">ワンタップでタイマー付きの即時ロック。または睡眠、勉強、仕事など自動プログラムを作成。日をまたぐ時間帯にも対応しています。</p>
+          </div>
+          <div class="step reveal">
+            <figure class="slot illus" data-ph="🌿">
+              <img src="/assets/img/g6-step3.webp" alt="" loading="lazy" onerror="imgFail(this)">
+            </figure>
+            <span class="step-num" aria-hidden="true"></span>
+            <h3 data-i18n="how.s3t">後戻りはできない。それが狙いです。</h3>
+            <p data-i18n="how.s3d">プログラムが始まると、途中で終了することはできません。Pawlockが見張ってくれるので、あなたは自分の人生を生きられます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FEATURES ======================== -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="features.title">時間を取り戻すために必要なもの、すべて</h2>
+          <p data-i18n="features.sub">中身は本気のブロック、表はやさしい笑顔。</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature reveal">
+            <div class="feature-icon">⚡️</div>
+            <h3 data-i18n="features.f1t">即時ロック</h3>
+            <p data-i18n="features.f1d">ワンタップで選んだアプリとサイトをロック。ホイールを回して日、時間、分を設定し、集中のカウントダウンを見守りましょう。</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">📅</div>
+            <h3 data-i18n="features.f2t">パーソナライズされたプログラム提案</h3>
+            <p data-i18n="features.f2d">オンボーディングでいくつかの質問に答えると、Pawlockが習慣・目標・毎日の生活に合うプログラムを自動で提案します。</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🛡️</div>
+            <h3 data-i18n="features.f3t">あえての厳しさ</h3>
+            <p data-i18n="features.f3d">始まったプログラムは途中でオフにできません。役目を言いくるめられないロックこそが、あなたの習慣を変えるのです。</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">📊</div>
+            <h3 data-i18n="features.f4t">本物の統計</h3>
+            <p data-i18n="features.f4d">Appleのスクリーンタイムデータによる、日・週・月ごとの使用状況。推定ではなく、デバイスから得た実際の数値です。</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🌐</div>
+            <h3 data-i18n="features.f5t">ウェブサイトも</h3>
+            <p data-i18n="features.f5d">気を散らすのはアプリだけではありません。ウェブサイトやカテゴリ全体も、同じロックの中でまとめてブロックできます。</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🔐</div>
+            <h3 data-i18n="features.f6t">はじめからプライベート</h3>
+            <p data-i18n="features.f6d">アカウントなし、サーバーなし、広告なし。スクリーンタイムのデータは、Appleが保管するあなたのiPhoneの中にとどまります。</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">⏳</div>
+            <h3 data-i18n="features.f7t">ライブカウントダウン</h3>
+            <p data-i18n="features.f7d">ロック画面ではマスコット付きのLive Activity、Dynamic Islandではコンパクトなカウントダウンでロックを確認できます。</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🔔</div>
+            <h3 data-i18n="features.f8t">スマートな毎日の通知</h3>
+            <p data-i18n="features.f8d">連続記録、ブロックした起動試行、週間フォーカスまとめに応じた役立つ通知を毎日受け取れます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SPOTLIGHT: STRICT (g7) ======================== -->
+    <section class="section spotlight">
+      <div class="container spot-inner reveal">
+        <figure class="slot spot-img" data-ph="🛡️">
+          <img src="/assets/img/g7-guard.webp" alt="" loading="lazy" onerror="imgFail(this)">
+        </figure>
+        <div class="spot-text">
+          <span class="spot-badge" data-i18n="spot.strict.badge">破れない</span>
+          <h2 data-i18n="spot.strict.title">言い訳では抜け出せないロック。</h2>
+          <p data-i18n="spot.strict.sub">たいていのブロッカーは、あなたが本気で入りたくなった瞬間に折れてしまいます。Pawlockは折れません。プログラムが始まったら、早期の抜け道も、ツータップの脱出もなし。それこそが、習慣を変える唯一の理由です。</p>
+          <ul class="spot-list">
+            <li><span class="tick">✓</span> <span data-i18n="spot.strict.b1">始まったプログラムは途中で終了できません</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.strict.b2">Appleのシステムレベルのスクリーンタイムを採用</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.strict.b3">抜け道なし、「今回だけ」もなし</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SPOTLIGHT: AUTOMATIC (g8) ======================== -->
+    <section class="section spotlight spotlight-alt">
+      <div class="container spot-inner reveal">
+        <figure class="slot spot-img" data-ph="🌙">
+          <img src="/assets/img/g8-sleep.webp" alt="" loading="lazy" onerror="imgFail(this)">
+        </figure>
+        <div class="spot-text">
+          <span class="spot-badge" data-i18n="spot.auto.badge">自動</span>
+          <h2 data-i18n="spot.auto.title">あなたが眠っている間も、見張っています。</h2>
+          <p data-i18n="spot.auto.sub">プログラムを一度設定すれば、あとはPawlockにおまかせ。毎晩、毎朝、時間どおりにロックします。あなたが覚えておく必要すらありません。</p>
+          <ul class="spot-list">
+            <li><span class="tick">✓</span> <span data-i18n="spot.auto.b1">23:00 → 07:00 のような、日をまたぐ時間帯</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.auto.b2">各プログラムが始まるときの通知</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.auto.b3">毎日、平日、週末をワンタップで</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SHOWCASE / EFFECT ======================== -->
+    <section class="section showcase">
+      <div class="container showcase-inner">
+        <div class="reveal">
+          <figure class="slot effect-medal" data-ph="🌱">
+            <img src="/assets/img/g9-stats.webp" alt="" loading="lazy" onerror="imgFail(this)">
+          </figure>
+          <h2 data-i18n="effect.title">取り戻した時間を、見える化</h2>
+          <p data-i18n="effect.sub">Pawlockは、あなたのビフォーとアフターを見せてくれます。使用状況がどう変わったか、最も忙しい時間帯、ロック中にアプリを開こうとした瞬間。取り戻した時間が増えていくのを見ることが、何よりのモチベーションです。</p>
+          <ul>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b1">ビフォーとアフターの比較</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b2">最も使用が多い時間帯</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b3">一日ごとに取り戻した時間</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b4">1日1時間減らせば、毎年23日分の起床時間が戻ってきます</span></li>
+          </ul>
+        </div>
+        <div class="showcase-phones reveal">
+          <div class="phone phone-sm">
+            <figure class="slot" data-ph="📊">
+              <img src="/assets/img/s2-stats.webp" width="820" height="1778" alt="Pawlock アプリのスクリーンタイム統計と使用状況グラフ" data-i18n-alt="alt.s2" loading="lazy" onerror="imgFail(this)">
+            </figure>
+          </div>
+          <div class="phone phone-sm">
+            <figure class="slot" data-ph="📅">
+              <img src="/assets/img/s4-programs.webp" width="820" height="1778" alt="Pawlock アプリの自動アプリブロックスケジュール一覧" data-i18n-alt="alt.s4" loading="lazy" onerror="imgFail(this)">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== PRICING ======================== -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="pricing.title">無料版とPro</h2>
+          <p data-i18n="pricing.sub">まずは無料で。習慣がもっと求めてきたら、アップグレードを。</p>
+        </div>
+        <div class="plans">
+          <div class="plan reveal">
+            <div class="plan-head">
+              <h3 data-i18n="pricing.freeName">無料版</h3>
+              <span class="plan-badge plan-badge-free" data-i18n="pricing.freePrice">ずっと無料</span>
+            </div>
+            <ul class="plan-features">
+              <li><span class="plan-feature-icon" aria-hidden="true">⚡</span><span data-i18n="pricing.freeF1">1日3回の即時ロック</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">📅</span><span data-i18n="pricing.freeF2">自動プログラム1つ</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">🛡</span><span data-i18n="pricing.freeF3">アプリ、カテゴリ、ウェブサイトのブロック</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">▥</span><span data-i18n="pricing.freeF4">毎日のスクリーンタイム統計</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">↗</span><span data-i18n="pricing.extendedStats">週間・月間スクリーンタイム統計</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">☀</span><span data-i18n="pricing.yesterdayReport">毎朝、昨日のレポート</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">✦</span><span data-i18n="pricing.fullPersonalizedPlan">パーソナライズされたプランのすべて</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">●</span><span data-i18n="features.f8t">スマートな毎日の通知</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">★</span><span data-i18n="features.f3t">あえての厳しさ</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+            </ul>
+            <div class="plan-footer">
+              <a class="btn btn-ghost store-link" href="#" data-i18n="pricing.freeCta">ダウンロード</a>
+              <p class="muted-note muted-note-placeholder" aria-hidden="true">&nbsp;</p>
+            </div>
+          </div>
+          <div class="plan plan-pro reveal">
+            <div class="plan-head">
+              <h3 data-i18n="pricing.proName">Pawlock Pro</h3>
+              <span class="plan-badge" data-i18n="pricing.proBadge">いつでも解約可能</span>
+            </div>
+            <ul class="plan-features">
+              <li><span class="plan-feature-icon" aria-hidden="true">⚡</span><span data-i18n="pricing.unlimitedInstant">無制限の即時ロック</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">📅</span><span data-i18n="pricing.proF2">無制限の自動プログラム</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">🛡</span><span data-i18n="pricing.freeF3">アプリ、カテゴリ、ウェブサイトのブロック</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">▥</span><span data-i18n="pricing.freeF4">毎日のスクリーンタイム統計</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">↗</span><span data-i18n="pricing.extendedStats">週間・月間スクリーンタイム統計</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">☀</span><span data-i18n="pricing.yesterdayReport">毎朝、昨日のレポート</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">✦</span><span data-i18n="pricing.fullPersonalizedPlan">パーソナライズされたプランのすべて</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">●</span><span data-i18n="features.f8t">スマートな毎日の通知</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">★</span><span data-i18n="features.f3t">あえての厳しさ</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+            </ul>
+            <div class="plan-footer">
+              <a class="btn btn-light store-link" href="#" data-i18n="pricing.proCta">Proを始める</a>
+              <p class="muted-note" data-i18n="pricing.proNote">週額、月額、または年額。価格はお住まいの地域に応じてApp Storeに表示されます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== WHY PAWLOCK ======================== -->
+    <section class="section why-section">
+      <div class="container">
+        <div class="section-head why-head reveal">
+          <h2 data-i18n="why.title">なぜPawlock？</h2>
+          <p data-i18n="why.sub">一般的なブロッカーアプリとの、公平な比較です。</p>
+        </div>
+        <div class="table-scroll why-table-wrap reveal">
+          <table class="compare">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Pawlock</th>
+                <th data-i18n="why.colOthers">一般的なブロッカー</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="why-capability" data-i18n="why.r1">Apple公式のスクリーンタイム技術によるシステムレベルのロック</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">対応</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">一部のみ</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r2">ロックは途中で終了できない</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">対応</span></span></td>
+                <td><span class="mark mark-no" data-i18n="why.legendNo">たいてい非対応</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r3">日をまたぐ時間帯にも対応した自動スケジュール</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">対応</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">一部のみ</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r4">アカウントや登録なしで使える</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">対応</span></span></td>
+                <td><span class="mark mark-no" data-i18n="why.legendNo">たいてい非対応</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r5">データは端末内にとどまる</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">対応</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">一部のみ</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r6">広告なし</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">対応</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">一部のみ</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== REVIEWS ========================
+         TODO: PLACEHOLDER CONTENT. Replace with real App Store reviews
+         after launch. The visible i18n "reviews.note" disclosure should
+         stay until real reviews are in. -->
+    <section class="section pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="reviews.title">みんなの声</h2>
+          <p data-i18n="reviews.sub">スクロールとの戦いから生まれた、リアルな物語。</p>
+        </div>
+        <div class="reviews-grid">
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r1t">毎晩夜中の2時までスクロールしてた。23時にすべてロックする睡眠スケジュールを設定して、最初の1週間はきつかったけど、今はちゃんと7時間眠れてる</p>
+            <span class="review-nick" data-i18n="reviews.r1n">ユウキ</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r2t">受験期に救われた。平日は9時から18時までスマホをロック。初日はパニックになったけど、3日目には慣れた。模試の点数がぐっと上がったよ</p>
+            <span class="review-nick" data-i18n="reviews.r2n">さくら</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r3t">仕事中にインスタを開いて40分溶かすタイプの人間です。今は午前中ずっと仕事スケジュールが動いてて、昼までスマホは実質死んでる。ちなみに上司じゃなくて自分でやりました</p>
+            <span class="review-nick" data-i18n="reviews.r3n">田中 大輔</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r4t">子どもと遊んでる最中にスマホを見てる自分に気づいて最悪な気分になった。今は夜6時から9時まで家族ロック。パパがもうスマホを見なくなったって娘が気づいてくれた</p>
+            <span class="review-nick" data-i18n="reviews.r4n">みっちー</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r5t">インスタを100回くらい削除しては入れ直してた。削除じゃなくてロックが答えだったんだね。3週間開いてなくて、正直もう欲求も薄れてきた</p>
+            <span class="review-nick" data-i18n="reviews.r5n">佐藤 めぐみ</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r6t">以前は起き上がる前から一日の最初の1時間がスマホに消えてた。今は7時から9時まで朝ロック。コーヒーを飲んで散歩に出る。あの1時間を取り戻すと人生が変わる</p>
+            <span class="review-nick" data-i18n="reviews.r6n">あみ</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r7t">本が読めなくなってた。2ページで手がスマホに伸びる。夜の読書ロックのおかげで今月3冊読み終えた。こんなの大学以来だよ</p>
+            <span class="review-nick" data-i18n="reviews.r7n">トム</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r8t">他のブロッカーは2タップで抜けられて、要するに自分をだましてた。これはオフにできない。最初はイライラするけど、効いたのはこれだけ</p>
+            <span class="review-nick" data-i18n="reviews.r8n">けんじ</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r9t">統計を見て衝撃だった、1日6時間40分。2か月で3時間まで減らした。あのグラフが下がっていくのを見るのが、なぜか一番モチベになる</p>
+            <span class="review-nick" data-i18n="reviews.r9n">りな</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★☆</div>
+            <p data-i18n="reviews.r10t">ショートの沼から抜け出せなくて、YouTubeをロックしたら一発解決。ウィジェットがあれば星5、それ以外に不満はゼロ</p>
+            <span class="review-nick" data-i18n="reviews.r10n">タイラ</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FAQ ======================== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="faq.title">よくある質問</h2>
+        </div>
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary data-i18n="faq.q1">本当に途中でロック解除できないの？</summary>
+            <p data-i18n="faq.a1">それが核心のアイデアです。予約したプログラムが始まると、終了時刻まで動き続けます。もし2タップでオフにできたら、それはロックではなくリマインダーです。時間はよく考えて設定してください。</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q2">私のデータはどこへ行くの？</summary>
+            <p data-i18n="faq.a2">どこにも行きません。Pawlockにはアカウントシステムもサーバーもありません。スクリーンタイムのデータはAppleのフレームワークを通じて端末内で処理され、私たちが目にすることは決してありません。</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q3">なぜスクリーンタイムの許可を求めるの？</summary>
+            <p data-i18n="faq.a3">アプリのロックはシステム自身の機能でのみ可能です。iPhone では Apple のスクリーンタイム（ファミリー共有）、Android ではアクセシビリティサービス。許可は端末のシステムに与えられ、実際のブロックには必須です。</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q4">無料版では何が使えるの？</summary>
+            <p data-i18n="faq.a4">1日3回の即時ロック、自動プログラム1つ、アプリとウェブサイトのブロック、そして毎日のスクリーンタイム統計です。Proなら自動プログラムが無制限になり、現在のすべてのPro機能も使えます。</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q5">サブスクリプションはどう解約するの？</summary>
+            <p data-i18n="faq.a5">App Store または Google Play のサブスクリプションから、他と同じように解約できます。解約しても支払い済み期間の終わりまで Pro は有効です。</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q6">どの端末に対応しているの？</summary>
+            <p data-i18n="faq.a6">Pawlock は iPhone でも Android でも動作します。必要なバージョンはストアページをご確認ください。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FINAL CTA ======================== -->
+    <section class="section cta">
+      <div class="container reveal">
+        <div class="cta-mascot">
+          <figure class="slot illus-square" data-ph="🐾" style="background:none; box-shadow:none">
+            <img src="/assets/img/g11-cta.webp" alt="" loading="lazy" onerror="imgFail(this)">
+          </figure>
+        </div>
+        <h2 data-i18n="cta.title">時間を、取り戻そう。</h2>
+        <p data-i18n="cta.sub">フィードは待てる。人生は待てない。</p>
+        <a class="btn btn-light store-link" href="#">
+          <svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          <span data-i18n="cta.button">Pawlockをダウンロード</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="#">
+          <span class="brand-icon"><img src="/assets/img/app-icon.png" alt="" onerror="this.replaceWith('🐾')"></span>
+          Pawlock
+        </a>
+        <p style="margin-top:10px" data-i18n="footer.tagline">画面は少なく、もっと人生を。</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="/privacy.html" data-i18n="footer.privacy">プライバシーポリシー</a></li>
+        <li><a href="/terms.html" data-i18n="footer.terms">利用規約</a></li>
+        <li><a href="mailto:support@pawlock.app" data-i18n="footer.contact">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> Pawlock</span>
+      <span data-i18n="footer.rights">All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="el" data-baked>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawlock — Αποκλεισμός εφαρμογών &amp; Έλεγχος χρόνου οθόνης | iPhone &amp; Android</title>
+  <meta name="description" content="Το Pawlock είναι φραγή εφαρμογών για iPhone και Android που κλειδώνει εφαρμογές και ιστότοπους που αποσπούν, με τα ίδια τα εργαλεία του συστήματος. Μπλοκάρετε τα social, ορίστε προγράμματα συγκέντρωσης και πάρτε πίσω τη μέρα σας.">
+
+  <link rel="canonical" href="https://pawlock.app/el/">
+  <link rel="alternate" hreflang="en" href="https://pawlock.app/">
+  <link rel="alternate" hreflang="tr" href="https://pawlock.app/tr/">
+  <link rel="alternate" hreflang="es" href="https://pawlock.app/es/">
+  <link rel="alternate" hreflang="de" href="https://pawlock.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://pawlock.app/fr/">
+  <link rel="alternate" hreflang="pt" href="https://pawlock.app/pt/">
+  <link rel="alternate" hreflang="ja" href="https://pawlock.app/ja/">
+  <link rel="alternate" hreflang="zh" href="https://pawlock.app/zh/">
+  <link rel="alternate" hreflang="ko" href="https://pawlock.app/ko/">
+  <link rel="alternate" hreflang="it" href="https://pawlock.app/it/">
+  <link rel="alternate" hreflang="ru" href="https://pawlock.app/ru/">
+  <link rel="alternate" hreflang="ar" href="https://pawlock.app/ar/">
+  <link rel="alternate" hreflang="nl" href="https://pawlock.app/nl/">
+  <link rel="alternate" hreflang="pl" href="https://pawlock.app/pl/">
+  <link rel="alternate" hreflang="id" href="https://pawlock.app/id/">
+  <link rel="alternate" hreflang="th" href="https://pawlock.app/th/">
+  <link rel="alternate" hreflang="vi" href="https://pawlock.app/vi/">
+  <link rel="alternate" hreflang="sv" href="https://pawlock.app/sv/">
+  <link rel="alternate" hreflang="da" href="https://pawlock.app/da/">
+  <link rel="alternate" hreflang="nb" href="https://pawlock.app/nb/">
+  <link rel="alternate" hreflang="fi" href="https://pawlock.app/fi/">
+  <link rel="alternate" hreflang="uk" href="https://pawlock.app/uk/">
+  <link rel="alternate" hreflang="el" href="https://pawlock.app/el/">
+  <link rel="alternate" hreflang="cs" href="https://pawlock.app/cs/">
+  <link rel="alternate" hreflang="ro" href="https://pawlock.app/ro/">
+  <link rel="alternate" hreflang="hu" href="https://pawlock.app/hu/">
+  <link rel="alternate" hreflang="sk" href="https://pawlock.app/sk/">
+  <link rel="alternate" hreflang="bg" href="https://pawlock.app/bg/">
+  <link rel="alternate" hreflang="hr" href="https://pawlock.app/hr/">
+  <link rel="alternate" hreflang="x-default" href="https://pawlock.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pawlock">
+  <meta property="og:url" content="https://pawlock.app/el/">
+  <meta property="og:title" content="Pawlock — Αποκλεισμός εφαρμογών &amp; Έλεγχος χρόνου οθόνης | iPhone &amp; Android">
+  <meta property="og:description" content="Το Pawlock κλειδώνει για σένα τις εφαρμογές και τους ιστότοπους που σε αποσπούν. Σταμάτα να βασίζεσαι στη θέληση: φτιάξε ένα σύστημα που πραγματικά αντέχει.">
+  <meta property="og:image" content="https://pawlock.app/assets/img/og-el.png">
+  <meta property="og:locale" content="el_GR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:locale:alternate" content="ar_SA">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="id_ID">
+  <meta property="og:locale:alternate" content="th_TH">
+  <meta property="og:locale:alternate" content="vi_VN">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="uk_UA">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="bg_BG">
+  <meta property="og:locale:alternate" content="hr_HR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236137ec'/%3E%3Cellipse cx='32' cy='40' rx='11' ry='9' fill='white'/%3E%3Ccircle cx='19' cy='28' r='5' fill='white'/%3E%3Ccircle cx='28' cy='21' r='5' fill='white'/%3E%3Ccircle cx='38' cy='21' r='5' fill='white'/%3E%3Ccircle cx='46' cy='28' r='5' fill='white'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="/assets/img/app-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preload" as="image" href="/assets/img/s1-locknow.webp" type="image/webp">
+  <link rel="preload" as="image" href="/assets/img/g1-hero.webp" type="image/webp" media="(min-width: 760px)">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Pawlock",
+    "alternateName": "Pawlock: App Blocker & Screen Time",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "ProductivityApplication",
+    "description": "Το Pawlock είναι φραγή εφαρμογών για iPhone και Android που κλειδώνει εφαρμογές και ιστότοπους που αποσπούν, με τα ίδια τα εργαλεία του συστήματος. Μπλοκάρετε τα social, ορίστε προγράμματα συγκέντρωσης και πάρτε πίσω τη μέρα σας.",
+    "image": "https://pawlock.app/assets/img/og.png",
+    "inLanguage": ["en","tr","es","de","fr","pt","ja","zh","ko","it","ru","ar","nl","pl","id","th","vi","sv","da","nb","fi","uk","el","cs","ro","hu","sk","bg","hr"],
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "url": "https://pawlock.app/el/"
+  }
+  </script>
+  <!-- ld-faq --><script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Δεν μπορώ πραγματικά να ξεκλειδώσω νωρίτερα;","acceptedAnswer":{"@type":"Answer","text":"Αυτή είναι η βασική ιδέα. Μόλις ξεκινήσει ένα προγραμματισμένο πρόγραμμα, τρέχει μέχρι την ώρα λήξης του. Αν μπορούσες να το κλείσεις με δύο αγγίγματα, θα ήταν υπενθύμιση, όχι κλείδωμα. Όρισε τις διάρκειές σου με σκέψη."}},{"@type":"Question","name":"Πού πηγαίνουν τα δεδομένα μου;","acceptedAnswer":{"@type":"Answer","text":"Πουθενά. Το Pawlock δεν έχει σύστημα λογαριασμών ούτε διακομιστές. Τα δεδομένα Χρόνου Οθόνης σου επεξεργάζονται στη συσκευή σου μέσω του framework της Apple, και δεν τα βλέπουμε ποτέ."}},{"@type":"Question","name":"Γιατί ζητά άδεια για τον Χρόνο Οθόνης;","acceptedAnswer":{"@type":"Answer","text":"Το κλείδωμα εφαρμογών γίνεται μόνο μέσω των εργαλείων του συστήματος: Χρόνος επί οθόνης (Οικογενειακός διαμοιρασμός) της Apple στο iPhone και η υπηρεσία προσβασιμότητας στο Android. Η άδεια δίνεται στο σύστημα του τηλεφώνου και είναι απαραίτητη για πραγματική φραγή."}},{"@type":"Question","name":"Τι παίρνω δωρεάν;","acceptedAnswer":{"@type":"Answer","text":"3 άμεσα κλειδώματα την ημέρα, 1 αυτόματο πρόγραμμα, μπλοκάρισμα εφαρμογών και ιστότοπων, και Ημερήσια στατιστικά Χρόνου Οθόνης. Το Pro ξεκλειδώνει απεριόριστα προγράμματα και όλες τις τρέχουσες λειτουργίες Pro."}},{"@type":"Question","name":"Πώς ακυρώνω τη συνδρομή μου;","acceptedAnswer":{"@type":"Answer","text":"Από τις συνδρομές σας στο App Store ή στο Google Play, όπως κάθε άλλη. Αν ακυρώσετε, το Pro μένει ενεργό ως το τέλος της πληρωμένης περιόδου."}},{"@type":"Question","name":"Ποιες συσκευές υποστηρίζονται;","acceptedAnswer":{"@type":"Answer","text":"Το Pawlock λειτουργεί σε iPhone και Android. Δείτε τη σελίδα του store για τις τρέχουσες απαιτήσεις έκδοσης."}}]}
+  </script><!-- /ld-faq -->
+</head>
+<body>
+
+  <!-- ======================== NAV ======================== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+        <span class="brand-icon"><img src="/assets/img/app-icon.png" alt="" onerror="this.replaceWith('🐾')"></span>
+        Pawlock
+      </a>
+      <button class="nav-burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#features" data-i18n="nav.features">Λειτουργίες</a></li>
+        <li><a href="#how" data-i18n="nav.how">Πώς λειτουργεί</a></li>
+        <li><a href="#pricing" data-i18n="nav.pricing">Δωρεάν vs Pro</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">Συχνές ερωτήσεις</a></li>
+        <li class="nav-cta no-line"><a class="btn btn-primary store-link" href="#pricing" data-i18n="nav.download">Λήψη</a></li>
+      </ul>
+    </div>
+    <div class="lang-strip">
+      <nav class="lang-bar" aria-label="Language">
+        <a href="/ar/" hreflang="ar" data-lang-link="ar" title="العربية" aria-label="العربية">🇸🇦</a>
+        <a href="/bg/" hreflang="bg" data-lang-link="bg" title="Български" aria-label="Български">🇧🇬</a>
+        <a href="/zh/" hreflang="zh" data-lang-link="zh" title="简体中文" aria-label="简体中文">🇨🇳</a>
+        <a href="/hr/" hreflang="hr" data-lang-link="hr" title="Hrvatski" aria-label="Hrvatski">🇭🇷</a>
+        <a href="/cs/" hreflang="cs" data-lang-link="cs" title="Čeština" aria-label="Čeština">🇨🇿</a>
+        <a href="/da/" hreflang="da" data-lang-link="da" title="Dansk" aria-label="Dansk">🇩🇰</a>
+        <a href="/nl/" hreflang="nl" data-lang-link="nl" title="Nederlands" aria-label="Nederlands">🇳🇱</a>
+        <a href="/" hreflang="en" data-lang-link="en" title="English" aria-label="English">🇬🇧</a>
+        <a href="/fi/" hreflang="fi" data-lang-link="fi" title="Suomi" aria-label="Suomi">🇫🇮</a>
+        <a href="/fr/" hreflang="fr" data-lang-link="fr" title="Français" aria-label="Français">🇫🇷</a>
+        <a href="/de/" hreflang="de" data-lang-link="de" title="Deutsch" aria-label="Deutsch">🇩🇪</a>
+        <a href="/el/" hreflang="el" data-lang-link="el" class="active" title="Ελληνικά" aria-label="Ελληνικά">🇬🇷</a>
+        <a href="/hu/" hreflang="hu" data-lang-link="hu" title="Magyar" aria-label="Magyar">🇭🇺</a>
+        <a href="/id/" hreflang="id" data-lang-link="id" title="Bahasa Indonesia" aria-label="Bahasa Indonesia">🇮🇩</a>
+        <a href="/it/" hreflang="it" data-lang-link="it" title="Italiano" aria-label="Italiano">🇮🇹</a>
+        <a href="/ja/" hreflang="ja" data-lang-link="ja" title="日本語" aria-label="日本語">🇯🇵</a>
+        <a href="/ko/" hreflang="ko" data-lang-link="ko" title="한국어" aria-label="한국어">🇰🇷</a>
+        <a href="/nb/" hreflang="nb" data-lang-link="nb" title="Norsk" aria-label="Norsk">🇳🇴</a>
+        <a href="/pl/" hreflang="pl" data-lang-link="pl" title="Polski" aria-label="Polski">🇵🇱</a>
+        <a href="/pt/" hreflang="pt" data-lang-link="pt" title="Português" aria-label="Português">🇵🇹</a>
+        <a href="/ro/" hreflang="ro" data-lang-link="ro" title="Română" aria-label="Română">🇷🇴</a>
+        <a href="/ru/" hreflang="ru" data-lang-link="ru" title="Русский" aria-label="Русский">🇷🇺</a>
+        <a href="/sk/" hreflang="sk" data-lang-link="sk" title="Slovenčina" aria-label="Slovenčina">🇸🇰</a>
+        <a href="/es/" hreflang="es" data-lang-link="es" title="Español" aria-label="Español">🇪🇸</a>
+        <a href="/sv/" hreflang="sv" data-lang-link="sv" title="Svenska" aria-label="Svenska">🇸🇪</a>
+        <a href="/th/" hreflang="th" data-lang-link="th" title="ไทย" aria-label="ไทย">🇹🇭</a>
+        <a href="/tr/" hreflang="tr" data-lang-link="tr" title="Türkçe" aria-label="Türkçe">🇹🇷</a>
+        <a href="/uk/" hreflang="uk" data-lang-link="uk" title="Українська" aria-label="Українська">🇺🇦</a>
+        <a href="/vi/" hreflang="vi" data-lang-link="vi" title="Tiếng Việt" aria-label="Tiếng Việt">🇻🇳</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================== HERO ======================== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="hero-badge">🐾 <span data-i18n="hero.badge">Φραγή εφαρμογών και φύλακας χρόνου οθόνης για iPhone και Android</span></span>
+          <h1>
+            <span data-i18n="hero.title1">Λιγότερη οθόνη,</span><br>
+            <span data-i18n="hero.title2">περισσότερη </span><span class="grad-word" data-i18n="hero.title3">ζωή.</span>
+          </h1>
+          <p class="hero-sub" data-i18n="hero.sub">Το Pawlock κλειδώνει για σένα τις εφαρμογές και τους ιστότοπους που σε αποσπούν. Σταμάτα να βασίζεσαι στη θέληση: φτιάξε ένα σύστημα που πραγματικά αντέχει.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary store-link" href="#pricing">
+              <svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+              <span data-i18n="hero.cta">Κατέβασέ το δωρεάν</span>
+            </a>
+            <a class="btn btn-ghost" href="#how" data-i18n="hero.cta2">Δες πώς λειτουργεί</a>
+          </div>
+          <ul class="hero-trust">
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust1">Τα δεδομένα σου δεν φεύγουν ποτέ από τη συσκευή σου</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust2">Δεν χρειάζεται λογαριασμός</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust3">Χτισμένο πάνω στα δικά σας συστημικά εργαλεία του τηλεφώνου</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust4">Χωρίς διαφημίσεις</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="phone">
+            <figure class="slot" data-ph="🔒">
+              <img src="/assets/img/s1-locknow.webp" width="820" height="1778" alt="Οθόνη κλειδώματος Pawlock με αντίστροφη μέτρηση" data-i18n-alt="alt.s1" onerror="imgFail(this)">
+            </figure>
+          </div>
+          <div class="hero-mascot">
+            <figure class="slot" data-ph="🐾">
+              <img src="/assets/img/g1-hero.webp" alt="" onerror="imgFail(this)">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== PROBLEM ======================== -->
+    <section class="section problem">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="problem.title">Δεν φταις εσύ. Φταίει ο σχεδιασμός.</h2>
+          <p data-i18n="problem.sub">Οι εφαρμογές που σου κλέβουν τον χρόνο χτίστηκαν από χιλιάδες μηχανικούς με έναν στόχο: να συνεχίσεις να κάνεις scroll. Η θέληση δεν ήταν ποτέ δίκαιη μάχη.</p>
+        </div>
+        <div class="problem-stats reveal">
+          <div class="pstat">
+            <strong data-i18n="problem.stat1n">4+ ώρες</strong>
+            <span data-i18n="problem.stat1d">είναι όσο περνά ο μέσος άνθρωπος στο κινητό του κάθε μέρα</span>
+          </div>
+          <div class="pstat">
+            <strong data-i18n="problem.stat2n">91 μέρες</strong>
+            <span data-i18n="problem.stat2d">από τον ξύπνιο χρόνο σου τον χρόνο εξαφανίζονται στην οθόνη με αυτόν τον ρυθμό</span>
+          </div>
+          <div class="pstat">
+            <strong data-i18n="problem.stat3n">1 στις 4</strong>
+            <span data-i18n="problem.stat3d">ξύπνιες ώρες πάνε στο κινητό, σε μια μέρα με 16 ώρες ξύπνιου χρόνου</span>
+          </div>
+        </div>
+        <div class="problem-grid">
+          <figure class="slot illus reveal" data-ph="🌙">
+            <img src="/assets/img/g2-problem.webp" alt="" loading="lazy" onerror="imgFail(this)">
+          </figure>
+          <div class="problem-cards reveal">
+            <div class="problem-card">
+              <h3 data-i18n="problem.c1t">«Μόνο πέντε λεπτά»</h3>
+              <p data-i18n="problem.c1d">Το ανοίγεις για μια στιγμή. Μια ώρα μετά είσαι ακόμη εκεί, και ούτε καν θυμάσαι τι είδες.</p>
+            </div>
+            <div class="problem-card">
+              <h3 data-i18n="problem.c2t">Η διαγραφή δεν πιάνει</h3>
+              <p data-i18n="problem.c2d">Διαγράφεις την εφαρμογή γεμάτος αποφασιστικότητα. Δύο μέρες μετά είναι ξανά στην αρχική σου οθόνη.</p>
+            </div>
+            <div class="problem-card">
+              <h3 data-i18n="problem.c3t">Οι υπενθυμίσεις αγνοούνται</h3>
+              <p data-i18n="problem.c3d">Οι προειδοποιήσεις χρόνου οθόνης και τα «κάνε ένα διάλειμμα» pop-up κλείνουν με ένα άγγιγμα. Χρειάζεσαι κλείδωμα, όχι πρόταση.</p>
+            </div>
+          </div>
+        </div>
+        <p class="problem-note reveal" data-i18n="problem.note">Τα μαθηματικά είναι απλά: 4 ώρες × 365 μέρες = 1.460 ώρες τον χρόνο. Μέτρα μια μέρα ως 16 ξύπνιες ώρες (οι άλλες 8 είναι ύπνος) και αυτό κάνει 91 ολόκληρες ξύπνιες μέρες. Τα στατιστικά του Pawlock σου δείχνουν τον δικό σου αριθμό, κατευθείαν από τη συσκευή σου.</p>
+      </div>
+    </section>
+
+    <!-- ======================== TRANSITION (problem → hope) ======================== -->
+    <section class="transition">
+      <div class="container transition-inner reveal">
+        <figure class="slot transition-img" data-ph="🌿">
+          <img src="/assets/img/g3-freedom.webp" alt="" loading="lazy" onerror="imgFail(this)">
+        </figure>
+        <div class="transition-text">
+          <h2 data-i18n="transition.title">Στην άλλη πλευρά, η ζωή σου σε περιμένει.</h2>
+          <p data-i18n="transition.sub">Δεν χάνεις τίποτα αφήνοντας κάτω το κινητό. Κερδίζεις πίσω μια ολόκληρη μέρα.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== HOW IT WORKS ======================== -->
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="how.title">Πώς λειτουργεί το Pawlock</h2>
+          <p data-i18n="how.sub">Τρία βήματα. Μετά, το σύστημα δουλεύει ακόμη κι όταν δεν δουλεύει το κίνητρό σου.</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <figure class="slot illus" data-ph="👆">
+              <img src="/assets/img/g4-step1.webp" alt="" loading="lazy" onerror="imgFail(this)">
+            </figure>
+            <span class="step-num" aria-hidden="true"></span>
+            <h3 data-i18n="how.s1t">Διάλεξε τι σε αποσπά</h3>
+            <p data-i18n="how.s1d">Διάλεξε εφαρμογές, ολόκληρες κατηγορίες ή ιστότοπους με τον επίσημο επιλογέα της Apple. Πρόσθεσε οποιονδήποτε ιστότοπο πληκτρολογώντας τη διεύθυνσή του.</p>
+          </div>
+          <div class="step reveal">
+            <figure class="slot illus" data-ph="🔒">
+              <img src="/assets/img/g5-step2.webp" alt="" loading="lazy" onerror="imgFail(this)">
+            </figure>
+            <span class="step-num" aria-hidden="true"></span>
+            <h3 data-i18n="how.s2t">Κλείδωσε τώρα ή με πρόγραμμα</h3>
+            <p data-i18n="how.s2d">Ένα άγγιγμα για άμεσο κλείδωμα με χρονόμετρο, ή δημιούργησε αυτόματα προγράμματα: ύπνος, μελέτη, δουλειά. Υποστηρίζονται και ολονύχτια παράθυρα.</p>
+          </div>
+          <div class="step reveal">
+            <figure class="slot illus" data-ph="🌿">
+              <img src="/assets/img/g6-step3.webp" alt="" loading="lazy" onerror="imgFail(this)">
+            </figure>
+            <span class="step-num" aria-hidden="true"></span>
+            <h3 data-i18n="how.s3t">Χωρίς επιστροφή. Αυτό είναι το νόημα.</h3>
+            <p data-i18n="how.s3d">Μόλις ξεκινήσει ένα πρόγραμμα, δεν μπορεί να τερματιστεί νωρίτερα. Το Pawlock στέκεται φρουρός για να πας να ζήσεις τη ζωή σου.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FEATURES ======================== -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="features.title">Όλα όσα χρειάζεσαι για να πάρεις πίσω τον χρόνο σου</h2>
+          <p data-i18n="features.sub">Σοβαρό μπλοκάρισμα από κάτω, φιλικό πρόσωπο από πάνω.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature reveal">
+            <div class="feature-icon">⚡️</div>
+            <h3 data-i18n="features.f1t">Άμεσο κλείδωμα</h3>
+            <p data-i18n="features.f1d">Ένα άγγιγμα κλειδώνει τις επιλεγμένες εφαρμογές και ιστότοπους σου. Γύρνα τον τροχό για να ορίσεις μέρες, ώρες, λεπτά, και δες την αντίστροφη μέτρηση συγκέντρωσης.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">📅</div>
+            <h3 data-i18n="features.f2t">Εξατομικευμένες προτάσεις προγραμμάτων</h3>
+            <p data-i18n="features.f2d">Απάντησε σε μερικές ερωτήσεις κατά την εισαγωγή και το Pawlock θα δημιουργήσει αυτόματα μια πρόταση προγράμματος βάσει των συνηθειών, των στόχων και της καθημερινής σου ρουτίνας.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🛡️</div>
+            <h3 data-i18n="features.f3t">Αυστηρό εκ σχεδιασμού</h3>
+            <p data-i18n="features.f3d">Ένα πρόγραμμα που ξεκίνησε δεν μπορεί να απενεργοποιηθεί νωρίτερα. Το κλείδωμα που δεν πείθεται να αφήσει τη δουλειά του είναι αυτό που αλλάζει τις συνήθειές σου.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">📊</div>
+            <h3 data-i18n="features.f4t">Πραγματικά στατιστικά</h3>
+            <p data-i18n="features.f4d">Ημερήσια, εβδομαδιαία και μηνιαία χρήση από τα δεδομένα Χρόνου Οθόνης της Apple. Πραγματικοί αριθμοί από τη συσκευή σου, όχι εκτιμήσεις.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🌐</div>
+            <h3 data-i18n="features.f5t">Και ιστότοποι</h3>
+            <p data-i18n="features.f5d">Ο περισπασμός δεν είναι μόνο οι εφαρμογές. Μπλόκαρε ιστότοπους και ολόκληρες κατηγορίες μαζί τους, στο ίδιο κλείδωμα.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🔐</div>
+            <h3 data-i18n="features.f6t">Ιδιωτικό εξ ορισμού</h3>
+            <p data-i18n="features.f6d">Χωρίς λογαριασμό, χωρίς διακομιστή, χωρίς διαφημίσεις. Τα δεδομένα Χρόνου Οθόνης σου μένουν στο iPhone σου, εκεί που τα κρατά η Apple.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">⏳</div>
+            <h3 data-i18n="features.f7t">Ζωντανή αντίστροφη μέτρηση</h3>
+            <p data-i18n="features.f7d">Παρακολούθησε κάθε κλείδωμα με ένα Live Activity με τη μασκότ στην οθόνη κλειδώματος και μια συμπαγή αντίστροφη μέτρηση στο Dynamic Island.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🔔</div>
+            <h3 data-i18n="features.f8t">Έξυπνες καθημερινές ειδοποιήσεις</h3>
+            <p data-i18n="features.f8d">Λάβε καθημερινά μια χρήσιμη υπενθύμιση βάσει του σερί, των αποκλεισμένων προσπαθειών ή της εβδομαδιαίας σύνοψης συγκέντρωσης.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SPOTLIGHT: STRICT (g7) ======================== -->
+    <section class="section spotlight">
+      <div class="container spot-inner reveal">
+        <figure class="slot spot-img" data-ph="🛡️">
+          <img src="/assets/img/g7-guard.webp" alt="" loading="lazy" onerror="imgFail(this)">
+        </figure>
+        <div class="spot-text">
+          <span class="spot-badge" data-i18n="spot.strict.badge">Άθραυστο</span>
+          <h2 data-i18n="spot.strict.title">Ένα κλείδωμα που δεν μπορείς να ξεγελάσεις.</h2>
+          <p data-i18n="spot.strict.sub">Τα περισσότερα blockers λυγίζουν τη στιγμή που πραγματικά θέλεις να μπεις. Το Pawlock όχι. Μόλις ξεκινήσει ένα πρόγραμμα, δεν υπάρχει πρόωρη έξοδος, καμία διαφυγή με δύο αγγίγματα. Αυτός ακριβώς είναι ο λόγος που αλλάζει τις συνήθειές σου.</p>
+          <ul class="spot-list">
+            <li><span class="tick">✓</span> <span data-i18n="spot.strict.b1">Τα προγράμματα που ξεκίνησαν δεν μπορούν να τερματιστούν νωρίτερα</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.strict.b2">Χτισμένο πάνω στον Χρόνο Οθόνης της Apple, σε επίπεδο συστήματος</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.strict.b3">Κανένα παραθυράκι, κανένα «μόνο αυτή τη φορά»</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SPOTLIGHT: AUTOMATIC (g8) ======================== -->
+    <section class="section spotlight spotlight-alt">
+      <div class="container spot-inner reveal">
+        <figure class="slot spot-img" data-ph="🌙">
+          <img src="/assets/img/g8-sleep.webp" alt="" loading="lazy" onerror="imgFail(this)">
+        </figure>
+        <div class="spot-text">
+          <span class="spot-badge" data-i18n="spot.auto.badge">Αυτόματο</span>
+          <h2 data-i18n="spot.auto.title">Σε φύλαξη, ακόμη κι όσο κοιμάσαι.</h2>
+          <p data-i18n="spot.auto.sub">Όρισε τα προγράμματά σου μία φορά και το Pawlock αναλαμβάνει. Κάθε βράδυ και κάθε πρωί κλειδώνει ακριβώς στην ώρα του. Δεν χρειάζεται καν να το θυμάσαι.</p>
+          <ul class="spot-list">
+            <li><span class="tick">✓</span> <span data-i18n="spot.auto.b1">Ολονύχτια παράθυρα, όπως 11μμ → 7πμ</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.auto.b2">Μια ειδοποίηση όταν ξεκινά κάθε πρόγραμμα</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.auto.b3">Κάθε μέρα, καθημερινές ή σαββατοκύριακα με ένα άγγιγμα</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SHOWCASE / EFFECT ======================== -->
+    <section class="section showcase">
+      <div class="container showcase-inner">
+        <div class="reveal">
+          <figure class="slot effect-medal" data-ph="🌱">
+            <img src="/assets/img/g9-stats.webp" alt="" loading="lazy" onerror="imgFail(this)">
+          </figure>
+          <h2 data-i18n="effect.title">Δες τον χρόνο που κερδίζεις πίσω</h2>
+          <p data-i18n="effect.sub">Το Pawlock σου δείχνει το πριν και το μετά: πώς αλλάζει η χρήση σου, οι πιο φορτωμένες σου ώρες, και πότε προσπάθησες να ανοίξεις κλειδωμένες εφαρμογές. Το να βλέπεις τις ανακτημένες ώρες να μεγαλώνουν είναι το καλύτερο κίνητρο που υπάρχει.</p>
+          <ul>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b1">Σύγκριση πριν και μετά</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b2">Οι πιο φορτωμένες σου ώρες χρήσης</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b3">Ανακτημένος χρόνος, μέρα με τη μέρα</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b4">Κόψε 1 ώρα τη μέρα: 23 ξύπνιες μέρες πίσω κάθε χρόνο</span></li>
+          </ul>
+        </div>
+        <div class="showcase-phones reveal">
+          <div class="phone phone-sm">
+            <figure class="slot" data-ph="📊">
+              <img src="/assets/img/s2-stats.webp" width="820" height="1778" alt="Στατιστικά χρόνου οθόνης και γραφήματα χρήσης στην εφαρμογή Pawlock" data-i18n-alt="alt.s2" loading="lazy" onerror="imgFail(this)">
+            </figure>
+          </div>
+          <div class="phone phone-sm">
+            <figure class="slot" data-ph="📅">
+              <img src="/assets/img/s4-programs.webp" width="820" height="1778" alt="Λίστα αυτόματων προγραμμάτων φραγής στην εφαρμογή Pawlock" data-i18n-alt="alt.s4" loading="lazy" onerror="imgFail(this)">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== PRICING ======================== -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="pricing.title">Δωρεάν vs Pro</h2>
+          <p data-i18n="pricing.sub">Ξεκίνα δωρεάν. Αναβάθμισε όταν οι συνήθειές σου ζητήσουν περισσότερα.</p>
+        </div>
+        <div class="plans">
+          <div class="plan reveal">
+            <div class="plan-head">
+              <h3 data-i18n="pricing.freeName">Δωρεάν</h3>
+              <span class="plan-badge plan-badge-free" data-i18n="pricing.freePrice">Δωρεάν για πάντα</span>
+            </div>
+            <ul class="plan-features">
+              <li><span class="plan-feature-icon" aria-hidden="true">⚡</span><span data-i18n="pricing.freeF1">3 άμεσα κλειδώματα την ημέρα</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">📅</span><span data-i18n="pricing.freeF2">1 αυτόματο πρόγραμμα</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">🛡</span><span data-i18n="pricing.freeF3">Μπλοκάρισμα εφαρμογών, κατηγοριών και ιστότοπων</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">▥</span><span data-i18n="pricing.freeF4">Ημερήσια στατιστικά Χρόνου Οθόνης</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">↗</span><span data-i18n="pricing.extendedStats">Εβδομαδιαία και μηνιαία στατιστικά Χρόνου Οθόνης</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">☀</span><span data-i18n="pricing.yesterdayReport">Η αναφορά της χθεσινής ημέρας κάθε πρωί</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">✦</span><span data-i18n="pricing.fullPersonalizedPlan">Πλήρες εξατομικευμένο πλάνο προγραμμάτων</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">●</span><span data-i18n="features.f8t">Έξυπνες καθημερινές ειδοποιήσεις</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">★</span><span data-i18n="features.f3t">Αυστηρό εκ σχεδιασμού</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+            </ul>
+            <div class="plan-footer">
+              <a class="btn btn-ghost store-link" href="#" data-i18n="pricing.freeCta">Λήψη</a>
+              <p class="muted-note muted-note-placeholder" aria-hidden="true">&nbsp;</p>
+            </div>
+          </div>
+          <div class="plan plan-pro reveal">
+            <div class="plan-head">
+              <h3 data-i18n="pricing.proName">Pawlock Pro</h3>
+              <span class="plan-badge" data-i18n="pricing.proBadge">Ακύρωσε οποτεδήποτε</span>
+            </div>
+            <ul class="plan-features">
+              <li><span class="plan-feature-icon" aria-hidden="true">⚡</span><span data-i18n="pricing.unlimitedInstant">Απεριόριστα άμεσα κλειδώματα</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">📅</span><span data-i18n="pricing.proF2">Απεριόριστα αυτόματα προγράμματα</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">🛡</span><span data-i18n="pricing.freeF3">Μπλοκάρισμα εφαρμογών, κατηγοριών και ιστότοπων</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">▥</span><span data-i18n="pricing.freeF4">Ημερήσια στατιστικά Χρόνου Οθόνης</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">↗</span><span data-i18n="pricing.extendedStats">Εβδομαδιαία και μηνιαία στατιστικά Χρόνου Οθόνης</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">☀</span><span data-i18n="pricing.yesterdayReport">Η αναφορά της χθεσινής ημέρας κάθε πρωί</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">✦</span><span data-i18n="pricing.fullPersonalizedPlan">Πλήρες εξατομικευμένο πλάνο προγραμμάτων</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">●</span><span data-i18n="features.f8t">Έξυπνες καθημερινές ειδοποιήσεις</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">★</span><span data-i18n="features.f3t">Αυστηρό εκ σχεδιασμού</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+            </ul>
+            <div class="plan-footer">
+              <a class="btn btn-light store-link" href="#" data-i18n="pricing.proCta">Απόκτησε το Pro</a>
+              <p class="muted-note" data-i18n="pricing.proNote">Εβδομαδιαία, μηνιαία ή ετήσια. Οι τιμές εμφανίζονται στο App Store για την περιοχή σου.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== WHY PAWLOCK ======================== -->
+    <section class="section why-section">
+      <div class="container">
+        <div class="section-head why-head reveal">
+          <h2 data-i18n="why.title">Γιατί Pawlock;</h2>
+          <p data-i18n="why.sub">Μια δίκαιη σύγκριση με τις τυπικές εφαρμογές blocker.</p>
+        </div>
+        <div class="table-scroll why-table-wrap reveal">
+          <table class="compare">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Pawlock</th>
+                <th data-i18n="why.colOthers">Τυπικά blockers</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="why-capability" data-i18n="why.r1">Κλείδωμα σε επίπεδο συστήματος μέσω της επίσημης τεχνολογίας Χρόνου Οθόνης της Apple</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Ναι</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">Μερικά</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r2">Τα κλειδώματα δεν μπορούν να τερματιστούν νωρίτερα</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Ναι</span></span></td>
+                <td><span class="mark mark-no" data-i18n="why.legendNo">Συνήθως όχι</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r3">Αυτόματα προγράμματα με ολονύχτια παράθυρα</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Ναι</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">Μερικά</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r4">Λειτουργεί χωρίς λογαριασμό ή εγγραφή</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Ναι</span></span></td>
+                <td><span class="mark mark-no" data-i18n="why.legendNo">Συνήθως όχι</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r5">Τα δεδομένα μένουν στη συσκευή σου</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Ναι</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">Μερικά</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r6">Χωρίς διαφημίσεις</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Ναι</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">Μερικά</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== REVIEWS ========================
+         TODO: PLACEHOLDER CONTENT. Replace with real App Store reviews
+         after launch. The visible i18n "reviews.note" disclosure should
+         stay until real reviews are in. -->
+    <section class="section pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="reviews.title">Τι λέει ο κόσμος</h2>
+          <p data-i18n="reviews.sub">Αληθινές ιστορίες από τη μάχη ενάντια στο scroll.</p>
+        </div>
+        <div class="reviews-grid">
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r1t">εκανα scroll μεχρι τις 2 τη νυχτα καθε βραδυ. εβαλα προγραμμα υπνου που κλειδωνει τα παντα στις 11 και η πρωτη εβδομαδα ηταν δυσκολη αλλα τωρα κοιμαμαι κανονικα 7 ωρες</p>
+            <span class="review-nick" data-i18n="reviews.r1n">Γιώργος Π.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r2t">με εσωσε στην εξεταστικη. κλειδωνα το κινητο 9 με 6 τις καθημερινες, πανικοβληθηκα την πρωτη μερα, το συνηθισα απο την τριτη. οι βαθμοι μου ανεβηκαν κατακορυφα</p>
+            <span class="review-nick" data-i18n="reviews.r2n">Ελένη Μ.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r3t">ειμαι αυτος που ανοιγει το instagram στη δουλεια και χανει 40 λεπτα. τωρα το προγραμμα εργασιας τρεχει ολο το πρωι, το κινητο ειναι πρακτικα νεκρο μεχρι το μεσημερι. δεν μου το επεβαλε το αφεντικο, το εκανα μονος μου</p>
+            <span class="review-nick" data-i18n="reviews.r3n">Δημήτρης Κ.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r4t">με επιασα να κοιταζω το κινητο ενω επαιζα με το παιδι μου και ενιωσα χαλια. τωρα εχω οικογενειακο κλειδωμα 6 με 9 το βραδυ. η κορη μου το προσεξε πραγματικα οτι ο μπαμπας δεν κοιταει πια το κινητο</p>
+            <span class="review-nick" data-i18n="reviews.r4n">Νίκος Α.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r5t">εσβησα το instagram κανα 100 φορες και παντα το ξαναεβαζα. τελικα η διαγραφη δεν ειναι η λυση, το κλειδωμα ειναι. 3 εβδομαδες καθαρος και ειλικρινα η επιθυμια σβηνει</p>
+            <span class="review-nick" data-i18n="reviews.r5n">Μαρία Τ.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r6t">η πρωτη ωρα της μερας μου χανοταν στο κινητο πριν καν σηκωθω απο το κρεβατι. πρωινο κλειδωμα 7 με 9, πινω τον καφε μου και παω για περπατημα. το να ξανακερδισω εκεινη την ωρα ειναι αλλη ζωη</p>
+            <span class="review-nick" data-i18n="reviews.r6n">Κατερίνα Β.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r7t">δεν μπορουσα πια να διαβασω βιβλια, 2 σελιδες και το χερι μου πηγαινε στο κινητο. βραδινο κλειδωμα για διαβασμα και τελειωσα 3 βιβλια αυτον τον μηνα. τελευταια φορα που ειχε συμβει ημουν φοιτητης</p>
+            <span class="review-nick" data-i18n="reviews.r7n">Θανάσης Ρ.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r8t">τα αλλα blockers τα παρακαμπτα με 2 αγγιγματα, ουσιαστικα ελεγα ψεματα στον εαυτο μου. αυτο δεν το κλεινεις και ναι στην αρχη ειναι εκνευριστικο αλλα ειναι το μονο που δουλεψε ποτε</p>
+            <span class="review-nick" data-i18n="reviews.r8n">Χρήστος Β.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r9t">τα στατιστικα με σοκαραν, 6ω 40λ τη μερα. επεσα στις 3 ωρες σε 2 μηνες. το να βλεπω εκεινο το γραφημα να κατεβαινει ειναι περιεργα το πιο κινητοποιητικο κομματι</p>
+            <span class="review-nick" data-i18n="reviews.r9n">Ραφαέλα Κ.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★☆</div>
+            <p data-i18n="reviews.r10t">δεν μπορουσα να ξεφυγω απο τη μαυρη τρυπα των shorts οποτε απλα κλειδωσα το youtube, το προβλημα λυθηκε. θα ηταν 5 αστερια με ενα widget, αλλιως κανενα παραπονο</p>
+            <span class="review-nick" data-i18n="reviews.r10n">Παναγιώτης Σ.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FAQ ======================== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="faq.title">Συχνές ερωτήσεις</h2>
+        </div>
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary data-i18n="faq.q1">Δεν μπορώ πραγματικά να ξεκλειδώσω νωρίτερα;</summary>
+            <p data-i18n="faq.a1">Αυτή είναι η βασική ιδέα. Μόλις ξεκινήσει ένα προγραμματισμένο πρόγραμμα, τρέχει μέχρι την ώρα λήξης του. Αν μπορούσες να το κλείσεις με δύο αγγίγματα, θα ήταν υπενθύμιση, όχι κλείδωμα. Όρισε τις διάρκειές σου με σκέψη.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q2">Πού πηγαίνουν τα δεδομένα μου;</summary>
+            <p data-i18n="faq.a2">Πουθενά. Το Pawlock δεν έχει σύστημα λογαριασμών ούτε διακομιστές. Τα δεδομένα Χρόνου Οθόνης σου επεξεργάζονται στη συσκευή σου μέσω του framework της Apple, και δεν τα βλέπουμε ποτέ.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q3">Γιατί ζητά άδεια για τον Χρόνο Οθόνης;</summary>
+            <p data-i18n="faq.a3">Το κλείδωμα εφαρμογών γίνεται μόνο μέσω των εργαλείων του συστήματος: Χρόνος επί οθόνης (Οικογενειακός διαμοιρασμός) της Apple στο iPhone και η υπηρεσία προσβασιμότητας στο Android. Η άδεια δίνεται στο σύστημα του τηλεφώνου και είναι απαραίτητη για πραγματική φραγή.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q4">Τι παίρνω δωρεάν;</summary>
+            <p data-i18n="faq.a4">3 άμεσα κλειδώματα την ημέρα, 1 αυτόματο πρόγραμμα, μπλοκάρισμα εφαρμογών και ιστότοπων, και Ημερήσια στατιστικά Χρόνου Οθόνης. Το Pro ξεκλειδώνει απεριόριστα προγράμματα και όλες τις τρέχουσες λειτουργίες Pro.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q5">Πώς ακυρώνω τη συνδρομή μου;</summary>
+            <p data-i18n="faq.a5">Από τις συνδρομές σας στο App Store ή στο Google Play, όπως κάθε άλλη. Αν ακυρώσετε, το Pro μένει ενεργό ως το τέλος της πληρωμένης περιόδου.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q6">Ποιες συσκευές υποστηρίζονται;</summary>
+            <p data-i18n="faq.a6">Το Pawlock λειτουργεί σε iPhone και Android. Δείτε τη σελίδα του store για τις τρέχουσες απαιτήσεις έκδοσης.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FINAL CTA ======================== -->
+    <section class="section cta">
+      <div class="container reveal">
+        <div class="cta-mascot">
+          <figure class="slot illus-square" data-ph="🐾" style="background:none; box-shadow:none">
+            <img src="/assets/img/g11-cta.webp" alt="" loading="lazy" onerror="imgFail(this)">
+          </figure>
+        </div>
+        <h2 data-i18n="cta.title">Πάρε πίσω τον χρόνο σου.</h2>
+        <p data-i18n="cta.sub">Το feed σου μπορεί να περιμένει. Η ζωή σου όχι.</p>
+        <a class="btn btn-light store-link" href="#">
+          <svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          <span data-i18n="cta.button">Κατέβασε το Pawlock</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="#">
+          <span class="brand-icon"><img src="/assets/img/app-icon.png" alt="" onerror="this.replaceWith('🐾')"></span>
+          Pawlock
+        </a>
+        <p style="margin-top:10px" data-i18n="footer.tagline">Λιγότερη οθόνη, περισσότερη ζωή.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="/privacy.html" data-i18n="footer.privacy">Πολιτική Απορρήτου</a></li>
+        <li><a href="/terms.html" data-i18n="footer.terms">Όροι Χρήσης</a></li>
+        <li><a href="mailto:support@pawlock.app" data-i18n="footer.contact">Επικοινωνία</a></li>
+      </ul>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> Pawlock</span>
+      <span data-i18n="footer.rights">Με επιφύλαξη παντός δικαιώματος.</span>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

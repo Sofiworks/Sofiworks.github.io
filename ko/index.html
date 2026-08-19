@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ko" data-baked>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawlock — iPhone·Android 앱 차단 및 스크린 타임 관리</title>
+  <meta name="description" content="Pawlock은 휴대폰 자체의 시스템 제어로 주의를 흩뜨리는 앱과 웹사이트를 잠그는 iPhone·Android 앱 차단기입니다. 소셜 미디어를 차단하고 집중 일정을 만들어 하루를 되찾으세요.">
+
+  <link rel="canonical" href="https://pawlock.app/ko/">
+  <link rel="alternate" hreflang="en" href="https://pawlock.app/">
+  <link rel="alternate" hreflang="tr" href="https://pawlock.app/tr/">
+  <link rel="alternate" hreflang="es" href="https://pawlock.app/es/">
+  <link rel="alternate" hreflang="de" href="https://pawlock.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://pawlock.app/fr/">
+  <link rel="alternate" hreflang="pt" href="https://pawlock.app/pt/">
+  <link rel="alternate" hreflang="ja" href="https://pawlock.app/ja/">
+  <link rel="alternate" hreflang="zh" href="https://pawlock.app/zh/">
+  <link rel="alternate" hreflang="ko" href="https://pawlock.app/ko/">
+  <link rel="alternate" hreflang="it" href="https://pawlock.app/it/">
+  <link rel="alternate" hreflang="ru" href="https://pawlock.app/ru/">
+  <link rel="alternate" hreflang="ar" href="https://pawlock.app/ar/">
+  <link rel="alternate" hreflang="nl" href="https://pawlock.app/nl/">
+  <link rel="alternate" hreflang="pl" href="https://pawlock.app/pl/">
+  <link rel="alternate" hreflang="id" href="https://pawlock.app/id/">
+  <link rel="alternate" hreflang="th" href="https://pawlock.app/th/">
+  <link rel="alternate" hreflang="vi" href="https://pawlock.app/vi/">
+  <link rel="alternate" hreflang="sv" href="https://pawlock.app/sv/">
+  <link rel="alternate" hreflang="da" href="https://pawlock.app/da/">
+  <link rel="alternate" hreflang="nb" href="https://pawlock.app/nb/">
+  <link rel="alternate" hreflang="fi" href="https://pawlock.app/fi/">
+  <link rel="alternate" hreflang="uk" href="https://pawlock.app/uk/">
+  <link rel="alternate" hreflang="el" href="https://pawlock.app/el/">
+  <link rel="alternate" hreflang="cs" href="https://pawlock.app/cs/">
+  <link rel="alternate" hreflang="ro" href="https://pawlock.app/ro/">
+  <link rel="alternate" hreflang="hu" href="https://pawlock.app/hu/">
+  <link rel="alternate" hreflang="sk" href="https://pawlock.app/sk/">
+  <link rel="alternate" hreflang="bg" href="https://pawlock.app/bg/">
+  <link rel="alternate" hreflang="hr" href="https://pawlock.app/hr/">
+  <link rel="alternate" hreflang="x-default" href="https://pawlock.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pawlock">
+  <meta property="og:url" content="https://pawlock.app/ko/">
+  <meta property="og:title" content="Pawlock — iPhone·Android 앱 차단 및 스크린 타임 관리">
+  <meta property="og:description" content="Pawlock이 주의를 빼앗는 앱과 웹사이트를 대신 잠가드려요. 의지력에 기대지 마세요. 실제로 버티는 시스템을 만드세요.">
+  <meta property="og:image" content="https://pawlock.app/assets/img/og-ko.png">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:locale:alternate" content="ar_SA">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="id_ID">
+  <meta property="og:locale:alternate" content="th_TH">
+  <meta property="og:locale:alternate" content="vi_VN">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="uk_UA">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="bg_BG">
+  <meta property="og:locale:alternate" content="hr_HR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236137ec'/%3E%3Cellipse cx='32' cy='40' rx='11' ry='9' fill='white'/%3E%3Ccircle cx='19' cy='28' r='5' fill='white'/%3E%3Ccircle cx='28' cy='21' r='5' fill='white'/%3E%3Ccircle cx='38' cy='21' r='5' fill='white'/%3E%3Ccircle cx='46' cy='28' r='5' fill='white'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="/assets/img/app-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preload" as="image" href="/assets/img/s1-locknow.webp" type="image/webp">
+  <link rel="preload" as="image" href="/assets/img/g1-hero.webp" type="image/webp" media="(min-width: 760px)">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Pawlock",
+    "alternateName": "Pawlock: App Blocker & Screen Time",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "ProductivityApplication",
+    "description": "Pawlock은 휴대폰 자체의 시스템 제어로 주의를 흩뜨리는 앱과 웹사이트를 잠그는 iPhone·Android 앱 차단기입니다. 소셜 미디어를 차단하고 집중 일정을 만들어 하루를 되찾으세요.",
+    "image": "https://pawlock.app/assets/img/og.png",
+    "inLanguage": ["en","tr","es","de","fr","pt","ja","zh","ko","it","ru","ar","nl","pl","id","th","vi","sv","da","nb","fi","uk","el","cs","ro","hu","sk","bg","hr"],
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "url": "https://pawlock.app/ko/"
+  }
+  </script>
+  <!-- ld-faq --><script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"정말 일찍 잠금을 풀 수 없나요?","acceptedAnswer":{"@type":"Answer","text":"그게 핵심 아이디어예요. 예약된 프로그램이 시작되면 종료 시간까지 계속 돌아가요. 두 번의 탭으로 끌 수 있다면 그건 잠금이 아니라 알림이겠죠. 시간을 신중하게 정하세요."}},{"@type":"Question","name":"제 데이터는 어디로 가나요?","acceptedAnswer":{"@type":"Answer","text":"어디로도 가지 않아요. Pawlock에는 계정 시스템도 서버도 없어요. 당신의 스크린 타임 데이터는 Apple의 프레임워크를 통해 기기에서 처리되고, 우리는 절대 볼 수 없어요."}},{"@type":"Question","name":"왜 스크린 타임 권한을 요청하나요?","acceptedAnswer":{"@type":"Answer","text":"앱 잠금은 시스템 자체의 제어로만 가능합니다. iPhone에서는 Apple의 스크린 타임(가족 공유), Android에서는 접근성 서비스입니다. 권한은 휴대폰 시스템에 부여되며 실제 차단에 반드시 필요합니다."}},{"@type":"Question","name":"무료로는 무엇을 이용할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"하루 즉시 잠금 3회, 자동 프로그램 1개, 앱과 웹사이트 차단, 그리고 일간 스크린 타임 통계예요. Pro는 자동 프로그램을 무제한으로 열어 주고 현재 제공되는 모든 Pro 기능을 포함해요."}},{"@type":"Question","name":"구독은 어떻게 취소하나요?","acceptedAnswer":{"@type":"Answer","text":"App Store 또는 Google Play 구독에서 다른 구독과 동일하게 관리합니다. 해지해도 결제 기간이 끝날 때까지 Pro가 유지됩니다."}},{"@type":"Question","name":"어떤 기기를 지원하나요?","acceptedAnswer":{"@type":"Answer","text":"Pawlock은 iPhone과 Android에서 모두 작동합니다. 현재 버전 요구 사항은 스토어 페이지를 확인하세요."}}]}
+  </script><!-- /ld-faq -->
+</head>
+<body>
+
+  <!-- ======================== NAV ======================== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+        <span class="brand-icon"><img src="/assets/img/app-icon.png" alt="" onerror="this.replaceWith('🐾')"></span>
+        Pawlock
+      </a>
+      <button class="nav-burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#features" data-i18n="nav.features">기능</a></li>
+        <li><a href="#how" data-i18n="nav.how">작동 방식</a></li>
+        <li><a href="#pricing" data-i18n="nav.pricing">무료 vs Pro</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">자주 묻는 질문</a></li>
+        <li class="nav-cta no-line"><a class="btn btn-primary store-link" href="#pricing" data-i18n="nav.download">다운로드</a></li>
+      </ul>
+    </div>
+    <div class="lang-strip">
+      <nav class="lang-bar" aria-label="Language">
+        <a href="/ar/" hreflang="ar" data-lang-link="ar" title="العربية" aria-label="العربية">🇸🇦</a>
+        <a href="/bg/" hreflang="bg" data-lang-link="bg" title="Български" aria-label="Български">🇧🇬</a>
+        <a href="/zh/" hreflang="zh" data-lang-link="zh" title="简体中文" aria-label="简体中文">🇨🇳</a>
+        <a href="/hr/" hreflang="hr" data-lang-link="hr" title="Hrvatski" aria-label="Hrvatski">🇭🇷</a>
+        <a href="/cs/" hreflang="cs" data-lang-link="cs" title="Čeština" aria-label="Čeština">🇨🇿</a>
+        <a href="/da/" hreflang="da" data-lang-link="da" title="Dansk" aria-label="Dansk">🇩🇰</a>
+        <a href="/nl/" hreflang="nl" data-lang-link="nl" title="Nederlands" aria-label="Nederlands">🇳🇱</a>
+        <a href="/" hreflang="en" data-lang-link="en" title="English" aria-label="English">🇬🇧</a>
+        <a href="/fi/" hreflang="fi" data-lang-link="fi" title="Suomi" aria-label="Suomi">🇫🇮</a>
+        <a href="/fr/" hreflang="fr" data-lang-link="fr" title="Français" aria-label="Français">🇫🇷</a>
+        <a href="/de/" hreflang="de" data-lang-link="de" title="Deutsch" aria-label="Deutsch">🇩🇪</a>
+        <a href="/el/" hreflang="el" data-lang-link="el" title="Ελληνικά" aria-label="Ελληνικά">🇬🇷</a>
+        <a href="/hu/" hreflang="hu" data-lang-link="hu" title="Magyar" aria-label="Magyar">🇭🇺</a>
+        <a href="/id/" hreflang="id" data-lang-link="id" title="Bahasa Indonesia" aria-label="Bahasa Indonesia">🇮🇩</a>
+        <a href="/it/" hreflang="it" data-lang-link="it" title="Italiano" aria-label="Italiano">🇮🇹</a>
+        <a href="/ja/" hreflang="ja" data-lang-link="ja" title="日本語" aria-label="日本語">🇯🇵</a>
+        <a href="/ko/" hreflang="ko" data-lang-link="ko" class="active" title="한국어" aria-label="한국어">🇰🇷</a>
+        <a href="/nb/" hreflang="nb" data-lang-link="nb" title="Norsk" aria-label="Norsk">🇳🇴</a>
+        <a href="/pl/" hreflang="pl" data-lang-link="pl" title="Polski" aria-label="Polski">🇵🇱</a>
+        <a href="/pt/" hreflang="pt" data-lang-link="pt" title="Português" aria-label="Português">🇵🇹</a>
+        <a href="/ro/" hreflang="ro" data-lang-link="ro" title="Română" aria-label="Română">🇷🇴</a>
+        <a href="/ru/" hreflang="ru" data-lang-link="ru" title="Русский" aria-label="Русский">🇷🇺</a>
+        <a href="/sk/" hreflang="sk" data-lang-link="sk" title="Slovenčina" aria-label="Slovenčina">🇸🇰</a>
+        <a href="/es/" hreflang="es" data-lang-link="es" title="Español" aria-label="Español">🇪🇸</a>
+        <a href="/sv/" hreflang="sv" data-lang-link="sv" title="Svenska" aria-label="Svenska">🇸🇪</a>
+        <a href="/th/" hreflang="th" data-lang-link="th" title="ไทย" aria-label="ไทย">🇹🇭</a>
+        <a href="/tr/" hreflang="tr" data-lang-link="tr" title="Türkçe" aria-label="Türkçe">🇹🇷</a>
+        <a href="/uk/" hreflang="uk" data-lang-link="uk" title="Українська" aria-label="Українська">🇺🇦</a>
+        <a href="/vi/" hreflang="vi" data-lang-link="vi" title="Tiếng Việt" aria-label="Tiếng Việt">🇻🇳</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================== HERO ======================== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="hero-badge">🐾 <span data-i18n="hero.badge">iPhone·Android용 앱 차단 및 스크린 타임 지킴이</span></span>
+          <h1>
+            <span data-i18n="hero.title1">화면은 줄이고,</span><br>
+            <span data-i18n="hero.title2">인생은 </span><span class="grad-word" data-i18n="hero.title3">더.</span>
+          </h1>
+          <p class="hero-sub" data-i18n="hero.sub">Pawlock이 주의를 빼앗는 앱과 웹사이트를 대신 잠가드려요. 의지력에 기대지 마세요. 실제로 버티는 시스템을 만드세요.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary store-link" href="#pricing">
+              <svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+              <span data-i18n="hero.cta">무료로 다운로드</span>
+            </a>
+            <a class="btn btn-ghost" href="#how" data-i18n="hero.cta2">작동 방식 보기</a>
+          </div>
+          <ul class="hero-trust">
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust1">데이터가 기기를 벗어나지 않아요</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust2">계정이 필요 없어요</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust3">휴대폰 자체의 시스템 제어를 기반으로 합니다</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust4">광고 없음</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="phone">
+            <figure class="slot" data-ph="🔒">
+              <img src="/assets/img/s1-locknow.webp" width="820" height="1778" alt="카운트다운이 있는 Pawlock 잠금 화면" data-i18n-alt="alt.s1" onerror="imgFail(this)">
+            </figure>
+          </div>
+          <div class="hero-mascot">
+            <figure class="slot" data-ph="🐾">
+              <img src="/assets/img/g1-hero.webp" alt="" onerror="imgFail(this)">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== PROBLEM ======================== -->
+    <section class="section problem">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="problem.title">당신 탓이 아니에요. 설계가 그런 거예요.</h2>
+          <p data-i18n="problem.sub">당신의 시간을 훔치는 앱들은 오직 하나의 목표를 가진 수천 명의 엔지니어가 만들었어요. 당신을 계속 스크롤하게 하는 것. 의지력은 애초에 공정한 싸움이 아니었어요.</p>
+        </div>
+        <div class="problem-stats reveal">
+          <div class="pstat">
+            <strong data-i18n="problem.stat1n">4시간 이상</strong>
+            <span data-i18n="problem.stat1d">이 보통 사람이 매일 휴대폰에 쓰는 시간이에요</span>
+          </div>
+          <div class="pstat">
+            <strong data-i18n="problem.stat2n">91일</strong>
+            <span data-i18n="problem.stat2d">이 속도라면 깨어 있는 1년 중 이만큼이 화면 속으로 사라져요</span>
+          </div>
+          <div class="pstat">
+            <strong data-i18n="problem.stat3n">4시간 중 1시간</strong>
+            <span data-i18n="problem.stat3d">깨어 있는 16시간을 기준으로, 깨어 있는 시간의 4분의 1이 휴대폰으로 가요</span>
+          </div>
+        </div>
+        <div class="problem-grid">
+          <figure class="slot illus reveal" data-ph="🌙">
+            <img src="/assets/img/g2-problem.webp" alt="" loading="lazy" onerror="imgFail(this)">
+          </figure>
+          <div class="problem-cards reveal">
+            <div class="problem-card">
+              <h3 data-i18n="problem.c1t">“딱 5분만”</h3>
+              <p data-i18n="problem.c1d">잠깐 열었을 뿐인데, 한 시간 뒤에도 여전히 보고 있어요. 뭘 봤는지 기억조차 나지 않고요.</p>
+            </div>
+            <div class="problem-card">
+              <h3 data-i18n="problem.c2t">삭제해도 소용없어요</h3>
+              <p data-i18n="problem.c2d">굳게 마음먹고 앱을 지워요. 이틀 뒤면 다시 홈 화면에 돌아와 있어요.</p>
+            </div>
+            <div class="problem-card">
+              <h3 data-i18n="problem.c3t">알림은 무시하면 그만이에요</h3>
+              <p data-i18n="problem.c3d">스크린 타임 경고와 “잠시 쉬어가세요” 팝업은 한 번의 탭으로 사라져요. 필요한 건 제안이 아니라 잠금이에요.</p>
+            </div>
+          </div>
+        </div>
+        <p class="problem-note reveal" data-i18n="problem.note">계산은 간단해요. 4시간 × 365일 = 1년에 1,460시간. 하루를 깨어 있는 16시간(나머지 8시간은 수면)으로 치면 꼬박 91일이에요. Pawlock의 통계는 당신의 기기에서 바로 당신만의 수치를 보여줘요.</p>
+      </div>
+    </section>
+
+    <!-- ======================== TRANSITION (problem → hope) ======================== -->
+    <section class="transition">
+      <div class="container transition-inner reveal">
+        <figure class="slot transition-img" data-ph="🌿">
+          <img src="/assets/img/g3-freedom.webp" alt="" loading="lazy" onerror="imgFail(this)">
+        </figure>
+        <div class="transition-text">
+          <h2 data-i18n="transition.title">그 너머에는 당신의 인생이 기다리고 있어요.</h2>
+          <p data-i18n="transition.sub">휴대폰을 내려놓아도 잃는 건 없어요. 오히려 하루를 통째로 되찾아요.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== HOW IT WORKS ======================== -->
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="how.title">Pawlock 작동 방식</h2>
+          <p data-i18n="how.sub">세 단계면 충분해요. 그다음부터는 의욕이 사라져도 시스템이 대신 일해요.</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <figure class="slot illus" data-ph="👆">
+              <img src="/assets/img/g4-step1.webp" alt="" loading="lazy" onerror="imgFail(this)">
+            </figure>
+            <span class="step-num" aria-hidden="true"></span>
+            <h3 data-i18n="how.s1t">당신을 방해하는 것을 고르세요</h3>
+            <p data-i18n="how.s1d">Apple의 공식 선택 도구로 앱, 전체 카테고리, 웹사이트를 고르세요. 주소를 입력해 어떤 사이트든 추가할 수 있어요.</p>
+          </div>
+          <div class="step reveal">
+            <figure class="slot illus" data-ph="🔒">
+              <img src="/assets/img/g5-step2.webp" alt="" loading="lazy" onerror="imgFail(this)">
+            </figure>
+            <span class="step-num" aria-hidden="true"></span>
+            <h3 data-i18n="how.s2t">지금 잠그거나, 예약해 두세요</h3>
+            <p data-i18n="how.s2d">한 번의 탭으로 타이머와 함께 즉시 잠그거나, 수면, 공부, 업무 같은 자동 프로그램을 만드세요. 밤을 넘기는 시간대도 지원해요.</p>
+          </div>
+          <div class="step reveal">
+            <figure class="slot illus" data-ph="🌿">
+              <img src="/assets/img/g6-step3.webp" alt="" loading="lazy" onerror="imgFail(this)">
+            </figure>
+            <span class="step-num" aria-hidden="true"></span>
+            <h3 data-i18n="how.s3t">돌아갈 방법은 없어요. 그게 핵심이에요.</h3>
+            <p data-i18n="how.s3d">프로그램이 시작되면 일찍 끝낼 수 없어요. Pawlock이 지켜드리니 당신은 인생을 살러 가면 돼요.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FEATURES ======================== -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="features.title">당신의 시간을 되찾는 데 필요한 모든 것</h2>
+          <p data-i18n="features.sub">속은 강력한 차단, 겉은 친근한 얼굴.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature reveal">
+            <div class="feature-icon">⚡️</div>
+            <h3 data-i18n="features.f1t">즉시 잠금</h3>
+            <p data-i18n="features.f1d">한 번의 탭으로 선택한 앱과 사이트를 잠가요. 다이얼을 돌려 일, 시간, 분을 설정하고 집중 카운트다운을 지켜보세요.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">📅</div>
+            <h3 data-i18n="features.f2t">맞춤형 프로그램 제안</h3>
+            <p data-i18n="features.f2d">온보딩 질문 몇 가지에 답하면 Pawlock이 습관, 목표, 일상에 맞는 프로그램을 자동으로 제안해요.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🛡️</div>
+            <h3 data-i18n="features.f3t">설계부터 엄격하게</h3>
+            <p data-i18n="features.f3d">시작된 프로그램은 일찍 끌 수 없어요. 제 역할에서 설득당하지 않는 잠금이야말로 습관을 바꾸는 잠금이에요.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">📊</div>
+            <h3 data-i18n="features.f4t">진짜 통계</h3>
+            <p data-i18n="features.f4d">Apple 스크린 타임 데이터로 확인하는 일간, 주간, 월간 사용량. 추정치가 아닌 기기의 실제 수치예요.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🌐</div>
+            <h3 data-i18n="features.f5t">웹사이트도 함께</h3>
+            <p data-i18n="features.f5d">방해 요소는 앱만이 아니에요. 같은 잠금으로 웹사이트와 전체 카테고리도 함께 차단하세요.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🔐</div>
+            <h3 data-i18n="features.f6t">기본부터 프라이빗하게</h3>
+            <p data-i18n="features.f6d">계정도, 서버도, 광고도 없어요. 당신의 스크린 타임 데이터는 Apple이 보관하는 그대로 iPhone에 머물러요.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">⏳</div>
+            <h3 data-i18n="features.f7t">실시간 카운트다운</h3>
+            <p data-i18n="features.f7d">잠금 화면의 마스코트 Live Activity와 Dynamic Island의 간결한 카운트다운으로 잠금 상태를 확인하세요.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🔔</div>
+            <h3 data-i18n="features.f8t">스마트 일일 알림</h3>
+            <p data-i18n="features.f8d">연속 기록, 차단된 실행 시도 또는 주간 집중 요약을 바탕으로 매일 유용한 알림을 받아보세요.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SPOTLIGHT: STRICT (g7) ======================== -->
+    <section class="section spotlight">
+      <div class="container spot-inner reveal">
+        <figure class="slot spot-img" data-ph="🛡️">
+          <img src="/assets/img/g7-guard.webp" alt="" loading="lazy" onerror="imgFail(this)">
+        </figure>
+        <div class="spot-text">
+          <span class="spot-badge" data-i18n="spot.strict.badge">깨지지 않는</span>
+          <h2 data-i18n="spot.strict.title">말로 빠져나갈 수 없는 잠금.</h2>
+          <p data-i18n="spot.strict.sub">대부분의 차단기는 정말 들어가고 싶은 순간 무너져요. Pawlock은 그렇지 않아요. 프로그램이 시작되면 조기 종료도, 두 번의 탭으로 탈출하는 것도 없어요. 그게 바로 습관을 바꾸는 이유예요.</p>
+          <ul class="spot-list">
+            <li><span class="tick">✓</span> <span data-i18n="spot.strict.b1">시작된 프로그램은 일찍 끝낼 수 없어요</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.strict.b2">Apple의 시스템 수준 스크린 타임 기반</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.strict.b3">빠져나갈 구멍도, “이번 한 번만”도 없어요</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SPOTLIGHT: AUTOMATIC (g8) ======================== -->
+    <section class="section spotlight spotlight-alt">
+      <div class="container spot-inner reveal">
+        <figure class="slot spot-img" data-ph="🌙">
+          <img src="/assets/img/g8-sleep.webp" alt="" loading="lazy" onerror="imgFail(this)">
+        </figure>
+        <div class="spot-text">
+          <span class="spot-badge" data-i18n="spot.auto.badge">자동</span>
+          <h2 data-i18n="spot.auto.title">당신이 잠든 사이에도 지켜요.</h2>
+          <p data-i18n="spot.auto.sub">프로그램을 한 번만 설정하면 Pawlock이 알아서 맡아요. 매일 밤, 매일 아침 정확한 시간에 잠가요. 기억할 필요조차 없어요.</p>
+          <ul class="spot-list">
+            <li><span class="tick">✓</span> <span data-i18n="spot.auto.b1">밤 11시부터 아침 7시까지처럼 밤을 넘기는 시간대</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.auto.b2">각 프로그램이 시작될 때 알림</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.auto.b3">매일, 평일, 주말을 한 번의 탭으로</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SHOWCASE / EFFECT ======================== -->
+    <section class="section showcase">
+      <div class="container showcase-inner">
+        <div class="reveal">
+          <figure class="slot effect-medal" data-ph="🌱">
+            <img src="/assets/img/g9-stats.webp" alt="" loading="lazy" onerror="imgFail(this)">
+          </figure>
+          <h2 data-i18n="effect.title">되찾은 시간을 눈으로 확인하세요</h2>
+          <p data-i18n="effect.sub">Pawlock은 당신의 전과 후를 보여줘요. 사용량이 어떻게 달라지는지, 가장 바쁜 시간대는 언제인지, 잠긴 앱을 언제 열려고 했는지. 되찾은 시간이 늘어나는 걸 지켜보는 것만큼 큰 동기부여는 없어요.</p>
+          <ul>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b1">전후 비교</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b2">가장 바쁜 사용 시간대</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b3">날마다 되찾은 시간</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b4">하루 1시간을 줄이면 매년 깨어 있는 23일을 되찾아요</span></li>
+          </ul>
+        </div>
+        <div class="showcase-phones reveal">
+          <div class="phone phone-sm">
+            <figure class="slot" data-ph="📊">
+              <img src="/assets/img/s2-stats.webp" width="820" height="1778" alt="Pawlock 앱의 스크린 타임 통계와 사용 그래프" data-i18n-alt="alt.s2" loading="lazy" onerror="imgFail(this)">
+            </figure>
+          </div>
+          <div class="phone phone-sm">
+            <figure class="slot" data-ph="📅">
+              <img src="/assets/img/s4-programs.webp" width="820" height="1778" alt="Pawlock 앱의 자동 앱 차단 일정 목록" data-i18n-alt="alt.s4" loading="lazy" onerror="imgFail(this)">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== PRICING ======================== -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="pricing.title">무료 vs Pro</h2>
+          <p data-i18n="pricing.sub">무료로 시작하세요. 습관이 더 많은 걸 원할 때 업그레이드하세요.</p>
+        </div>
+        <div class="plans">
+          <div class="plan reveal">
+            <div class="plan-head">
+              <h3 data-i18n="pricing.freeName">무료</h3>
+              <span class="plan-badge plan-badge-free" data-i18n="pricing.freePrice">평생 무료</span>
+            </div>
+            <ul class="plan-features">
+              <li><span class="plan-feature-icon" aria-hidden="true">⚡</span><span data-i18n="pricing.freeF1">하루 즉시 잠금 3회</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">📅</span><span data-i18n="pricing.freeF2">자동 프로그램 1개</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">🛡</span><span data-i18n="pricing.freeF3">앱, 카테고리, 웹사이트 차단</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">▥</span><span data-i18n="pricing.freeF4">일간 스크린 타임 통계</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">↗</span><span data-i18n="pricing.extendedStats">주간 및 월간 스크린 타임 통계</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">☀</span><span data-i18n="pricing.yesterdayReport">매일 아침 어제의 리포트</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">✦</span><span data-i18n="pricing.fullPersonalizedPlan">전체 맞춤형 프로그램 플랜</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">●</span><span data-i18n="features.f8t">스마트 일일 알림</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">★</span><span data-i18n="features.f3t">설계부터 엄격하게</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+            </ul>
+            <div class="plan-footer">
+              <a class="btn btn-ghost store-link" href="#" data-i18n="pricing.freeCta">다운로드</a>
+              <p class="muted-note muted-note-placeholder" aria-hidden="true">&nbsp;</p>
+            </div>
+          </div>
+          <div class="plan plan-pro reveal">
+            <div class="plan-head">
+              <h3 data-i18n="pricing.proName">Pawlock Pro</h3>
+              <span class="plan-badge" data-i18n="pricing.proBadge">언제든 취소 가능</span>
+            </div>
+            <ul class="plan-features">
+              <li><span class="plan-feature-icon" aria-hidden="true">⚡</span><span data-i18n="pricing.unlimitedInstant">무제한 즉시 잠금</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">📅</span><span data-i18n="pricing.proF2">무제한 자동 프로그램</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">🛡</span><span data-i18n="pricing.freeF3">앱, 카테고리, 웹사이트 차단</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">▥</span><span data-i18n="pricing.freeF4">일간 스크린 타임 통계</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">↗</span><span data-i18n="pricing.extendedStats">주간 및 월간 스크린 타임 통계</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">☀</span><span data-i18n="pricing.yesterdayReport">매일 아침 어제의 리포트</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">✦</span><span data-i18n="pricing.fullPersonalizedPlan">전체 맞춤형 프로그램 플랜</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">●</span><span data-i18n="features.f8t">스마트 일일 알림</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">★</span><span data-i18n="features.f3t">설계부터 엄격하게</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+            </ul>
+            <div class="plan-footer">
+              <a class="btn btn-light store-link" href="#" data-i18n="pricing.proCta">Pro 시작하기</a>
+              <p class="muted-note" data-i18n="pricing.proNote">주간, 월간 또는 연간. 가격은 지역에 맞게 App Store에 표시돼요.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== WHY PAWLOCK ======================== -->
+    <section class="section why-section">
+      <div class="container">
+        <div class="section-head why-head reveal">
+          <h2 data-i18n="why.title">왜 Pawlock일까요?</h2>
+          <p data-i18n="why.sub">일반적인 차단 앱과의 공정한 비교예요.</p>
+        </div>
+        <div class="table-scroll why-table-wrap reveal">
+          <table class="compare">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Pawlock</th>
+                <th data-i18n="why.colOthers">일반적인 차단기</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="why-capability" data-i18n="why.r1">Apple의 공식 스크린 타임 기술을 통한 시스템 수준 잠금</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">예</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">일부만</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r2">잠금을 일찍 끝낼 수 없음</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">예</span></span></td>
+                <td><span class="mark mark-no" data-i18n="why.legendNo">대개 아님</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r3">밤을 넘기는 시간대를 포함한 자동 스케줄</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">예</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">일부만</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r4">계정이나 가입 없이 작동</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">예</span></span></td>
+                <td><span class="mark mark-no" data-i18n="why.legendNo">대개 아님</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r5">데이터가 기기에 머무름</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">예</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">일부만</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r6">광고 없음</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">예</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">일부만</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== REVIEWS ========================
+         TODO: PLACEHOLDER CONTENT. Replace with real App Store reviews
+         after launch. The visible i18n "reviews.note" disclosure should
+         stay until real reviews are in. -->
+    <section class="section pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="reviews.title">사용자들의 이야기</h2>
+          <p data-i18n="reviews.sub">스크롤과의 싸움에서 나온 진짜 이야기들.</p>
+        </div>
+        <div class="reviews-grid">
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r1t">매일 밤 새벽 2시까지 스크롤만 했어요. 11시에 전부 잠기는 수면 스케줄을 걸었는데 첫 주는 정말 힘들었지만 지금은 진짜로 7시간을 자요</p>
+            <span class="review-nick" data-i18n="reviews.r1n">김민준</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r2t">시험 기간을 살렸어요. 평일 9시부터 6시까지 휴대폰을 잠갔는데 첫날은 멘붕이었다가 사흘째부터 적응됐어요. 모의고사 점수가 확 올랐어요</p>
+            <span class="review-nick" data-i18n="reviews.r2n">이서연</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r3t">회사에서 인스타 열었다가 40분 날리는 사람이 바로 저예요. 이제 업무 스케줄이 오전 내내 돌아가서 점심까지 휴대폰이 거의 죽어 있어요. 참고로 상사가 시킨 거 아니고 제가 한 거예요</p>
+            <span class="review-nick" data-i18n="reviews.r3n">박지훈</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r4t">아이랑 놀아주면서 휴대폰 확인하는 저를 보고 정말 자괴감이 들었어요. 이제 저녁 6시부터 9시까지 가족 잠금을 걸어요. 딸이 아빠가 이제 휴대폰 안 본다고 알아채더라고요</p>
+            <span class="review-nick" data-i18n="reviews.r4n">최수아</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r5t">인스타를 백 번은 지웠다가 늘 다시 깔았어요. 삭제가 답이 아니라 잠그는 게 답이더라고요. 3주째 끊고 있는데 솔직히 이제 충동이 점점 사라져요</p>
+            <span class="review-nick" data-i18n="reviews.r5n">정하은</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r6t">예전엔 일어나기도 전에 하루의 첫 한 시간이 휴대폰 속으로 사라졌어요. 7시부터 9시까지 아침 잠금을 걸고 커피 마시며 산책을 나가요. 그 시간을 다시 내 것으로 만드니 완전히 다른 삶이에요</p>
+            <span class="review-nick" data-i18n="reviews.r6n">강도윤</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r7t">책을 더는 못 읽겠더라고요. 두 쪽 보면 손이 휴대폰으로 갔어요. 저녁 독서 잠금을 걸고 이번 달에 책 3권을 다 읽었어요. 이런 건 대학 이후 처음이에요</p>
+            <span class="review-nick" data-i18n="reviews.r7n">윤지우</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r8t">다른 차단기는 두 번만 탭하면 뚫려서 결국 저 자신을 속이는 거였어요. 이건 끌 수가 없어요. 처음엔 짜증 나지만 지금까지 효과 본 유일한 앱이에요</p>
+            <span class="review-nick" data-i18n="reviews.r8n">임현우</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r9t">통계 보고 충격받았어요. 하루 6시간 40분이었거든요. 두 달 만에 3시간으로 줄었어요. 그래프가 내려가는 걸 보는 게 이상하게 제일 큰 동기가 돼요</p>
+            <span class="review-nick" data-i18n="reviews.r9n">한소율</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★☆</div>
+            <p data-i18n="reviews.r10t">쇼츠 블랙홀에서 못 빠져나와서 그냥 유튜브를 잠갔더니 해결됐어요. 위젯만 있으면 별 다섯이고 그것 말고는 불만 하나도 없어요</p>
+            <span class="review-nick" data-i18n="reviews.r10n">오준서</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FAQ ======================== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="faq.title">자주 묻는 질문</h2>
+        </div>
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary data-i18n="faq.q1">정말 일찍 잠금을 풀 수 없나요?</summary>
+            <p data-i18n="faq.a1">그게 핵심 아이디어예요. 예약된 프로그램이 시작되면 종료 시간까지 계속 돌아가요. 두 번의 탭으로 끌 수 있다면 그건 잠금이 아니라 알림이겠죠. 시간을 신중하게 정하세요.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q2">제 데이터는 어디로 가나요?</summary>
+            <p data-i18n="faq.a2">어디로도 가지 않아요. Pawlock에는 계정 시스템도 서버도 없어요. 당신의 스크린 타임 데이터는 Apple의 프레임워크를 통해 기기에서 처리되고, 우리는 절대 볼 수 없어요.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q3">왜 스크린 타임 권한을 요청하나요?</summary>
+            <p data-i18n="faq.a3">앱 잠금은 시스템 자체의 제어로만 가능합니다. iPhone에서는 Apple의 스크린 타임(가족 공유), Android에서는 접근성 서비스입니다. 권한은 휴대폰 시스템에 부여되며 실제 차단에 반드시 필요합니다.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q4">무료로는 무엇을 이용할 수 있나요?</summary>
+            <p data-i18n="faq.a4">하루 즉시 잠금 3회, 자동 프로그램 1개, 앱과 웹사이트 차단, 그리고 일간 스크린 타임 통계예요. Pro는 자동 프로그램을 무제한으로 열어 주고 현재 제공되는 모든 Pro 기능을 포함해요.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q5">구독은 어떻게 취소하나요?</summary>
+            <p data-i18n="faq.a5">App Store 또는 Google Play 구독에서 다른 구독과 동일하게 관리합니다. 해지해도 결제 기간이 끝날 때까지 Pro가 유지됩니다.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q6">어떤 기기를 지원하나요?</summary>
+            <p data-i18n="faq.a6">Pawlock은 iPhone과 Android에서 모두 작동합니다. 현재 버전 요구 사항은 스토어 페이지를 확인하세요.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FINAL CTA ======================== -->
+    <section class="section cta">
+      <div class="container reveal">
+        <div class="cta-mascot">
+          <figure class="slot illus-square" data-ph="🐾" style="background:none; box-shadow:none">
+            <img src="/assets/img/g11-cta.webp" alt="" loading="lazy" onerror="imgFail(this)">
+          </figure>
+        </div>
+        <h2 data-i18n="cta.title">당신의 시간을 되찾으세요.</h2>
+        <p data-i18n="cta.sub">피드는 기다릴 수 있어요. 당신의 인생은 아니고요.</p>
+        <a class="btn btn-light store-link" href="#">
+          <svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          <span data-i18n="cta.button">Pawlock 다운로드</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="#">
+          <span class="brand-icon"><img src="/assets/img/app-icon.png" alt="" onerror="this.replaceWith('🐾')"></span>
+          Pawlock
+        </a>
+        <p style="margin-top:10px" data-i18n="footer.tagline">화면은 줄이고, 인생은 더.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="/privacy.html" data-i18n="footer.privacy">개인정보 처리방침</a></li>
+        <li><a href="/terms.html" data-i18n="footer.terms">이용약관</a></li>
+        <li><a href="mailto:support@pawlock.app" data-i18n="footer.contact">문의</a></li>
+      </ul>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> Pawlock</span>
+      <span data-i18n="footer.rights">모든 권리 보유.</span>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

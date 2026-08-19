@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="sk" data-baked>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawlock — Blokovanie aplikácií a správa času pri obrazovke | iPhone &amp; Android</title>
+  <meta name="description" content="Pawlock je blokovanie aplikácií pre iPhone aj Android, ktoré zamyká rozptyľujúce aplikácie a weby vlastnými systémovými nástrojmi telefónu. Zablokujte sociálne siete, nastavte plány sústredenia a získajte svoj deň späť.">
+
+  <link rel="canonical" href="https://pawlock.app/sk/">
+  <link rel="alternate" hreflang="en" href="https://pawlock.app/">
+  <link rel="alternate" hreflang="tr" href="https://pawlock.app/tr/">
+  <link rel="alternate" hreflang="es" href="https://pawlock.app/es/">
+  <link rel="alternate" hreflang="de" href="https://pawlock.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://pawlock.app/fr/">
+  <link rel="alternate" hreflang="pt" href="https://pawlock.app/pt/">
+  <link rel="alternate" hreflang="ja" href="https://pawlock.app/ja/">
+  <link rel="alternate" hreflang="zh" href="https://pawlock.app/zh/">
+  <link rel="alternate" hreflang="ko" href="https://pawlock.app/ko/">
+  <link rel="alternate" hreflang="it" href="https://pawlock.app/it/">
+  <link rel="alternate" hreflang="ru" href="https://pawlock.app/ru/">
+  <link rel="alternate" hreflang="ar" href="https://pawlock.app/ar/">
+  <link rel="alternate" hreflang="nl" href="https://pawlock.app/nl/">
+  <link rel="alternate" hreflang="pl" href="https://pawlock.app/pl/">
+  <link rel="alternate" hreflang="id" href="https://pawlock.app/id/">
+  <link rel="alternate" hreflang="th" href="https://pawlock.app/th/">
+  <link rel="alternate" hreflang="vi" href="https://pawlock.app/vi/">
+  <link rel="alternate" hreflang="sv" href="https://pawlock.app/sv/">
+  <link rel="alternate" hreflang="da" href="https://pawlock.app/da/">
+  <link rel="alternate" hreflang="nb" href="https://pawlock.app/nb/">
+  <link rel="alternate" hreflang="fi" href="https://pawlock.app/fi/">
+  <link rel="alternate" hreflang="uk" href="https://pawlock.app/uk/">
+  <link rel="alternate" hreflang="el" href="https://pawlock.app/el/">
+  <link rel="alternate" hreflang="cs" href="https://pawlock.app/cs/">
+  <link rel="alternate" hreflang="ro" href="https://pawlock.app/ro/">
+  <link rel="alternate" hreflang="hu" href="https://pawlock.app/hu/">
+  <link rel="alternate" hreflang="sk" href="https://pawlock.app/sk/">
+  <link rel="alternate" hreflang="bg" href="https://pawlock.app/bg/">
+  <link rel="alternate" hreflang="hr" href="https://pawlock.app/hr/">
+  <link rel="alternate" hreflang="x-default" href="https://pawlock.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pawlock">
+  <meta property="og:url" content="https://pawlock.app/sk/">
+  <meta property="og:title" content="Pawlock — Blokovanie aplikácií a správa času pri obrazovke | iPhone &amp; Android">
+  <meta property="og:description" content="Pawlock za teba uzamkne tvoje rušivé aplikácie a webové stránky. Prestaň sa spoliehať na silu vôle: vybuduj systém, ktorý naozaj vydrží.">
+  <meta property="og:image" content="https://pawlock.app/assets/img/og-sk.png">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:locale:alternate" content="ar_SA">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="id_ID">
+  <meta property="og:locale:alternate" content="th_TH">
+  <meta property="og:locale:alternate" content="vi_VN">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="uk_UA">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="bg_BG">
+  <meta property="og:locale:alternate" content="hr_HR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236137ec'/%3E%3Cellipse cx='32' cy='40' rx='11' ry='9' fill='white'/%3E%3Ccircle cx='19' cy='28' r='5' fill='white'/%3E%3Ccircle cx='28' cy='21' r='5' fill='white'/%3E%3Ccircle cx='38' cy='21' r='5' fill='white'/%3E%3Ccircle cx='46' cy='28' r='5' fill='white'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="/assets/img/app-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preload" as="image" href="/assets/img/s1-locknow.webp" type="image/webp">
+  <link rel="preload" as="image" href="/assets/img/g1-hero.webp" type="image/webp" media="(min-width: 760px)">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Pawlock",
+    "alternateName": "Pawlock: App Blocker & Screen Time",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "ProductivityApplication",
+    "description": "Pawlock je blokovanie aplikácií pre iPhone aj Android, ktoré zamyká rozptyľujúce aplikácie a weby vlastnými systémovými nástrojmi telefónu. Zablokujte sociálne siete, nastavte plány sústredenia a získajte svoj deň späť.",
+    "image": "https://pawlock.app/assets/img/og.png",
+    "inLanguage": ["en","tr","es","de","fr","pt","ja","zh","ko","it","ru","ar","nl","pl","id","th","vi","sv","da","nb","fi","uk","el","cs","ro","hu","sk","bg","hr"],
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "url": "https://pawlock.app/sk/"
+  }
+  </script>
+  <!-- ld-faq --><script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Naozaj sa nedá odomknúť predčasne?","acceptedAnswer":{"@type":"Answer","text":"To je základná myšlienka. Keď sa naplánovaný program spustí, beží až do svojho času konca. Keby si ho vypol na dve klepnutia, bola by to pripomienka, nie zámok. Nastav svoje trvania premyslene."}},{"@type":"Question","name":"Kam idú moje údaje?","acceptedAnswer":{"@type":"Answer","text":"Nikam. Pawlock nemá žiadny systém účtov ani servery. Tvoje údaje z Času pred obrazovkou sa spracúvajú na tvojom zariadení cez framework od Apple a my ich nikdy nevidíme."}},{"@type":"Question","name":"Prečo žiada povolenie k Času pred obrazovkou?","acceptedAnswer":{"@type":"Answer","text":"Zamknúť aplikácie sa dá len cez vlastné nástroje systému: Čas pri obrazovke (Rodinné zdieľanie) od Apple na iPhone a služba prístupnosti na Androide. Povolenie sa udeľuje systému telefónu a je nutné pre skutočné blokovanie."}},{"@type":"Question","name":"Čo dostanem zadarmo?","acceptedAnswer":{"@type":"Answer","text":"3 okamžité zámky denne, 1 automatický program, blokovanie aplikácií a webových stránok a Denné štatistiky Času pred obrazovkou. Pro odomyká neobmedzený počet programov a všetky aktuálne Pro funkcie."}},{"@type":"Question","name":"Ako zruším predplatné?","acceptedAnswer":{"@type":"Answer","text":"Cez predplatné v App Store alebo Google Play, ako každé iné. Po zrušení Pro platí do konca zaplateného obdobia."}},{"@type":"Question","name":"Ktoré zariadenia sú podporované?","acceptedAnswer":{"@type":"Answer","text":"Pawlock beží na iPhone aj na Androide. Aktuálne požiadavky nájdete na stránke obchodu."}}]}
+  </script><!-- /ld-faq -->
+</head>
+<body>
+
+  <!-- ======================== NAV ======================== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+        <span class="brand-icon"><img src="/assets/img/app-icon.png" alt="" onerror="this.replaceWith('🐾')"></span>
+        Pawlock
+      </a>
+      <button class="nav-burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#features" data-i18n="nav.features">Funkcie</a></li>
+        <li><a href="#how" data-i18n="nav.how">Ako to funguje</a></li>
+        <li><a href="#pricing" data-i18n="nav.pricing">Free vs Pro</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">Časté otázky</a></li>
+        <li class="nav-cta no-line"><a class="btn btn-primary store-link" href="#pricing" data-i18n="nav.download">Stiahnuť</a></li>
+      </ul>
+    </div>
+    <div class="lang-strip">
+      <nav class="lang-bar" aria-label="Language">
+        <a href="/ar/" hreflang="ar" data-lang-link="ar" title="العربية" aria-label="العربية">🇸🇦</a>
+        <a href="/bg/" hreflang="bg" data-lang-link="bg" title="Български" aria-label="Български">🇧🇬</a>
+        <a href="/zh/" hreflang="zh" data-lang-link="zh" title="简体中文" aria-label="简体中文">🇨🇳</a>
+        <a href="/hr/" hreflang="hr" data-lang-link="hr" title="Hrvatski" aria-label="Hrvatski">🇭🇷</a>
+        <a href="/cs/" hreflang="cs" data-lang-link="cs" title="Čeština" aria-label="Čeština">🇨🇿</a>
+        <a href="/da/" hreflang="da" data-lang-link="da" title="Dansk" aria-label="Dansk">🇩🇰</a>
+        <a href="/nl/" hreflang="nl" data-lang-link="nl" title="Nederlands" aria-label="Nederlands">🇳🇱</a>
+        <a href="/" hreflang="en" data-lang-link="en" title="English" aria-label="English">🇬🇧</a>
+        <a href="/fi/" hreflang="fi" data-lang-link="fi" title="Suomi" aria-label="Suomi">🇫🇮</a>
+        <a href="/fr/" hreflang="fr" data-lang-link="fr" title="Français" aria-label="Français">🇫🇷</a>
+        <a href="/de/" hreflang="de" data-lang-link="de" title="Deutsch" aria-label="Deutsch">🇩🇪</a>
+        <a href="/el/" hreflang="el" data-lang-link="el" title="Ελληνικά" aria-label="Ελληνικά">🇬🇷</a>
+        <a href="/hu/" hreflang="hu" data-lang-link="hu" title="Magyar" aria-label="Magyar">🇭🇺</a>
+        <a href="/id/" hreflang="id" data-lang-link="id" title="Bahasa Indonesia" aria-label="Bahasa Indonesia">🇮🇩</a>
+        <a href="/it/" hreflang="it" data-lang-link="it" title="Italiano" aria-label="Italiano">🇮🇹</a>
+        <a href="/ja/" hreflang="ja" data-lang-link="ja" title="日本語" aria-label="日本語">🇯🇵</a>
+        <a href="/ko/" hreflang="ko" data-lang-link="ko" title="한국어" aria-label="한국어">🇰🇷</a>
+        <a href="/nb/" hreflang="nb" data-lang-link="nb" title="Norsk" aria-label="Norsk">🇳🇴</a>
+        <a href="/pl/" hreflang="pl" data-lang-link="pl" title="Polski" aria-label="Polski">🇵🇱</a>
+        <a href="/pt/" hreflang="pt" data-lang-link="pt" title="Português" aria-label="Português">🇵🇹</a>
+        <a href="/ro/" hreflang="ro" data-lang-link="ro" title="Română" aria-label="Română">🇷🇴</a>
+        <a href="/ru/" hreflang="ru" data-lang-link="ru" title="Русский" aria-label="Русский">🇷🇺</a>
+        <a href="/sk/" hreflang="sk" data-lang-link="sk" class="active" title="Slovenčina" aria-label="Slovenčina">🇸🇰</a>
+        <a href="/es/" hreflang="es" data-lang-link="es" title="Español" aria-label="Español">🇪🇸</a>
+        <a href="/sv/" hreflang="sv" data-lang-link="sv" title="Svenska" aria-label="Svenska">🇸🇪</a>
+        <a href="/th/" hreflang="th" data-lang-link="th" title="ไทย" aria-label="ไทย">🇹🇭</a>
+        <a href="/tr/" hreflang="tr" data-lang-link="tr" title="Türkçe" aria-label="Türkçe">🇹🇷</a>
+        <a href="/uk/" hreflang="uk" data-lang-link="uk" title="Українська" aria-label="Українська">🇺🇦</a>
+        <a href="/vi/" hreflang="vi" data-lang-link="vi" title="Tiếng Việt" aria-label="Tiếng Việt">🇻🇳</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================== HERO ======================== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="hero-badge">🐾 <span data-i18n="hero.badge">Blokovanie aplikácií a strážca času pri obrazovke pre iPhone aj Android</span></span>
+          <h1>
+            <span data-i18n="hero.title1">Menej obrazovky,</span><br>
+            <span data-i18n="hero.title2">viac </span><span class="grad-word" data-i18n="hero.title3">života.</span>
+          </h1>
+          <p class="hero-sub" data-i18n="hero.sub">Pawlock za teba uzamkne tvoje rušivé aplikácie a webové stránky. Prestaň sa spoliehať na silu vôle: vybuduj systém, ktorý naozaj vydrží.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary store-link" href="#pricing">
+              <svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+              <span data-i18n="hero.cta">Stiahnuť zdarma</span>
+            </a>
+            <a class="btn btn-ghost" href="#how" data-i18n="hero.cta2">Pozri, ako to funguje</a>
+          </div>
+          <ul class="hero-trust">
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust1">Tvoje údaje nikdy neopustia tvoje zariadenie</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust2">Netreba žiadny účet</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust3">Postavené na vlastných systémových nástrojoch telefónu</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="hero.trust4">Bez reklám</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="phone">
+            <figure class="slot" data-ph="🔒">
+              <img src="/assets/img/s1-locknow.webp" width="820" height="1778" alt="Zamykacia obrazovka Pawlock s odpočtom" data-i18n-alt="alt.s1" onerror="imgFail(this)">
+            </figure>
+          </div>
+          <div class="hero-mascot">
+            <figure class="slot" data-ph="🐾">
+              <img src="/assets/img/g1-hero.webp" alt="" onerror="imgFail(this)">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== PROBLEM ======================== -->
+    <section class="section problem">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="problem.title">Nie si to ty. Je to dizajn.</h2>
+          <p data-i18n="problem.sub">Aplikácie, ktoré ti kradnú čas, postavili tisíce inžinierov s jediným cieľom: udržať ťa pri scrollovaní. Sila vôle nikdy nemala férovú šancu.</p>
+        </div>
+        <div class="problem-stats reveal">
+          <div class="pstat">
+            <strong data-i18n="problem.stat1n">4+ hodiny</strong>
+            <span data-i18n="problem.stat1d">trávi priemerný človek na telefóne každý jeden deň</span>
+          </div>
+          <div class="pstat">
+            <strong data-i18n="problem.stat2n">91 dní</strong>
+            <span data-i18n="problem.stat2d">z tvojho bdelého roka zmizne v obrazovke pri tomto tempe</span>
+          </div>
+          <div class="pstat">
+            <strong data-i18n="problem.stat3n">1 zo 4</strong>
+            <span data-i18n="problem.stat3d">bdelých hodín padne na telefón, pri 16-hodinovom bdelom dni</span>
+          </div>
+        </div>
+        <div class="problem-grid">
+          <figure class="slot illus reveal" data-ph="🌙">
+            <img src="/assets/img/g2-problem.webp" alt="" loading="lazy" onerror="imgFail(this)">
+          </figure>
+          <div class="problem-cards reveal">
+            <div class="problem-card">
+              <h3 data-i18n="problem.c1t">„Len päť minút“</h3>
+              <p data-i18n="problem.c1d">Otvoríš to na chvíľku. O hodinu si stále tam a ani si nepamätáš, čo si videl.</p>
+            </div>
+            <div class="problem-card">
+              <h3 data-i18n="problem.c2t">Zmazanie nefunguje</h3>
+              <p data-i18n="problem.c2d">Zmažeš aplikáciu s odhodlaním. O dva dni je späť na tvojej domovskej obrazovke.</p>
+            </div>
+            <div class="problem-card">
+              <h3 data-i18n="problem.c3t">Pripomienky sa dajú ignorovať</h3>
+              <p data-i18n="problem.c3d">Upozornenia na čas pred obrazovkou a vyskakovacie okná „daj si pauzu“ zavrieš jedným klepnutím. Potrebuješ zámok, nie návrh.</p>
+            </div>
+          </div>
+        </div>
+        <p class="problem-note reveal" data-i18n="problem.note">Matematika je jednoduchá: 4 hodiny × 365 dní = 1 460 hodín ročne. Rátaj deň ako 16 bdelých hodín (ostatných 8 je spánok) a to je 91 celých bdelých dní. Štatistiky Pawlock ti ukážu tvoje vlastné číslo, priamo z tvojho zariadenia.</p>
+      </div>
+    </section>
+
+    <!-- ======================== TRANSITION (problem → hope) ======================== -->
+    <section class="transition">
+      <div class="container transition-inner reveal">
+        <figure class="slot transition-img" data-ph="🌿">
+          <img src="/assets/img/g3-freedom.webp" alt="" loading="lazy" onerror="imgFail(this)">
+        </figure>
+        <div class="transition-text">
+          <h2 data-i18n="transition.title">Na druhej strane na teba čaká tvoj život.</h2>
+          <p data-i18n="transition.sub">Odložením telefónu nič nestratíš. Získaš späť celý deň.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== HOW IT WORKS ======================== -->
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="how.title">Ako Pawlock funguje</h2>
+          <p data-i18n="how.sub">Tri kroky. Potom systém funguje aj vtedy, keď tvoja motivácia nie.</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <figure class="slot illus" data-ph="👆">
+              <img src="/assets/img/g4-step1.webp" alt="" loading="lazy" onerror="imgFail(this)">
+            </figure>
+            <span class="step-num" aria-hidden="true"></span>
+            <h3 data-i18n="how.s1t">Vyber si, čo ťa rozptyľuje</h3>
+            <p data-i18n="how.s1d">Vyber aplikácie, celé kategórie alebo webové stránky pomocou oficiálneho výberu od Apple. Pridaj akúkoľvek stránku napísaním jej adresy.</p>
+          </div>
+          <div class="step reveal">
+            <figure class="slot illus" data-ph="🔒">
+              <img src="/assets/img/g5-step2.webp" alt="" loading="lazy" onerror="imgFail(this)">
+            </figure>
+            <span class="step-num" aria-hidden="true"></span>
+            <h3 data-i18n="how.s2t">Uzamkni teraz alebo podľa rozvrhu</h3>
+            <p data-i18n="how.s2d">Jedno klepnutie pre okamžité uzamknutie s časovačom, alebo vytvor automatické programy: spánok, učenie, práca. Nočné okná sú podporované.</p>
+          </div>
+          <div class="step reveal">
+            <figure class="slot illus" data-ph="🌿">
+              <img src="/assets/img/g6-step3.webp" alt="" loading="lazy" onerror="imgFail(this)">
+            </figure>
+            <span class="step-num" aria-hidden="true"></span>
+            <h3 data-i18n="how.s3t">Niet cesty späť. O to práve ide.</h3>
+            <p data-i18n="how.s3d">Keď sa program spustí, nemožno ho ukončiť predčasne. Pawlock stráži, aby si mohol ísť žiť svoj život.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FEATURES ======================== -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="features.title">Všetko, čo potrebuješ, aby si si vzal svoj čas späť</h2>
+          <p data-i18n="features.sub">Vážne blokovanie zvnútra, priateľská tvár navrchu.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature reveal">
+            <div class="feature-icon">⚡️</div>
+            <h3 data-i18n="features.f1t">Okamžité uzamknutie</h3>
+            <p data-i18n="features.f1d">Jedno klepnutie uzamkne tvoje vybrané aplikácie a stránky. Otoč kolieskom a nastav dni, hodiny, minúty a sleduj odpočítavanie sústredenia.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">📅</div>
+            <h3 data-i18n="features.f2t">Prispôsobené návrhy programov</h3>
+            <p data-i18n="features.f2d">Odpovedzte počas úvodného nastavenia na niekoľko otázok a Pawlock automaticky vytvorí návrh programu podľa vašich návykov, cieľov a denného režimu.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🛡️</div>
+            <h3 data-i18n="features.f3t">Prísny už z princípu</h3>
+            <p data-i18n="features.f3d">Spustený program nemožno predčasne vypnúť. Zámok, ktorý sa nedá prehovoriť z jeho úlohy, je ten, ktorý zmení tvoje návyky.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">📊</div>
+            <h3 data-i18n="features.f4t">Skutočné štatistiky</h3>
+            <p data-i18n="features.f4d">Denné, týždenné a mesačné využitie z dát Času pred obrazovkou od Apple. Skutočné čísla zo zariadenia, nie odhady.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🌐</div>
+            <h3 data-i18n="features.f5t">Aj webové stránky</h3>
+            <p data-i18n="features.f5d">Rozptýlenie nie sú len aplikácie. Blokuj webové stránky a celé kategórie spolu s nimi, v tom istom uzamknutí.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🔐</div>
+            <h3 data-i18n="features.f6t">Súkromné z princípu</h3>
+            <p data-i18n="features.f6d">Žiadny účet, žiadny server, žiadne reklamy. Tvoje údaje z Času pred obrazovkou zostávajú na tvojom iPhone, kde ich Apple uchováva.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">⏳</div>
+            <h3 data-i18n="features.f7t">Živé odpočítavanie</h3>
+            <p data-i18n="features.f7d">Sledujte každý zámok pomocou Live Activity s maskotom na zamknutej obrazovke a kompaktného odpočtu v Dynamic Islande.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature-icon">🔔</div>
+            <h3 data-i18n="features.f8t">Inteligentné denné upozornenia</h3>
+            <p data-i18n="features.f8d">Každý deň dostanete užitočné upozornenie podľa svojej série, zablokovaných pokusov alebo týždenného súhrnu sústredenia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SPOTLIGHT: STRICT (g7) ======================== -->
+    <section class="section spotlight">
+      <div class="container spot-inner reveal">
+        <figure class="slot spot-img" data-ph="🛡️">
+          <img src="/assets/img/g7-guard.webp" alt="" loading="lazy" onerror="imgFail(this)">
+        </figure>
+        <div class="spot-text">
+          <span class="spot-badge" data-i18n="spot.strict.badge">Neprelomiteľný</span>
+          <h2 data-i18n="spot.strict.title">Zámok, z ktorého sa nevyhovoríš.</h2>
+          <p data-i18n="spot.strict.sub">Väčšina blokovačov povolí v momente, keď sa naozaj chceš dostať dnu. Pawlock nie. Keď sa program spustí, niet predčasného východu, niet úniku na dve klepnutia. To je celý dôvod, prečo mení tvoje návyky.</p>
+          <ul class="spot-list">
+            <li><span class="tick">✓</span> <span data-i18n="spot.strict.b1">Spustené programy nemožno predčasne ukončiť</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.strict.b2">Postavené na systémovom Čase pred obrazovkou od Apple</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.strict.b3">Žiadna kľučka, žiadne „len tento raz“</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SPOTLIGHT: AUTOMATIC (g8) ======================== -->
+    <section class="section spotlight spotlight-alt">
+      <div class="container spot-inner reveal">
+        <figure class="slot spot-img" data-ph="🌙">
+          <img src="/assets/img/g8-sleep.webp" alt="" loading="lazy" onerror="imgFail(this)">
+        </figure>
+        <div class="spot-text">
+          <span class="spot-badge" data-i18n="spot.auto.badge">Automatické</span>
+          <h2 data-i18n="spot.auto.title">V strehu, aj kým spíš.</h2>
+          <p data-i18n="spot.auto.sub">Nastav svoje programy raz a Pawlock to prevezme. Každú noc a každé ráno uzamkne presne načas. Ani si to nemusíš pamätať.</p>
+          <ul class="spot-list">
+            <li><span class="tick">✓</span> <span data-i18n="spot.auto.b1">Nočné okná, napríklad 23:00 → 7:00</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.auto.b2">Upozornenie, keď sa každý program začne</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="spot.auto.b3">Každý deň, pracovné dni alebo víkendy jedným klepnutím</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SHOWCASE / EFFECT ======================== -->
+    <section class="section showcase">
+      <div class="container showcase-inner">
+        <div class="reveal">
+          <figure class="slot effect-medal" data-ph="🌱">
+            <img src="/assets/img/g9-stats.webp" alt="" loading="lazy" onerror="imgFail(this)">
+          </figure>
+          <h2 data-i18n="effect.title">Pozri čas, ktorý získaš späť</h2>
+          <p data-i18n="effect.sub">Pawlock ti ukáže tvoje predtým a potom: ako sa mení tvoje využitie, tvoje najrušnejšie hodiny a kedy si sa pokúsil otvoriť uzamknuté aplikácie. Sledovať, ako rastú získané hodiny, je tá najlepšia motivácia.</p>
+          <ul>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b1">Porovnanie predtým a potom</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b2">Tvoje najrušnejšie hodiny využitia</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b3">Získaný čas, deň po dni</span></li>
+            <li><span class="tick">✓</span> <span data-i18n="effect.b4">Ubranie 1 hodiny denne: 23 bdelých dní späť každý rok</span></li>
+          </ul>
+        </div>
+        <div class="showcase-phones reveal">
+          <div class="phone phone-sm">
+            <figure class="slot" data-ph="📊">
+              <img src="/assets/img/s2-stats.webp" width="820" height="1778" alt="Štatistiky času pri obrazovke a grafy používania v aplikácii Pawlock" data-i18n-alt="alt.s2" loading="lazy" onerror="imgFail(this)">
+            </figure>
+          </div>
+          <div class="phone phone-sm">
+            <figure class="slot" data-ph="📅">
+              <img src="/assets/img/s4-programs.webp" width="820" height="1778" alt="Zoznam automatických plánov blokovania v aplikácii Pawlock" data-i18n-alt="alt.s4" loading="lazy" onerror="imgFail(this)">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== PRICING ======================== -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="pricing.title">Free vs Pro</h2>
+          <p data-i18n="pricing.sub">Začni zadarmo. Prejdi vyššie, keď si tvoje návyky vyžiadajú viac.</p>
+        </div>
+        <div class="plans">
+          <div class="plan reveal">
+            <div class="plan-head">
+              <h3 data-i18n="pricing.freeName">Free</h3>
+              <span class="plan-badge plan-badge-free" data-i18n="pricing.freePrice">Zadarmo navždy</span>
+            </div>
+            <ul class="plan-features">
+              <li><span class="plan-feature-icon" aria-hidden="true">⚡</span><span data-i18n="pricing.freeF1">3 okamžité zámky denne</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">📅</span><span data-i18n="pricing.freeF2">1 automatický program</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">🛡</span><span data-i18n="pricing.freeF3">Blokovanie aplikácií, kategórií a webových stránok</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">▥</span><span data-i18n="pricing.freeF4">Denné štatistiky Času pred obrazovkou</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">↗</span><span data-i18n="pricing.extendedStats">Týždenné a mesačné štatistiky Času pred obrazovkou</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">☀</span><span data-i18n="pricing.yesterdayReport">Včerajší prehľad každé ráno</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">✦</span><span data-i18n="pricing.fullPersonalizedPlan">Kompletný prispôsobený plán programov</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li class="unavailable"><span class="plan-feature-icon" aria-hidden="true">●</span><span data-i18n="features.f8t">Inteligentné denné upozornenia</span><span class="feature-mark cross" aria-hidden="true">×</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">★</span><span data-i18n="features.f3t">Prísny už z princípu</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+            </ul>
+            <div class="plan-footer">
+              <a class="btn btn-ghost store-link" href="#" data-i18n="pricing.freeCta">Stiahnuť</a>
+              <p class="muted-note muted-note-placeholder" aria-hidden="true">&nbsp;</p>
+            </div>
+          </div>
+          <div class="plan plan-pro reveal">
+            <div class="plan-head">
+              <h3 data-i18n="pricing.proName">Pawlock Pro</h3>
+              <span class="plan-badge" data-i18n="pricing.proBadge">Zruš kedykoľvek</span>
+            </div>
+            <ul class="plan-features">
+              <li><span class="plan-feature-icon" aria-hidden="true">⚡</span><span data-i18n="pricing.unlimitedInstant">Neobmedzené okamžité uzamknutia</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">📅</span><span data-i18n="pricing.proF2">Neobmedzené automatické programy</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">🛡</span><span data-i18n="pricing.freeF3">Blokovanie aplikácií, kategórií a webových stránok</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">▥</span><span data-i18n="pricing.freeF4">Denné štatistiky Času pred obrazovkou</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">↗</span><span data-i18n="pricing.extendedStats">Týždenné a mesačné štatistiky Času pred obrazovkou</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">☀</span><span data-i18n="pricing.yesterdayReport">Včerajší prehľad každé ráno</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">✦</span><span data-i18n="pricing.fullPersonalizedPlan">Kompletný prispôsobený plán programov</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">●</span><span data-i18n="features.f8t">Inteligentné denné upozornenia</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+              <li><span class="plan-feature-icon" aria-hidden="true">★</span><span data-i18n="features.f3t">Prísny už z princípu</span><span class="feature-mark tick" aria-hidden="true">✓</span></li>
+            </ul>
+            <div class="plan-footer">
+              <a class="btn btn-light store-link" href="#" data-i18n="pricing.proCta">Získať Pro</a>
+              <p class="muted-note" data-i18n="pricing.proNote">Týždenne, mesačne alebo ročne. Ceny sú zobrazené v App Store pre tvoj región.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== WHY PAWLOCK ======================== -->
+    <section class="section why-section">
+      <div class="container">
+        <div class="section-head why-head reveal">
+          <h2 data-i18n="why.title">Prečo Pawlock?</h2>
+          <p data-i18n="why.sub">Férové porovnanie s bežnými blokovacími aplikáciami.</p>
+        </div>
+        <div class="table-scroll why-table-wrap reveal">
+          <table class="compare">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Pawlock</th>
+                <th data-i18n="why.colOthers">Bežné blokovače</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="why-capability" data-i18n="why.r1">Systémový zámok cez oficiálnu technológiu Času pred obrazovkou od Apple</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Áno</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">Niektoré áno</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r2">Uzamknutia nemožno predčasne ukončiť</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Áno</span></span></td>
+                <td><span class="mark mark-no" data-i18n="why.legendNo">Zvyčajne nie</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r3">Automatické rozvrhy s nočnými oknami</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Áno</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">Niektoré áno</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r4">Funguje bez účtu alebo registrácie</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Áno</span></span></td>
+                <td><span class="mark mark-no" data-i18n="why.legendNo">Zvyčajne nie</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r5">Údaje zostávajú na tvojom zariadení</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Áno</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">Niektoré áno</span></td>
+              </tr>
+              <tr>
+                <td class="why-capability" data-i18n="why.r6">Bez reklám</td>
+                <td><span class="mark mark-yes"><b aria-hidden="true">✓</b><span data-i18n="why.legendYes">Áno</span></span></td>
+                <td><span class="mark mark-some" data-i18n="why.legendSome">Niektoré áno</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== REVIEWS ========================
+         TODO: PLACEHOLDER CONTENT. Replace with real App Store reviews
+         after launch. The visible i18n "reviews.note" disclosure should
+         stay until real reviews are in. -->
+    <section class="section pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="reviews.title">Čo ľudia hovoria</h2>
+          <p data-i18n="reviews.sub">Skutočné príbehy z boja proti scrollovaniu.</p>
+        </div>
+        <div class="reviews-grid">
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r1t">scrolloval som každú noc do druhej rána. nastavil som si rozvrh spánku, ktorý o jedenástej všetko uzamkne, prvý týždeň bol drsný ale teraz naozaj spím 7 hodín</p>
+            <span class="review-nick" data-i18n="reviews.r1n">Martin K.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r2t">skúškové ma zachránilo. uzamkol som telefón od 9 do 6 cez pracovné dni, prvý deň panika, na tretí deň som si zvykol. moje výsledky išli výrazne hore</p>
+            <span class="review-nick" data-i18n="reviews.r2n">Zuzana H.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r3t">som ten typ čo otvorí instagram v práci a stratí 40 minút. pracovný rozvrh mi teraz beží celé dopoludnie, telefón je v podstate mŕtvy až do obeda. šéf ma k tomu nenútil mimochodom, urobil som to sám</p>
+            <span class="review-nick" data-i18n="reviews.r3n">Peter B.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r4t">pristihol som sa ako pozerám na telefón keď sa hrám s dieťaťom a bolo mi hrozne. teraz rodinný zámok od 6 do 9 večer. dcéra si naozaj všimla že ocko sa už nepozerá do telefónu</p>
+            <span class="review-nick" data-i18n="reviews.r4n">Michal T.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r5t">zmazal som instagram asi stokrát a vždy ho nainštaloval späť. ukázalo sa že mazanie nie je odpoveď, uzamknutie áno. 3 týždne čistý a chuť úprimne mizne</p>
+            <span class="review-nick" data-i18n="reviews.r5n">Katarína M.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r6t">prvá hodina môjho dňa mi mizla v telefóne ešte než som vstal z postele. ranný zámok od 7 do 9, vypijem si kávu a idem na prechádzku. mať tú hodinu späť je iný život</p>
+            <span class="review-nick" data-i18n="reviews.r6n">Lucia R.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r7t">už som nevedel čítať knihy, 2 strany a ruka siahala po telefóne. večerný zámok na čítanie a tento mesiac som dočítal 3 knihy. naposledy sa to stalo na výške</p>
+            <span class="review-nick" data-i18n="reviews.r7n">Tomáš V.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r8t">iné blokovače som obišiel na 2 klepnutia, v podstate som klamal sám seba. tento nevypneš a áno spočiatku to je otravné ale je to jediné čo kedy zabralo</p>
+            <span class="review-nick" data-i18n="reviews.r8n">Jozef S.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <p data-i18n="reviews.r9t">štatistiky ma šokovali, 6h 40m denne. za 2 mesiace dole na 3 hodiny. sledovať ako ten graf klesá je čudne tá najmotivujúcejšia časť</p>
+            <span class="review-nick" data-i18n="reviews.r9n">Simona K.</span>
+          </div>
+          <div class="review reveal">
+            <div class="review-stars" aria-hidden="true">★★★★☆</div>
+            <p data-i18n="reviews.r10t">nevedel som uniknúť z čiernej diery shorts tak som proste uzamkol youtube, problém vyriešený. bolo by to na 5 hviezd s widgetom, inak žiadne výhrady</p>
+            <span class="review-nick" data-i18n="reviews.r10n">Marek D.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FAQ ======================== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="faq.title">Časté otázky</h2>
+        </div>
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary data-i18n="faq.q1">Naozaj sa nedá odomknúť predčasne?</summary>
+            <p data-i18n="faq.a1">To je základná myšlienka. Keď sa naplánovaný program spustí, beží až do svojho času konca. Keby si ho vypol na dve klepnutia, bola by to pripomienka, nie zámok. Nastav svoje trvania premyslene.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q2">Kam idú moje údaje?</summary>
+            <p data-i18n="faq.a2">Nikam. Pawlock nemá žiadny systém účtov ani servery. Tvoje údaje z Času pred obrazovkou sa spracúvajú na tvojom zariadení cez framework od Apple a my ich nikdy nevidíme.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q3">Prečo žiada povolenie k Času pred obrazovkou?</summary>
+            <p data-i18n="faq.a3">Zamknúť aplikácie sa dá len cez vlastné nástroje systému: Čas pri obrazovke (Rodinné zdieľanie) od Apple na iPhone a služba prístupnosti na Androide. Povolenie sa udeľuje systému telefónu a je nutné pre skutočné blokovanie.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q4">Čo dostanem zadarmo?</summary>
+            <p data-i18n="faq.a4">3 okamžité zámky denne, 1 automatický program, blokovanie aplikácií a webových stránok a Denné štatistiky Času pred obrazovkou. Pro odomyká neobmedzený počet programov a všetky aktuálne Pro funkcie.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q5">Ako zruším predplatné?</summary>
+            <p data-i18n="faq.a5">Cez predplatné v App Store alebo Google Play, ako každé iné. Po zrušení Pro platí do konca zaplateného obdobia.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q6">Ktoré zariadenia sú podporované?</summary>
+            <p data-i18n="faq.a6">Pawlock beží na iPhone aj na Androide. Aktuálne požiadavky nájdete na stránke obchodu.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FINAL CTA ======================== -->
+    <section class="section cta">
+      <div class="container reveal">
+        <div class="cta-mascot">
+          <figure class="slot illus-square" data-ph="🐾" style="background:none; box-shadow:none">
+            <img src="/assets/img/g11-cta.webp" alt="" loading="lazy" onerror="imgFail(this)">
+          </figure>
+        </div>
+        <h2 data-i18n="cta.title">Vezmi si svoj čas späť.</h2>
+        <p data-i18n="cta.sub">Tvoj feed počká. Tvoj život nie.</p>
+        <a class="btn btn-light store-link" href="#">
+          <svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          <span data-i18n="cta.button">Stiahnuť Pawlock</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="#">
+          <span class="brand-icon"><img src="/assets/img/app-icon.png" alt="" onerror="this.replaceWith('🐾')"></span>
+          Pawlock
+        </a>
+        <p style="margin-top:10px" data-i18n="footer.tagline">Menej obrazovky, viac života.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="/privacy.html" data-i18n="footer.privacy">Zásady ochrany súkromia</a></li>
+        <li><a href="/terms.html" data-i18n="footer.terms">Podmienky používania</a></li>
+        <li><a href="mailto:support@pawlock.app" data-i18n="footer.contact">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> Pawlock</span>
+      <span data-i18n="footer.rights">Všetky práva vyhradené.</span>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
