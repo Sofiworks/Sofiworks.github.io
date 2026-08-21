@@ -11,8 +11,74 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
+  <style>
+    /* Kod ekranı. Sayfanın kendi CSS'ini bozmamak için tek yerde duruyor. */
+    .gate {
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      background: #f6f4ff;
+      color: #1b1630;
+      font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+      padding: 24px;
+      text-align: center;
+    }
+    .gate[hidden] { display: none; }
+    .gate h1 { font-size: 22px; font-weight: 900; margin: 0; }
+    .gate p { font-size: 15px; color: #5b5478; margin: 0; max-width: 32ch; line-height: 1.5; }
+    .gate form { display: flex; gap: 10px; align-items: center; }
+    .gate input {
+      width: 132px;
+      padding: 13px 16px;
+      font-size: 22px;
+      font-family: inherit;
+      font-weight: 700;
+      letter-spacing: .35em;
+      text-align: center;
+      border: 2px solid #d9d2f5;
+      border-radius: 12px;
+      background: #fff;
+      color: inherit;
+    }
+    .gate input:focus { outline: 3px solid rgba(97, 55, 236, .35); border-color: #6137ec; }
+    .gate button {
+      padding: 14px 22px;
+      font-size: 15px;
+      font-family: inherit;
+      font-weight: 700;
+      border: 0;
+      border-radius: 12px;
+      background: #6137ec;
+      color: #fff;
+      cursor: pointer;
+    }
+    .gate button:focus-visible { outline: 3px solid rgba(97, 55, 236, .45); outline-offset: 2px; }
+    .gate .error { color: #c0392b; font-weight: 700; min-height: 20px; }
+    .gate-shake { animation: gate-shake .3s; }
+    @keyframes gate-shake {
+      25% { transform: translateX(-7px); }
+      75% { transform: translateX(7px); }
+    }
+    @media (prefers-reduced-motion: reduce) { .gate-shake { animation: none; } }
+    body.locked > *:not(.gate) { display: none; }
+  </style>
 </head>
-<body>
+<body class="locked">
+  <div class="gate" id="gate">
+    <h1>Bu sayfa kodla açılıyor</h1>
+    <p>Devam etmek için size verilen 4 haneli kodu girin.</p>
+    <form id="gate-form" novalidate>
+      <input id="gate-input" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="4"
+             autocomplete="off" aria-label="4 haneli kod" required>
+      <button type="submit">Aç</button>
+    </form>
+    <div class="error" id="gate-error" role="alert"></div>
+  </div>
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="/">
@@ -77,6 +143,50 @@
     </div>
   </footer>
 
+  <script>
+    // Kodun kendisi sayfada yazmıyor, yalnızca SHA-256 özeti duruyor.
+    (function () {
+      var HASH = "10f816e9cd648cf9514171c3080b6b2d65ec64e76326971e0022f6489c203f86";
+      var gate = document.getElementById("gate");
+      var form = document.getElementById("gate-form");
+      var input = document.getElementById("gate-input");
+      var error = document.getElementById("gate-error");
+
+      function unlock() {
+        document.body.classList.remove("locked");
+        gate.hidden = true;
+      }
+
+      async function digest(code) {
+        var bytes = new TextEncoder().encode("pawlock:" + code);
+        var buffer = await crypto.subtle.digest("SHA-256", bytes);
+        return Array.from(new Uint8Array(buffer))
+          .map(function (b) { return b.toString(16).padStart(2, "0"); })
+          .join("");
+      }
+
+      // Aynı oturumda sayfayı yenilemek kodu tekrar sormasın.
+      if (sessionStorage.getItem("ozur-unlocked") === "1") unlock();
+
+      form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+        var code = input.value.trim();
+        if (await digest(code) === HASH) {
+          sessionStorage.setItem("ozur-unlocked", "1");
+          unlock();
+          return;
+        }
+        error.textContent = "Kod yanlış.";
+        input.value = "";
+        input.focus();
+        gate.classList.remove("gate-shake");
+        void gate.offsetWidth;
+        gate.classList.add("gate-shake");
+      });
+
+      input.focus();
+    })();
+  </script>
   <script src="/js/i18n.js"></script>
   <script src="/js/main.js"></script>
 </body>
