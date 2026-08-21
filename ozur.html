@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawlock — Özür dileriz</title>
+  <meta name="description" content="Pawlock kullanıcılarına açık mektup.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23b3a1ee'/%3E%3Cpath d='M32 9l19 6.5v16.8c0 10.6-8.2 17.9-19 22.7-10.8-4.8-19-12.1-19-22.7V15.5z' fill='%234a1fd6'/%3E%3Cpath d='M27.5 30v-4.5a4.5 4.5 0 019 0V30' fill='none' stroke='%23f6ecd4' stroke-width='4.5' stroke-linecap='round'/%3E%3Crect x='22.5' y='29.5' width='19' height='16' rx='5' fill='%23f6ecd4'/%3E%3Ccircle cx='32' cy='36' r='2.6' fill='%234a1fd6'/%3E%3Cpath d='M32 36.6l-1.5 5.4h3z' fill='%234a1fd6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="/">
+        <span class="brand-icon"><img src="/assets/img/app-icon.png" alt="" onerror="this.replaceWith('🐾')"></span>
+        Pawlock
+      </a>
+      <div class="lang-switch" role="group" aria-label="Language" style="margin-left:auto">
+        <button class="lang-btn" data-lang="tr" aria-pressed="false">TR</button>
+        <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ==================== TÜRKÇE ==================== -->
+    <article class="legal" data-lang-block="tr">
+      <h1>Özür dileriz</h1>
+      <p class="updated">Son güncelleme: 21 Ağustos 2026</p>
+
+      <p>Bu sayfa, bir aksaklık yaşandığında ne olduğunu, neyi yanlış yaptığımızı ve nasıl düzelttiğimizi açıkça yazdığımız yer. Sessiz kalmak yerine burada anlatmayı tercih ediyoruz.</p>
+
+      <h2>Ne oldu</h2>
+      <p>Şu anda paylaşılacak bir olay bulunmuyor. Bir sorun yaşandığında ayrıntısı burada yayımlanacak.</p>
+
+      <h2>Ne yaptık</h2>
+      <p>Bir olay olduğunda, sorunun nasıl giderildiği ve tekrarlanmaması için ne değiştirdiğimiz bu bölümde yer alacak.</p>
+
+      <h2>Size ne oluyor</h2>
+      <p>Kilitleriniz, programlarınız ve kullanım verileriniz cihazınızda kalır. Hiçbir aksaklık, bu verilerin bize ulaştığı anlamına gelmez.</p>
+
+      <h2>Bize ulaşın</h2>
+      <p>Yaşadığınız bir sorunu doğrudan anlatmak isterseniz: <a href="mailto:support@pawlock.app">support@pawlock.app</a></p>
+    </article>
+
+    <!-- ==================== ENGLISH ==================== -->
+    <article class="legal" data-lang-block="en" hidden>
+      <h1>We are sorry</h1>
+      <p class="updated">Last updated: August 21, 2026</p>
+
+      <p>This is where we write down what happened, what we got wrong and how we fixed it. When something goes wrong we would rather say it here than stay quiet.</p>
+
+      <h2>What happened</h2>
+      <p>There is nothing to report right now. If an incident occurs, the details will be published here.</p>
+
+      <h2>What we did</h2>
+      <p>When there is an incident, this section will carry how it was resolved and what we changed so it does not happen again.</p>
+
+      <h2>What this means for you</h2>
+      <p>Your locks, schedules and usage data stay on your device. No incident means that data reached us.</p>
+
+      <h2>Contact</h2>
+      <p>If you want to tell us about a problem directly: <a href="mailto:support@pawlock.app">support@pawlock.app</a></p>
+    </article>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bottom" style="border-top:0; padding-top:0">
+      <span>© <span id="year">2026</span> Pawlock</span>
+      <a href="/" style="color:inherit">pawlock.app</a>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
