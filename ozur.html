@@ -1,193 +1,331 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pawlock — Özür dileriz</title>
-  <meta name="description" content="Pawlock kullanıcılarına açık mektup.">
-  <meta name="robots" content="noindex">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23b3a1ee'/%3E%3Cpath d='M32 9l19 6.5v16.8c0 10.6-8.2 17.9-19 22.7-10.8-4.8-19-12.1-19-22.7V15.5z' fill='%234a1fd6'/%3E%3Cpath d='M27.5 30v-4.5a4.5 4.5 0 019 0V30' fill='none' stroke='%23f6ecd4' stroke-width='4.5' stroke-linecap='round'/%3E%3Crect x='22.5' y='29.5' width='19' height='16' rx='5' fill='%23f6ecd4'/%3E%3Ccircle cx='32' cy='36' r='2.6' fill='%234a1fd6'/%3E%3Cpath d='M32 36.6l-1.5 5.4h3z' fill='%234a1fd6'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
-  <style>
-    /* Kod ekranı. Sayfanın kendi CSS'ini bozmamak için tek yerde duruyor. */
-    .gate {
-      position: fixed;
-      inset: 0;
-      z-index: 999;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 18px;
-      background: #f6f4ff;
-      color: #1b1630;
-      font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
-      padding: 24px;
-      text-align: center;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Özür dilerim</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' font-size='50'%3E%F0%9F%A4%8D%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ground: #F4F2EC;
+    --surface: #FFFFFF;
+    --ink: #241F2B;
+    --muted: #6E6675;
+    --line: #E2DDD3;
+    --olive: #6E7A4F;
+    --rose: #A8536A;
+    --shadow: 0 2px 4px rgba(36,31,43,.05), 0 14px 40px rgba(36,31,43,.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #17141B;
+      --surface: #201C26;
+      --ink: #F0EBF2;
+      --muted: #A79EAD;
+      --line: #322C3A;
+      --olive: #A9B885;
+      --rose: #D98BA0;
+      --shadow: 0 2px 4px rgba(0,0,0,.4), 0 16px 44px rgba(0,0,0,.35);
     }
-    .gate[hidden] { display: none; }
-    .gate h1 { font-size: 22px; font-weight: 900; margin: 0; }
-    .gate p { font-size: 15px; color: #5b5478; margin: 0; max-width: 32ch; line-height: 1.5; }
-    .gate form { display: flex; gap: 10px; align-items: center; }
-    .gate input {
-      width: 132px;
-      padding: 13px 16px;
-      font-size: 22px;
-      font-family: inherit;
-      font-weight: 700;
-      letter-spacing: .35em;
-      text-align: center;
-      border: 2px solid #d9d2f5;
-      border-radius: 12px;
-      background: #fff;
-      color: inherit;
-    }
-    .gate input:focus { outline: 3px solid rgba(97, 55, 236, .35); border-color: #6137ec; }
-    .gate button {
-      padding: 14px 22px;
-      font-size: 15px;
-      font-family: inherit;
-      font-weight: 700;
-      border: 0;
-      border-radius: 12px;
-      background: #6137ec;
-      color: #fff;
-      cursor: pointer;
-    }
-    .gate button:focus-visible { outline: 3px solid rgba(97, 55, 236, .45); outline-offset: 2px; }
-    .gate .error { color: #c0392b; font-weight: 700; min-height: 20px; }
-    .gate-shake { animation: gate-shake .3s; }
-    @keyframes gate-shake {
-      25% { transform: translateX(-7px); }
-      75% { transform: translateX(7px); }
-    }
-    @media (prefers-reduced-motion: reduce) { .gate-shake { animation: none; } }
-    body.locked > *:not(.gate) { display: none; }
-  </style>
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  body.locked > *:not(.gate) { display: none; }
+
+  /* ---------- kod ekranı ---------- */
+  .gate {
+    position: fixed; inset: 0; z-index: 999;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 16px; padding: 24px; text-align: center;
+    background: var(--ground); color: var(--ink);
+  }
+  .gate[hidden] { display: none; }
+  .gate h1 { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 26px; margin: 0; }
+  .gate p { margin: 0; color: var(--muted); max-width: 30ch; font-size: 15.5px; }
+  .gate form { display: flex; gap: 10px; }
+  .gate input {
+    width: 140px; padding: 13px 16px; font: 700 22px/1 "Karla", sans-serif;
+    letter-spacing: .35em; text-align: center; color: inherit;
+    background: var(--surface); border: 2px solid var(--line); border-radius: 14px;
+  }
+  .gate input:focus { outline: 3px solid rgba(168,83,106,.35); border-color: var(--rose); }
+  .gate button {
+    padding: 14px 22px; font: 700 15px/1 "Karla", sans-serif; cursor: pointer;
+    border: 0; border-radius: 14px; background: var(--rose); color: #fff;
+  }
+  .gate .error { min-height: 22px; color: var(--rose); font-weight: 700; font-size: 15px; }
+  .shake { animation: shake .3s; }
+  @keyframes shake { 25% { transform: translateX(-7px); } 75% { transform: translateX(7px); } }
+  @media (prefers-reduced-motion: reduce) { .shake { animation: none; } }
+
+  /* ---------- sayfa ---------- */
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 22px 120px; }
+
+  header.hero { padding: 92px 0 44px; display: flex; flex-direction: column; gap: 16px; }
+  .eyebrow { font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--olive); font-weight: 700; }
+  h1 {
+    font-family: "Fraunces", Georgia, serif; font-weight: 600;
+    font-size: clamp(44px, 9vw, 74px); line-height: 1.02; letter-spacing: -.02em;
+    margin: 0; text-wrap: balance;
+  }
+  h2 {
+    font-family: "Fraunces", Georgia, serif; font-weight: 600;
+    font-size: clamp(24px, 4.5vw, 31px); line-height: 1.2; margin: 0 0 14px;
+    text-wrap: balance;
+  }
+  p { margin: 0 0 16px; }
+  p:last-child { margin-bottom: 0; }
+  section { padding: 40px 0; border-top: 1px solid var(--line); }
+  section:first-of-type { border-top: 0; }
+  .lead { font-size: 20.5px; color: var(--muted); }
+
+  figure { margin: 0 0 22px; }
+  figure img {
+    width: 100%; height: auto; display: block;
+    border-radius: 18px; box-shadow: var(--shadow);
+  }
+  figure.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  figure.pair img { border-radius: 14px; }
+  figcaption {
+    grid-column: 1 / -1;
+    margin-top: 10px; font-size: 15.5px; color: var(--muted); font-style: italic;
+  }
+  .ph {
+    width: 100%; aspect-ratio: 4 / 5; border: 2px dashed var(--line); border-radius: 18px;
+    display: flex; align-items: center; justify-content: center; text-align: center;
+    color: var(--muted); font-size: 14.5px; padding: 20px; background: var(--surface);
+  }
+
+  .promises { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+  .promises li { display: grid; grid-template-columns: 22px 1fr; gap: 12px; align-items: start; }
+  .promises li::before { content: "•"; color: var(--rose); font-size: 22px; line-height: 1.2; }
+
+  .signature { font-family: "Fraunces", Georgia, serif; font-size: 22px; margin-top: 26px; }
+
+  /* ---------- düzenleme ---------- */
+  .editbar {
+    position: fixed; right: 16px; bottom: 16px; z-index: 200;
+    display: flex; gap: 8px; align-items: center;
+  }
+  .editbar button {
+    font: 700 14px/1 "Karla", sans-serif; cursor: pointer; padding: 12px 16px;
+    border: 1px solid var(--line); border-radius: 999px;
+    background: var(--surface); color: var(--ink); box-shadow: var(--shadow);
+  }
+  .editbar button.primary { background: var(--olive); color: #fff; border-color: transparent; }
+  body.editing [data-k] {
+    outline: 1.5px dashed var(--olive); outline-offset: 4px; border-radius: 4px;
+  }
+  body.editing [data-k]:focus { outline: 2px solid var(--olive); background: rgba(110,122,79,.07); }
+  .toast {
+    position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%);
+    background: var(--ink); color: var(--ground); padding: 11px 18px; border-radius: 999px;
+    font-size: 14.5px; font-weight: 700; z-index: 300; box-shadow: var(--shadow);
+  }
+  .toast[hidden] { display: none; }
+
+  @media (max-width: 520px) {
+    body { font-size: 17px; }
+    header.hero { padding: 70px 0 34px; }
+    figure.pair { grid-template-columns: 1fr; }
+  }
+</style>
 </head>
 <body class="locked">
-  <div class="gate" id="gate">
-    <h1>Bu sayfa kodla açılıyor</h1>
-    <p>Devam etmek için size verilen 4 haneli kodu girin.</p>
-    <form id="gate-form" novalidate>
-      <input id="gate-input" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="4"
-             autocomplete="off" aria-label="4 haneli kod" required>
-      <button type="submit">Aç</button>
-    </form>
-    <div class="error" id="gate-error" role="alert"></div>
-  </div>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="/">
-        <span class="brand-icon"><img src="/assets/img/app-icon.png" alt="" onerror="this.replaceWith('🐾')"></span>
-        Pawlock
-      </a>
-      <div class="lang-switch" role="group" aria-label="Language" style="margin-left:auto">
-        <button class="lang-btn" data-lang="tr" aria-pressed="false">TR</button>
-        <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
-      </div>
-    </div>
+
+<div class="gate" id="gate">
+  <h1>Bu sayfa sana özel</h1>
+  <p>Açmak için sana verdiğim 4 haneli kodu gir.</p>
+  <form id="gate-form" novalidate>
+    <input id="gate-input" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="4"
+           autocomplete="off" aria-label="4 haneli kod" required>
+    <button type="submit">Aç</button>
+  </form>
+  <div class="error" id="gate-error" role="alert"></div>
+</div>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow" data-k="eyebrow">sana küçük bir sayfa</div>
+    <h1 data-k="baslik">Özür dilerim</h1>
+    <p class="lead" data-k="giris">Bu sayfayı tartışmayı kazanmak için yapmadım. Seni ne kadar sevdiğimi doğru dürüst cümlelerle söyleyebilmek için yaptım. Yanlış yaptığım yeri biliyorum ve arkasına saklanacak bir bahanem yok.</p>
   </header>
 
-  <main class="container">
+  <section>
+    <h2 data-k="b1">Önce en kolayı: seni seviyorum</h2>
+    <figure>
+      <img src="/ozur/foto/1-portre.jpg" alt="" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'fotoğraf birazdan buraya gelecek'}))">
+      <figcaption data-k="k1">Bu fotoğrafta gülümsemenin ucundan tutmuşsun. Ben o ucu bırakmak istemiyorum.</figcaption>
+    </figure>
+    <p data-k="p1">Sabah gözümü açtığımda aklıma gelen ilk şey sensin, gece kapatırken de son. Aramızda ne olursa olsun bu değişmedi, bundan sonra da değişmeyecek. Sana kızgın olduğum günlerde bile seni seviyorum, sadece o gün beceriksizce anlatıyorum.</p>
+  </section>
 
-    <!-- ==================== TÜRKÇE ==================== -->
-    <article class="legal" data-lang-block="tr">
-      <h1>Özür dileriz</h1>
-      <p class="updated">Son güncelleme: 21 Ağustos 2026</p>
+  <section>
+    <h2 data-k="b2">Seninle her yol kısa</h2>
+    <figure class="pair">
+      <img src="/ozur/foto/2-istasyon.jpg" alt="" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'istasyon fotoğrafı'}))">
+      <img src="/ozur/foto/3-araba.jpg" alt="" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'araba fotoğrafı'}))">
+      <figcaption data-k="k2">Sen gülüyorsun, ben camdaki yansımana bakıyorum. İkisi de aynı kapıya çıkıyor.</figcaption>
+    </figure>
+    <p data-k="p2">Trende, arabada, yolda. Nereye gittiğimizin çok önemi yok, sen yanımda olunca yol kısalıyor. Ben senin yanında sustuğumda bile huzurluyum, bunu başka kimsede bulamadım.</p>
+  </section>
 
-      <p>Bu sayfa, bir aksaklık yaşandığında ne olduğunu, neyi yanlış yaptığımızı ve nasıl düzelttiğimizi açıkça yazdığımız yer. Sessiz kalmak yerine burada anlatmayı tercih ediyoruz.</p>
+  <section>
+    <h2 data-k="b3">Seninle yaşlanmak istiyorum</h2>
+    <figure>
+      <img src="/ozur/foto/4-yuzuk.jpg" alt="" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'yüzük fotoğrafı'}))">
+      <figcaption data-k="k3">O yüzük bir söz. Sözümün arkasındayım.</figcaption>
+    </figure>
+    <p data-k="p3">Ben seninle bir hafta sonu değil, bir ömür planlıyorum. Aynı evde sabah kahvesi, aynı arabada aynı şarkılar, sen yaşlandığında hâlâ aynı şekilde gülüşün. Seninle yaşlanmak istiyorum, bunun için de bugünkü halimi düzeltmem gerektiğini biliyorum.</p>
+  </section>
 
-      <h2>Ne oldu</h2>
-      <p>Şu anda paylaşılacak bir olay bulunmuyor. Bir sorun yaşandığında ayrıntısı burada yayımlanacak.</p>
+  <section>
+    <h2 data-k="b4">Bilimsel kanıt: sen yokken hâlim</h2>
+    <figure>
+      <img src="/ozur/foto/5-hastane.jpg" alt="" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'hastane fotoğrafı'}))">
+      <figcaption data-k="k4">Sen yokken hastanelik oldum. Doktora asıl sebebi söyleyemedim.</figcaption>
+    </figure>
+    <p data-k="p4">Serum takıldı, tahliller yapıldı, kimse bir şey bulamadı. Bense biliyordum: sen aramadan ateşim düşmüyor, sen kızgınken kan değerlerim bozuluyor. Tıp buna daha bir isim koymadı ama tedavisi belli, tek bir mesajın yetiyor.</p>
+  </section>
 
-      <h2>Ne yaptık</h2>
-      <p>Bir olay olduğunda, sorunun nasıl giderildiği ve tekrarlanmaması için ne değiştirdiğimiz bu bölümde yer alacak.</p>
+  <section>
+    <h2 data-k="b5">Söz veriyorum</h2>
+    <ul class="promises">
+      <li data-k="s1">Kırıldığın şeyi küçümsemeyeceğim, önce dinleyeceğim.</li>
+      <li data-k="s2">Özrü, sen istemeden ve geç kalmadan söyleyeceğim.</li>
+      <li data-k="s3">Aynı hatayı ikinci kez yapmayacağım, üçüncüsünü hiç konuşmuyorum.</li>
+    </ul>
+    <p style="margin-top:18px" data-k="p5">Buraya kendi cümlelerimi de yazacağım. Sağ alttaki düğmeden metinleri değiştirebiliyorum, yani bu sayfa bitmedi, tıpkı bizim gibi.</p>
+    <p class="signature" data-k="imza">Seni seviyorum. Özür dilerim.</p>
+  </section>
 
-      <h2>Size ne oluyor</h2>
-      <p>Kilitleriniz, programlarınız ve kullanım verileriniz cihazınızda kalır. Hiçbir aksaklık, bu verilerin bize ulaştığı anlamına gelmez.</p>
+</div>
 
-      <h2>Bize ulaşın</h2>
-      <p>Yaşadığınız bir sorunu doğrudan anlatmak isterseniz: <a href="mailto:support@pawlock.app">support@pawlock.app</a></p>
-    </article>
+<div class="editbar" id="editbar" hidden>
+  <button type="button" id="edit-toggle">Düzenle</button>
+  <button type="button" id="edit-copy" class="primary" hidden>Metinleri kopyala</button>
+  <button type="button" id="edit-reset" hidden>Geri al</button>
+</div>
+<div class="toast" id="toast" hidden></div>
 
-    <!-- ==================== ENGLISH ==================== -->
-    <article class="legal" data-lang-block="en" hidden>
-      <h1>We are sorry</h1>
-      <p class="updated">Last updated: August 21, 2026</p>
+<script>
+(function () {
+  var HASH = "10f816e9cd648cf9514171c3080b6b2d65ec64e76326971e0022f6489c203f86";
+  var gate = document.getElementById("gate");
+  var form = document.getElementById("gate-form");
+  var input = document.getElementById("gate-input");
+  var error = document.getElementById("gate-error");
+  var editbar = document.getElementById("editbar");
 
-      <p>This is where we write down what happened, what we got wrong and how we fixed it. When something goes wrong we would rather say it here than stay quiet.</p>
+  function unlock() {
+    document.body.classList.remove("locked");
+    gate.hidden = true;
+    editbar.hidden = false;
+  }
 
-      <h2>What happened</h2>
-      <p>There is nothing to report right now. If an incident occurs, the details will be published here.</p>
+  async function digest(code) {
+    var buffer = await crypto.subtle.digest("SHA-256", new TextEncoder().encode("pawlock:" + code));
+    return Array.from(new Uint8Array(buffer)).map(function (b) {
+      return b.toString(16).padStart(2, "0");
+    }).join("");
+  }
 
-      <h2>What we did</h2>
-      <p>When there is an incident, this section will carry how it was resolved and what we changed so it does not happen again.</p>
+  if (sessionStorage.getItem("ozur-unlocked") === "1") unlock();
 
-      <h2>What this means for you</h2>
-      <p>Your locks, schedules and usage data stay on your device. No incident means that data reached us.</p>
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+    if (await digest(input.value.trim()) === HASH) {
+      sessionStorage.setItem("ozur-unlocked", "1");
+      unlock();
+      return;
+    }
+    error.textContent = "Kod yanlış.";
+    input.value = "";
+    input.focus();
+    gate.classList.remove("shake");
+    void gate.offsetWidth;
+    gate.classList.add("shake");
+  });
+  input.focus();
+})();
 
-      <h2>Contact</h2>
-      <p>If you want to tell us about a problem directly: <a href="mailto:support@pawlock.app">support@pawlock.app</a></p>
-    </article>
+(function () {
+  var STORE = "ozur-metin";
+  var fields = Array.prototype.slice.call(document.querySelectorAll("[data-k]"));
+  var toggle = document.getElementById("edit-toggle");
+  var copy = document.getElementById("edit-copy");
+  var reset = document.getElementById("edit-reset");
+  var toast = document.getElementById("toast");
+  var timer;
 
-  </main>
+  function say(message) {
+    toast.textContent = message;
+    toast.hidden = false;
+    clearTimeout(timer);
+    timer = setTimeout(function () { toast.hidden = true; }, 2600);
+  }
 
-  <footer class="footer">
-    <div class="container footer-bottom" style="border-top:0; padding-top:0">
-      <span>© <span id="year">2026</span> Pawlock</span>
-      <a href="/" style="color:inherit">pawlock.app</a>
-    </div>
-  </footer>
+  function stored() {
+    try { return JSON.parse(localStorage.getItem(STORE) || "{}"); } catch (e) { return {}; }
+  }
 
-  <script>
-    // Kodun kendisi sayfada yazmıyor, yalnızca SHA-256 özeti duruyor.
-    (function () {
-      var HASH = "10f816e9cd648cf9514171c3080b6b2d65ec64e76326971e0022f6489c203f86";
-      var gate = document.getElementById("gate");
-      var form = document.getElementById("gate-form");
-      var input = document.getElementById("gate-input");
-      var error = document.getElementById("gate-error");
+  function apply(texts) {
+    fields.forEach(function (node) {
+      var value = texts[node.dataset.k];
+      if (typeof value === "string" && value.length) node.textContent = value;
+    });
+  }
 
-      function unlock() {
-        document.body.classList.remove("locked");
-        gate.hidden = true;
-      }
+  // Yayındaki kalıcı metinler burada durur; yoksa sayfadaki varsayılanlar kalır.
+  fetch("/ozur/metin.json", { cache: "no-store" })
+    .then(function (r) { return r.ok ? r.json() : {}; })
+    .then(function (published) { apply(published); apply(stored()); })
+    .catch(function () { apply(stored()); });
 
-      async function digest(code) {
-        var bytes = new TextEncoder().encode("pawlock:" + code);
-        var buffer = await crypto.subtle.digest("SHA-256", bytes);
-        return Array.from(new Uint8Array(buffer))
-          .map(function (b) { return b.toString(16).padStart(2, "0"); })
-          .join("");
-      }
+  function save() {
+    var texts = {};
+    fields.forEach(function (node) { texts[node.dataset.k] = node.textContent.trim(); });
+    localStorage.setItem(STORE, JSON.stringify(texts));
+    return texts;
+  }
 
-      // Aynı oturumda sayfayı yenilemek kodu tekrar sormasın.
-      if (sessionStorage.getItem("ozur-unlocked") === "1") unlock();
+  toggle.addEventListener("click", function () {
+    var editing = document.body.classList.toggle("editing");
+    fields.forEach(function (node) { node.contentEditable = editing ? "true" : "false"; });
+    toggle.textContent = editing ? "Bitir" : "Düzenle";
+    copy.hidden = !editing;
+    reset.hidden = !editing;
+    if (!editing) { save(); say("Değişiklikler bu tarayıcıya kaydedildi."); }
+  });
 
-      form.addEventListener("submit", async function (event) {
-        event.preventDefault();
-        var code = input.value.trim();
-        if (await digest(code) === HASH) {
-          sessionStorage.setItem("ozur-unlocked", "1");
-          unlock();
-          return;
-        }
-        error.textContent = "Kod yanlış.";
-        input.value = "";
-        input.focus();
-        gate.classList.remove("gate-shake");
-        void gate.offsetWidth;
-        gate.classList.add("gate-shake");
-      });
+  copy.addEventListener("click", function () {
+    var json = JSON.stringify(save(), null, 2);
+    navigator.clipboard.writeText(json).then(function () {
+      say("Metinler kopyalandı. Yayına almak için bana gönder.");
+    }, function () {
+      say("Kopyalanamadı, metni elle seçmen gerekiyor.");
+    });
+  });
 
-      input.focus();
-    })();
-  </script>
-  <script src="/js/i18n.js"></script>
-  <script src="/js/main.js"></script>
+  reset.addEventListener("click", function () {
+    localStorage.removeItem(STORE);
+    location.reload();
+  });
+})();
+</script>
 </body>
 </html>
